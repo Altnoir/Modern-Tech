@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "moderntech:block/titanium_barrel_top",
+    "side": "moderntech:block/titanium_barrel_side"
+  }
+}

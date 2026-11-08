@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "moderntech:digital_circuit"
+    },
+    "P": {
+      "item": "moderntech:pump"
+    },
+    "c": {
+      "item": "moderntech:aluminum_wire"
+    },
+    "d": {
+      "item": "moderntech:stainless_steel_drill_head"
+    },
+    "g": {
+      "tag": "c:gears/iron"
+    },
+    "m": {
+      "item": "moderntech:motor"
+    },
+    "p": {
+      "tag": "c:plates/stainless_steel"
+    }
+  },
+  "pattern": [
+    "gpd",
+    "mCp",
+    "cPg"
+  ],
+  "result": {
+    "count": 4,
+    "id": "moderntech:stainless_steel_drill"
+  }
+}

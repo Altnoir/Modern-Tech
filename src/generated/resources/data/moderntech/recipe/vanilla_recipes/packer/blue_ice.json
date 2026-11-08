@@ -1,0 +1,17 @@
+{
+  "type": "moderntech:packer",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 9,
+      "item": "minecraft:packed_ice"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:blue_ice"
+    }
+  ]
+}

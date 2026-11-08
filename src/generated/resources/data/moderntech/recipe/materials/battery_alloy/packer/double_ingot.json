@@ -1,0 +1,22 @@
+{
+  "type": "moderntech:packer",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 2,
+      "tag": "c:ingots/battery_alloy"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:packer_double_ingot_template",
+      "probability": 0.0
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:battery_alloy_double_ingot"
+    }
+  ]
+}

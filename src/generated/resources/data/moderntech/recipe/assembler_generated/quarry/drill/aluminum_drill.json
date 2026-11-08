@@ -1,0 +1,38 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 2,
+      "tag": "c:plates/aluminum"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:electrum_wire"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:electronic_circuit"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:aluminum_drill_head"
+    },
+    {
+      "amount": 2,
+      "tag": "c:gears/iron"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:pump"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 4,
+      "item": "moderntech:aluminum_drill"
+    }
+  ],
+  "level": "electric"
+}

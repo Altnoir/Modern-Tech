@@ -1,0 +1,21 @@
+{
+  "type": "moderntech:mixer",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 6,
+      "tag": "c:dusts/uranium_238"
+    },
+    {
+      "amount": 3,
+      "tag": "c:dusts/uranium_235"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 9,
+      "item": "moderntech:he_uranium_dust"
+    }
+  ]
+}

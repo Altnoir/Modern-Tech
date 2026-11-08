@@ -1,0 +1,30 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:analog_circuit"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:redstone_battery"
+    },
+    {
+      "amount": 3,
+      "item": "moderntech:tin_wire"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:steel_machine_casing"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:electric_machine_hull"
+    }
+  ],
+  "level": "electric"
+}

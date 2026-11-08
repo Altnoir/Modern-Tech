@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:blast_furnace",
+  "duration": 600,
+  "energy": 64,
+  "fluid_inputs": [
+    {
+      "amount": 250,
+      "fluid": "moderntech:oxygen"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:dusts/copper"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:annealed_copper_hot_ingot"
+    }
+  ],
+  "level": "stainless_steel"
+}

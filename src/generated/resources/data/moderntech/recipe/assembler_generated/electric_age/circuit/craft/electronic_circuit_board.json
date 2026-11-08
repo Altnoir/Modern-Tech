@@ -1,0 +1,26 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 4,
+      "item": "moderntech:electrum_wire"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:redstone_battery"
+    },
+    {
+      "amount": 2,
+      "tag": "c:plates/aluminum"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:electronic_circuit_board"
+    }
+  ],
+  "level": "electric"
+}

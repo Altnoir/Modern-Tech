@@ -1,0 +1,31 @@
+{
+  "parent": "moderntech:fusion_reactor",
+  "criteria": {
+    "buildMultiblock": {
+      "conditions": {
+        "multiblock": {
+          "id": "moderntech:plasma_turbine"
+        }
+      },
+      "trigger": "moderntech:built_multiblock"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.plasma_turbine.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moderntech:plasma_turbine"
+    },
+    "title": {
+      "translate": "advancements.moderntech.plasma_turbine"
+    }
+  },
+  "requirements": [
+    [
+      "buildMultiblock"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

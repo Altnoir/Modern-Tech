@@ -1,0 +1,21 @@
+{
+  "type": "moderntech:vacuum_freezer",
+  "duration": 250,
+  "energy": 256,
+  "fluid_inputs": [
+    {
+      "amount": 140,
+      "fluid": "moderntech:argon"
+    },
+    {
+      "amount": 60,
+      "fluid": "moderntech:helium"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 200,
+      "fluid": "moderntech:cryofluid"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "moderntech:macerator",
+  "duration": 400,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:raw_materials/tungsten"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:tungsten_dust"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:tungsten_dust",
+      "probability": 0.5
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "moderntech:electrolyzer",
+  "duration": 2400,
+  "energy": 32,
+  "fluid_outputs": [
+    {
+      "amount": 2500,
+      "fluid": "moderntech:oxygen",
+      "probability": 0.5
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 18,
+      "tag": "c:dusts/lapis"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 3,
+      "item": "moderntech:aluminum_dust"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:sodium_dust"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:silicon_dust"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "moderntech:item/sulfuric_light_fuel_bucket"
+  }
+}

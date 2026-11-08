@@ -1,0 +1,18 @@
+{
+  "type": "moderntech:blast_furnace",
+  "duration": 20,
+  "energy": 128,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:tiny_dusts/le_mox"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:le_mox_nugget"
+    }
+  ],
+  "level": "iridium"
+}

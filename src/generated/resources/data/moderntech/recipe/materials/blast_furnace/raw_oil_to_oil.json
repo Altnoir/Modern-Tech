@@ -1,0 +1,17 @@
+{
+  "type": "moderntech:steam_blast_furnace",
+  "duration": 200,
+  "energy": 2,
+  "fluid_inputs": [
+    {
+      "amount": 100,
+      "fluid": "moderntech:raw_synthetic_oil"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 100,
+      "fluid": "moderntech:synthetic_oil"
+    }
+  ]
+}

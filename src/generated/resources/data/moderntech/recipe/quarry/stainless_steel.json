@@ -1,0 +1,34 @@
+{
+  "type": "moderntech:quarry",
+  "duration": 600,
+  "energy": 32,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:stainless_steel_drill",
+      "reusable": true
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:titanium_ore",
+      "probability": 0.15
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:tungsten_ore",
+      "probability": 0.2
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:monazite_ore",
+      "probability": 0.25
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:platinum_ore",
+      "probability": 0.12
+    }
+  ]
+}

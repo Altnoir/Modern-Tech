@@ -1,0 +1,25 @@
+{
+  "type": "moderntech:implosion_compressor",
+  "duration": 10,
+  "energy": 1,
+  "item_inputs": [
+    {
+      "amount": 64,
+      "tag": "c:storage_blocks/gold"
+    },
+    {
+      "amount": 1,
+      "item": "minecraft:apple"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:industrial_tnt"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:enchanted_golden_apple"
+    }
+  ]
+}

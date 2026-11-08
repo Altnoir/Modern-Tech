@@ -1,0 +1,13 @@
+{
+  "casing": "aluminum_alloy",
+  "default_overlays": {
+    "fluid_auto": "moderntech:block/overlays/fluid_auto",
+    "front": "moderntech:block/machines/wiremill/overlay_front",
+    "front_active": "moderntech:block/machines/wiremill/overlay_front_active",
+    "item_auto": "moderntech:block/overlays/item_auto",
+    "output": "moderntech:block/overlays/output",
+    "top": "moderntech:block/machines/wiremill/overlay_top",
+    "top_active": "moderntech:block/machines/wiremill/overlay_top_active"
+  },
+  "loader": "moderntech:machine"
+}

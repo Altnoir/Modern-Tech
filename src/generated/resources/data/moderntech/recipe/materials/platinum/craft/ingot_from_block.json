@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:platinum_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "moderntech:platinum_ingot"
+  }
+}

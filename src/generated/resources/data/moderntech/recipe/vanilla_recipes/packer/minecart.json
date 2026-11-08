@@ -1,0 +1,21 @@
+{
+  "type": "moderntech:packer",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:steel_large_plate"
+    },
+    {
+      "amount": 1,
+      "item": "minecraft:rail"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:minecart"
+    }
+  ]
+}

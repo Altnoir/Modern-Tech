@@ -1,0 +1,4 @@
+{
+  "block": "minecraft:bricks",
+  "loader": "moderntech:use_block_model"
+}

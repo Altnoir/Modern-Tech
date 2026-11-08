@@ -1,0 +1,18 @@
+{
+  "type": "moderntech:distillery",
+  "duration": 200,
+  "energy": 12,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:crude_oil"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 500,
+      "fluid": "moderntech:sulfuric_light_fuel"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

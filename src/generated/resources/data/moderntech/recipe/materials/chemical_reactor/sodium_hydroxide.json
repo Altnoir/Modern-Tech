@@ -1,0 +1,28 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 200,
+  "energy": 8,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:oxygen"
+    },
+    {
+      "amount": 1000,
+      "fluid": "moderntech:hydrogen"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 2000,
+      "fluid": "moderntech:sodium_hydroxide"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:dusts/sodium"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

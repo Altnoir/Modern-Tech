@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:plates/nuclear_alloy"
+    },
+    "C": {
+      "item": "moderntech:titanium_item_input_hatch"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ACA",
+    "AAA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:nuclear_item_hatch"
+  }
+}

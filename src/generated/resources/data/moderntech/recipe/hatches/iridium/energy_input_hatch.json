@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "U": {
+      "item": "moderntech:superconductor_wire"
+    },
+    "V": {
+      "item": "moderntech:iridium_machine_hull"
+    }
+  },
+  "pattern": [
+    "U",
+    "V"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:iridium_energy_input_hatch"
+  }
+}

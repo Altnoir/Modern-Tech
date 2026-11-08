@@ -1,0 +1,22 @@
+{
+  "type": "moderntech:centrifuge",
+  "duration": 1200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 6,
+      "item": "minecraft:raw_iron"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 8,
+      "item": "moderntech:iron_dust"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:manganese_crushed_dust"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

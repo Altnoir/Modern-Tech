@@ -1,0 +1,31 @@
+{
+  "type": "moderntech:centrifuge",
+  "duration": 1200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 10,
+      "item": "minecraft:redstone"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 5,
+      "item": "moderntech:iron_dust"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:ruby_dust"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:quartz_dust"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:neodymium_tiny_dust",
+      "probability": 0.5
+    }
+  ],
+  "level": "aluminum_alloy"
+}

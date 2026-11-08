@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:fire_clay_bricks"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:bronze_furnace"
+    },
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "item": "moderntech:bronze_plate"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:bronze_boiler"
+  }
+}

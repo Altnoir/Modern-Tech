@@ -1,0 +1,26 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 2,
+      "tag": "c:plates/bronze"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:bronze_drill_head"
+    },
+    {
+      "amount": 2,
+      "tag": "c:gears/iron"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 4,
+      "item": "moderntech:bronze_drill"
+    }
+  ],
+  "level": "electric"
+}

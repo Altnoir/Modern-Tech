@@ -1,0 +1,32 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 2,
+  "fluid_inputs": [
+    {
+      "amount": 75,
+      "fluid": "moderntech:soldering_alloy"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 3,
+      "tag": "c:plates/steel"
+    },
+    {
+      "amount": 1,
+      "tag": "c:rods/steel"
+    },
+    {
+      "amount": 2,
+      "tag": "c:gears/steel"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:steel_drill_head"
+    }
+  ],
+  "level": "electric"
+}

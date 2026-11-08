@@ -1,0 +1,21 @@
+{
+  "type": "moderntech:macerator",
+  "duration": 400,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:titanium_drill_head"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 64,
+      "item": "moderntech:titanium_tiny_dust"
+    },
+    {
+      "amount": 3,
+      "item": "moderntech:titanium_tiny_dust"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "moderntech:steam_blast_furnace",
+  "criteria": {
+    "checkInv": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moderntech:steel_machine_casing"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.steel_machine_casing.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "moderntech:steel_machine_casing"
+    },
+    "title": {
+      "translate": "advancements.moderntech.steel_machine_casing"
+    }
+  },
+  "requirements": [
+    [
+      "checkInv"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

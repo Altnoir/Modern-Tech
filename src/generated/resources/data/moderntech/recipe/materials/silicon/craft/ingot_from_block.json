@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:silicon_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "moderntech:silicon_ingot"
+  }
+}

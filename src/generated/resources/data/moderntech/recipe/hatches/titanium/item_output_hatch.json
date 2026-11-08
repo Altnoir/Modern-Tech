@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "U": {
+      "item": "moderntech:titanium_machine_hull"
+    },
+    "V": {
+      "item": "minecraft:hopper"
+    }
+  },
+  "pattern": [
+    "U",
+    "V"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:titanium_item_output_hatch"
+  }
+}

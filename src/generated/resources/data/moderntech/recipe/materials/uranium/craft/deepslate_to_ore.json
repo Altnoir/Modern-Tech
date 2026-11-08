@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:deepslate_uranium_ore"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:uranium_ore"
+  }
+}

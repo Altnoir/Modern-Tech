@@ -1,0 +1,34 @@
+{
+  "parent": "moderntech:quantum_upgrade",
+  "criteria": {
+    "checkInv": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moderntech:replicator"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.replicator.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "moderntech:replicator"
+    },
+    "title": {
+      "translate": "advancements.moderntech.replicator"
+    }
+  },
+  "requirements": [
+    [
+      "checkInv"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

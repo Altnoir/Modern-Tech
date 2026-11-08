@@ -1,0 +1,32 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 400,
+  "energy": 4,
+  "fluid_inputs": [
+    {
+      "amount": 250,
+      "fluid": "minecraft:water"
+    },
+    {
+      "amount": 500,
+      "fluid": "moderntech:sodium_hydroxide"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 4,
+      "tag": "c:dusts/quartz"
+    },
+    {
+      "amount": 1,
+      "tag": "c:tiny_dusts/iron"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 4,
+      "item": "minecraft:amethyst_shard"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

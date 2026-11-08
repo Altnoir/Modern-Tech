@@ -1,0 +1,38 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 2,
+      "tag": "c:plates/titanium"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:annealed_copper_wire"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:processor"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:titanium_drill_head"
+    },
+    {
+      "amount": 2,
+      "tag": "c:gears/iron"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:large_motor"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 4,
+      "item": "moderntech:titanium_drill"
+    }
+  ],
+  "level": "electric"
+}

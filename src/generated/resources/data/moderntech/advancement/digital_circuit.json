@@ -1,0 +1,33 @@
+{
+  "parent": "moderntech:electric_distillery",
+  "criteria": {
+    "checkInv": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moderntech:digital_circuit"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.digital_circuit.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moderntech:digital_circuit"
+    },
+    "title": {
+      "translate": "advancements.moderntech.digital_circuit"
+    }
+  },
+  "requirements": [
+    [
+      "checkInv"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

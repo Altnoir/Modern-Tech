@@ -1,0 +1,29 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:clean_stainless_steel_machine_casing"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:digital_circuit"
+    },
+    {
+      "item": "moderntech:stainless_steel_rotor"
+    },
+    {
+      "item": "moderntech:stainless_steel_large_plate"
+    },
+    {
+      "item": "moderntech:pump"
+    }
+  ],
+  "pattern": [
+    " X ",
+    "X X",
+    " X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:large_steam_turbine"
+  }
+}

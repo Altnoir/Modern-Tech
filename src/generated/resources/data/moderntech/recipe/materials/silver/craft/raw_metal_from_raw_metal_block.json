@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:raw_silver_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "moderntech:raw_silver"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "tag": "c:plates/copper"
+    },
+    "r": {
+      "item": "moderntech:rubber_sheet"
+    }
+  },
+  "pattern": [
+    "r",
+    "c",
+    "r"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:analog_circuit_board"
+  }
+}

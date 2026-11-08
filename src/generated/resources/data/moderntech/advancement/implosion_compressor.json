@@ -1,0 +1,32 @@
+{
+  "parent": "moderntech:blastproof_alloy_plate",
+  "criteria": {
+    "buildMultiblock": {
+      "conditions": {
+        "multiblock": {
+          "id": "moderntech:implosion_compressor"
+        }
+      },
+      "trigger": "moderntech:built_multiblock"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.implosion_compressor.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "moderntech:implosion_compressor"
+    },
+    "title": {
+      "translate": "advancements.moderntech.implosion_compressor"
+    }
+  },
+  "requirements": [
+    [
+      "buildMultiblock"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

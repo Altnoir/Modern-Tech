@@ -1,0 +1,34 @@
+{
+  "parent": "moderntech:forge_hammer",
+  "criteria": {
+    "checkInv": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moderntech:coke_oven"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.coke_oven.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "moderntech:coke_oven"
+    },
+    "title": {
+      "translate": "advancements.moderntech.coke_oven"
+    }
+  },
+  "requirements": [
+    [
+      "checkInv"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

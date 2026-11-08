@@ -1,0 +1,28 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 280,
+  "energy": 10,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:ethanol"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 500,
+      "fluid": "moderntech:ethylene"
+    },
+    {
+      "amount": 400,
+      "fluid": "moderntech:sulfuric_acid"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:dusts/sulfur"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

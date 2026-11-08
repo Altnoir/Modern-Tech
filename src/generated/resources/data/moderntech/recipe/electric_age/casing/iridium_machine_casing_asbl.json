@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:plates/iridium"
+    },
+    "H": {
+      "item": "moderntech:titanium_machine_hull"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "AHA",
+    "AAA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:iridium_machine_casing"
+  }
+}

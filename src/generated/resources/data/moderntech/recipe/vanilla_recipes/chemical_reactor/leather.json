@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 100,
+  "energy": 8,
+  "fluid_inputs": [
+    {
+      "amount": 100,
+      "fluid": "moderntech:oxygen"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 5,
+      "item": "minecraft:rotten_flesh"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:leather"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

@@ -1,0 +1,40 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 400,
+  "energy": 4,
+  "fluid_inputs": [
+    {
+      "amount": 4000,
+      "fluid": "moderntech:hydrogen"
+    },
+    {
+      "amount": 4000,
+      "fluid": "moderntech:sodium_hydroxide"
+    },
+    {
+      "amount": 250,
+      "fluid": "moderntech:chlorine"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 4,
+      "tag": "c:dusts/quartz"
+    },
+    {
+      "amount": 3,
+      "tag": "c:tiny_dusts/beryllium"
+    },
+    {
+      "amount": 2,
+      "tag": "c:tiny_dusts/aluminum"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 16,
+      "item": "minecraft:prismarine_crystals"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

@@ -1,0 +1,18 @@
+{
+  "type": "moderntech:blast_furnace",
+  "duration": 1500,
+  "energy": 32,
+  "item_inputs": [
+    {
+      "amount": 32,
+      "tag": "c:dusts/silicon"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:monocrystalline_silicon"
+    }
+  ],
+  "level": "electric"
+}

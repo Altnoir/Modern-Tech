@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "moderntech:tin_wire"
+    },
+    "g": {
+      "tag": "c:gears/steel"
+    },
+    "m": {
+      "item": "moderntech:motor"
+    },
+    "p": {
+      "tag": "c:plates/steel"
+    },
+    "r": {
+      "tag": "c:rods/steel"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "crr",
+    "cmg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:piston"
+  }
+}

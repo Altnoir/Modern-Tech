@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "moderntech:quarry",
+  "duration": 600,
+  "energy": 128,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "create:mechanical_arm",
+      "reusable": true
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "create:asurine",
+      "probability": 0.5
+    },
+    {
+      "amount": 1,
+      "item": "create:crimsite",
+      "probability": 0.5
+    },
+    {
+      "amount": 1,
+      "item": "create:ochrum",
+      "probability": 0.5
+    },
+    {
+      "amount": 1,
+      "item": "create:veridium",
+      "probability": 0.5
+    }
+  ],
+  "level": "bronze"
+}

@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:electrolyzer",
+  "duration": 400,
+  "energy": 16,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:manganese_sulfuric_solution"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 900,
+      "fluid": "moderntech:sulfuric_acid"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 3,
+      "item": "moderntech:manganese_tiny_dust"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

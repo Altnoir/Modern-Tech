@@ -1,0 +1,25 @@
+{
+  "type": "moderntech:mixer",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:tiny_dusts/stainless_steel"
+    },
+    {
+      "amount": 1,
+      "tag": "c:tiny_dusts/chromium"
+    },
+    {
+      "amount": 1,
+      "tag": "c:tiny_dusts/aluminum"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 3,
+      "item": "moderntech:kanthal_tiny_dust"
+    }
+  ]
+}

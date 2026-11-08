@@ -1,0 +1,10 @@
+{
+  "type": "moderntech:forge_hammer",
+  "ingredient": {
+    "tag": "c:ores/copper"
+  },
+  "result": {
+    "count": 12,
+    "id": "moderntech:copper_dust"
+  }
+}

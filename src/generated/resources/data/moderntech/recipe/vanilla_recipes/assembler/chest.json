@@ -1,0 +1,22 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 8,
+      "tag": "minecraft:planks"
+    },
+    {
+      "amount": 1,
+      "item": "minecraft:chest",
+      "probability": 0.0
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 2,
+      "item": "minecraft:chest"
+    }
+  ]
+}

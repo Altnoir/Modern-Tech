@@ -1,0 +1,26 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 5,
+      "tag": "c:plates/steel"
+    },
+    {
+      "amount": 3,
+      "item": "minecraft:smooth_stone"
+    },
+    {
+      "amount": 1,
+      "item": "minecraft:furnace"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 2,
+      "item": "minecraft:blast_furnace"
+    }
+  ],
+  "level": "electric"
+}

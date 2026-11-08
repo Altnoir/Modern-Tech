@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:bronze_machine_casing"
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "item": "moderntech:bronze_rotor"
+    },
+    {
+      "item": "moderntech:bronze_plate"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:bronze_water_pump"
+  }
+}

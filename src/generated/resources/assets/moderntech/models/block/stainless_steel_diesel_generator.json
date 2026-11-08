@@ -1,0 +1,11 @@
+{
+  "casing": "stainless_steel",
+  "default_overlays": {
+    "front": "moderntech:block/machines/diesel_generator/overlay_front",
+    "front_active": "moderntech:block/machines/diesel_generator/overlay_front_active",
+    "output": "moderntech:block/overlays/output_energy",
+    "top": "moderntech:block/machines/diesel_generator/overlay_top",
+    "top_active": "moderntech:block/machines/diesel_generator/overlay_top_active"
+  },
+  "loader": "moderntech:machine"
+}

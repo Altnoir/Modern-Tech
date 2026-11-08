@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "moderntech:battery_alloy_plate"
+    },
+    "a": {
+      "tag": "c:plates/battery_alloy"
+    },
+    "c": {
+      "item": "moderntech:tin_wire"
+    },
+    "r": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "cac",
+    "BrB",
+    "BrB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:redstone_battery"
+  }
+}

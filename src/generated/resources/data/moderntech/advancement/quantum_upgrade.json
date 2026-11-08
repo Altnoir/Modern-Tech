@@ -1,0 +1,34 @@
+{
+  "parent": "moderntech:quantum_circuit",
+  "criteria": {
+    "checkInv": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moderntech:quantum_upgrade"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.quantum_upgrade.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "moderntech:quantum_upgrade"
+    },
+    "title": {
+      "translate": "advancements.moderntech.quantum_upgrade"
+    }
+  },
+  "requirements": [
+    [
+      "checkInv"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

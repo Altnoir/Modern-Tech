@@ -1,0 +1,10 @@
+{
+  "type": "moderntech:forge_hammer",
+  "ingredient": {
+    "tag": "c:ingots/steel"
+  },
+  "result": {
+    "count": 1,
+    "id": "moderntech:steel_dust"
+  }
+}

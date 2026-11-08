@@ -1,0 +1,22 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 150,
+  "energy": 10,
+  "fluid_inputs": [
+    {
+      "amount": 500,
+      "fluid": "moderntech:styrene"
+    },
+    {
+      "amount": 500,
+      "fluid": "moderntech:butadiene"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:styrene_butadiene"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

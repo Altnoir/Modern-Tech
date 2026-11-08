@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "moderntech:electronic_circuit_board"
+    },
+    "c": {
+      "item": "moderntech:analog_circuit"
+    },
+    "d": {
+      "item": "moderntech:diode"
+    },
+    "t": {
+      "item": "moderntech:transistor"
+    }
+  },
+  "pattern": [
+    "cdc",
+    "tbt",
+    "cdc"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:electronic_circuit"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 8000,
+  "energy": 32,
+  "fluid_inputs": [
+    {
+      "amount": 500,
+      "fluid": "moderntech:uu_matter"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:iridium_machine_hull"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:quantum_upgrade"
+    },
+    {
+      "amount": 4,
+      "item": "moderntech:quantum_processor"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:replicator"
+    }
+  ]
+}

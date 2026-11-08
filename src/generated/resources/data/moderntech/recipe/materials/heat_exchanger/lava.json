@@ -1,0 +1,28 @@
+{
+  "type": "moderntech:heat_exchanger",
+  "duration": 400,
+  "energy": 2,
+  "fluid_inputs": [
+    {
+      "amount": 10,
+      "fluid": "minecraft:lava"
+    },
+    {
+      "amount": 500,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 8000,
+      "fluid": "moderntech:steam"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:obsidian",
+      "probability": 0.01
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "casing": "clean_stainless_steel_machine_casing",
+  "default_overlays": {
+    "fluid_auto": "moderntech:block/overlays/fluid_auto",
+    "front": "moderntech:block/machines/heat_exchanger/overlay_front",
+    "front_active": "moderntech:block/machines/heat_exchanger/overlay_front_active",
+    "item_auto": "moderntech:block/overlays/item_auto",
+    "output": "moderntech:block/overlays/output"
+  },
+  "loader": "moderntech:machine"
+}

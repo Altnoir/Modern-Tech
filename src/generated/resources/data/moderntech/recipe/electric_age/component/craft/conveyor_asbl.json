@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "moderntech:tin_wire"
+    },
+    "m": {
+      "item": "moderntech:motor"
+    },
+    "r": {
+      "item": "moderntech:rubber_sheet"
+    }
+  },
+  "pattern": [
+    "rrr",
+    "mcm",
+    "rrr"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:conveyor"
+  }
+}

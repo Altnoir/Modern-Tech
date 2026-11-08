@@ -1,0 +1,31 @@
+{
+  "type": "moderntech:mixer",
+  "duration": 200,
+  "energy": 16,
+  "fluid_inputs": [
+    {
+      "amount": 250,
+      "fluid": "moderntech:toluene"
+    },
+    {
+      "amount": 1000,
+      "fluid": "moderntech:nitrogen"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 4,
+      "tag": "minecraft:sand"
+    },
+    {
+      "amount": 3,
+      "item": "minecraft:flint"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 4,
+      "item": "moderntech:industrial_tnt"
+    }
+  ]
+}

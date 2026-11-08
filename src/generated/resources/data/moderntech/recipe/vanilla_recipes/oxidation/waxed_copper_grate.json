@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 100,
+  "energy": 8,
+  "fluid_inputs": [
+    {
+      "amount": 100,
+      "fluid": "moderntech:oxygen"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:waxed_copper_grate"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:waxed_exposed_copper_grate"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

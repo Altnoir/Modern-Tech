@@ -1,0 +1,30 @@
+{
+  "type": "moderntech:blast_furnace",
+  "duration": 400,
+  "energy": 128,
+  "fluid_inputs": [
+    {
+      "amount": 3000,
+      "fluid": "moderntech:manganese_sulfuric_solution"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 2500,
+      "fluid": "moderntech:manganese_sulfuric_solution"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 3,
+      "tag": "c:raw_materials/titanium"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 4,
+      "item": "moderntech:titanium_hot_ingot"
+    }
+  ],
+  "level": "stainless_steel"
+}

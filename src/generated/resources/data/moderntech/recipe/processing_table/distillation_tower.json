@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:clean_stainless_steel_machine_casing"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:stainless_steel_distillery"
+    },
+    {
+      "item": "moderntech:stainless_steel_distillery"
+    },
+    {
+      "item": "minecraft:glass"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:distillation_tower"
+  }
+}

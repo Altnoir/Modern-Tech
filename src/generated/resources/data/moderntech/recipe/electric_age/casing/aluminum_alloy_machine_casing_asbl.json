@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "tag": "c:gears/aluminum_alloy"
+    },
+    "P": {
+      "tag": "c:plates/aluminum_alloy"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "PGP",
+    "PPP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:aluminum_alloy_machine_casing"
+  }
+}

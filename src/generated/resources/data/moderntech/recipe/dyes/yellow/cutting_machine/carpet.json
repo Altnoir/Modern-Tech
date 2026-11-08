@@ -1,0 +1,17 @@
+{
+  "type": "moderntech:cutting_machine",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:yellow_wool"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 4,
+      "item": "minecraft:yellow_carpet"
+    }
+  ]
+}

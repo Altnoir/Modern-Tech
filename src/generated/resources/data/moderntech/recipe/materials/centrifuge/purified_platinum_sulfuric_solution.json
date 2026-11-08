@@ -1,0 +1,25 @@
+{
+  "type": "moderntech:centrifuge",
+  "duration": 1200,
+  "energy": 8,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:platinum_sulfuric_solution"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:purified_platinum_sulfuric_solution"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:iridium_tiny_dust",
+      "probability": 0.05
+    }
+  ],
+  "level": "aluminum_alloy"
+}

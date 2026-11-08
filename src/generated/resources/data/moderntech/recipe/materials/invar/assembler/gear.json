@@ -1,0 +1,28 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 2,
+  "fluid_inputs": [
+    {
+      "amount": 100,
+      "fluid": "moderntech:soldering_alloy"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 4,
+      "tag": "c:plates/invar"
+    },
+    {
+      "amount": 1,
+      "tag": "c:ingots/invar"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 2,
+      "item": "moderntech:invar_gear"
+    }
+  ],
+  "level": "electric"
+}

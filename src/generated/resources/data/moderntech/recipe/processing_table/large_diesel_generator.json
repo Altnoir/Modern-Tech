@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:titanium_machine_hull"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:silver_wire"
+    },
+    {
+      "item": "moderntech:titanium_gear"
+    },
+    {
+      "item": "moderntech:motor"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:large_diesel_generator"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 700,
+  "energy": 12,
+  "fluid_inputs": [
+    {
+      "amount": 500,
+      "fluid": "moderntech:vinyl_chloride"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 700,
+      "fluid": "moderntech:polyvinyl_chloride"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:tiny_dusts/chromium"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

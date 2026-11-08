@@ -1,0 +1,18 @@
+{
+  "type": "moderntech:polarizer",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:rods/steel"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:steel_rod_magnetic"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

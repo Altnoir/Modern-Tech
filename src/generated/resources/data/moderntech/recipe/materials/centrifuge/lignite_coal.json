@@ -1,0 +1,18 @@
+{
+  "type": "moderntech:centrifuge",
+  "duration": 100,
+  "energy": 32,
+  "item_inputs": [
+    {
+      "amount": 27,
+      "tag": "c:dusts/lignite_coal"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 10,
+      "item": "moderntech:coal_dust"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

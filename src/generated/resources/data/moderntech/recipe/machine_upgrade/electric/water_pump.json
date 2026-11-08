@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:electric_machine_hull"
+    },
+    {
+      "item": "moderntech:steel_water_pump"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:electric_water_pump"
+  }
+}

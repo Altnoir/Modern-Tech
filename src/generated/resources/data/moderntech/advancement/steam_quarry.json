@@ -1,0 +1,32 @@
+{
+  "parent": "moderntech:steel_machine_casing",
+  "criteria": {
+    "buildMultiblock": {
+      "conditions": {
+        "multiblock": {
+          "id": "moderntech:steam_quarry"
+        }
+      },
+      "trigger": "moderntech:built_multiblock"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.steam_quarry.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "moderntech:steam_quarry"
+    },
+    "title": {
+      "translate": "advancements.moderntech.steam_quarry"
+    }
+  },
+  "requirements": [
+    [
+      "buildMultiblock"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

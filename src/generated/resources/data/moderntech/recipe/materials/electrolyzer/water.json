@@ -1,0 +1,22 @@
+{
+  "type": "moderntech:electrolyzer",
+  "duration": 600,
+  "energy": 8,
+  "fluid_inputs": [
+    {
+      "amount": 3000,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 2000,
+      "fluid": "moderntech:hydrogen"
+    },
+    {
+      "amount": 1000,
+      "fluid": "moderntech:oxygen"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

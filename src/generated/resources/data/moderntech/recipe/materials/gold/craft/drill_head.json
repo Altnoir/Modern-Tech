@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "tag": "c:gears/gold"
+    },
+    "R": {
+      "tag": "c:rods/gold"
+    },
+    "b": {
+      "item": "moderntech:gold_bolt"
+    },
+    "c": {
+      "tag": "c:plates/gold"
+    },
+    "p": {
+      "tag": "c:plates/gold"
+    }
+  },
+  "pattern": [
+    "bcp",
+    "GRc",
+    "bGb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:gold_drill_head"
+  }
+}

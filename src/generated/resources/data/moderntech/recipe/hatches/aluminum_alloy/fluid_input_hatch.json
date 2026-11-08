@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "U": {
+      "item": "moderntech:aluminum_tank"
+    },
+    "V": {
+      "item": "moderntech:aluminum_alloy_machine_hull"
+    }
+  },
+  "pattern": [
+    "U",
+    "V"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:aluminum_alloy_fluid_input_hatch"
+  }
+}

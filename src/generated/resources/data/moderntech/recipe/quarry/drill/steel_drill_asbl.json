@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "moderntech:analog_circuit"
+    },
+    "c": {
+      "item": "moderntech:tin_wire"
+    },
+    "d": {
+      "item": "moderntech:steel_drill_head"
+    },
+    "g": {
+      "tag": "c:gears/iron"
+    },
+    "m": {
+      "item": "moderntech:motor"
+    },
+    "p": {
+      "tag": "c:plates/steel"
+    }
+  },
+  "pattern": [
+    "gpd",
+    "mCp",
+    "cmg"
+  ],
+  "result": {
+    "count": 4,
+    "id": "moderntech:steel_drill"
+  }
+}

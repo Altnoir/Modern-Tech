@@ -1,0 +1,10 @@
+{
+  "type": "moderntech:forge_hammer",
+  "ingredient": {
+    "tag": "c:nuggets/copper"
+  },
+  "result": {
+    "count": 1,
+    "id": "moderntech:copper_tiny_dust"
+  }
+}

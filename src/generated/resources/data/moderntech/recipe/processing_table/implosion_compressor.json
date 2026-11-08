@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:stainless_steel_machine_hull"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:titanium_large_plate"
+    },
+    {
+      "item": "moderntech:blastproof_alloy_large_plate"
+    },
+    {
+      "item": "moderntech:digital_circuit"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:implosion_compressor"
+  }
+}

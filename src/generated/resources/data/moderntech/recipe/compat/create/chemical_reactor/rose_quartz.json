@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "moderntech:chemical_reactor",
+  "duration": 100,
+  "energy": 8,
+  "fluid_inputs": [
+    {
+      "amount": 720,
+      "fluid": "moderntech:molten_redstone"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:gems/quartz"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "create:rose_quartz"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

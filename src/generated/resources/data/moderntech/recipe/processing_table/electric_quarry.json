@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:aluminum_alloy_machine_hull"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:steam_quarry"
+    },
+    {
+      "item": "moderntech:electronic_circuit"
+    },
+    {
+      "item": "moderntech:steel_gear"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:electric_quarry"
+  }
+}

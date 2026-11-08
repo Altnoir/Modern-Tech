@@ -1,0 +1,32 @@
+{
+  "parent": "moderntech:electronic_circuit",
+  "criteria": {
+    "buildMultiblock": {
+      "conditions": {
+        "multiblock": {
+          "id": "moderntech:oil_drilling_rig"
+        }
+      },
+      "trigger": "moderntech:built_multiblock"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.oil_drilling_rig.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "moderntech:oil_drilling_rig"
+    },
+    "title": {
+      "translate": "advancements.moderntech.oil_drilling_rig"
+    }
+  },
+  "requirements": [
+    [
+      "buildMultiblock"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

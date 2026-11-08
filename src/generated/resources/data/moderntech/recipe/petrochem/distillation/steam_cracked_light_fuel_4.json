@@ -1,0 +1,18 @@
+{
+  "type": "moderntech:distillery",
+  "duration": 200,
+  "energy": 25,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:steam_cracked_light_fuel"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 200,
+      "fluid": "moderntech:benzene"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

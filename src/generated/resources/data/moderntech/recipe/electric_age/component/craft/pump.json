@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "moderntech:tin_bolt"
+    },
+    "m": {
+      "item": "moderntech:motor"
+    },
+    "r": {
+      "item": "moderntech:tin_rotor"
+    }
+  },
+  "pattern": [
+    "brb",
+    "rmr",
+    "brb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:pump"
+  }
+}

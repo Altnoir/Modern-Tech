@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:uranium_238_dust"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "moderntech:uranium_238_tiny_dust"
+  }
+}

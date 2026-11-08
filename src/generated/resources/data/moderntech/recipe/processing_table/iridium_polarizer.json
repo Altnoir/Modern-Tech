@@ -1,0 +1,29 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:iridium_machine_hull"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:inductor"
+    },
+    {
+      "item": "moderntech:copper_wire"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "pattern": [
+    " X ",
+    "X X",
+    " X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:iridium_polarizer"
+  }
+}

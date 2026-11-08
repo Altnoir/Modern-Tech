@@ -1,0 +1,64 @@
+{
+  "type": "moderntech:quarry",
+  "duration": 600,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:gold_drill",
+      "reusable": true
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 32,
+      "item": "minecraft:netherrack",
+      "probability": 0.5
+    },
+    {
+      "amount": 16,
+      "item": "minecraft:blackstone",
+      "probability": 0.25
+    },
+    {
+      "amount": 16,
+      "item": "minecraft:basalt",
+      "probability": 0.25
+    },
+    {
+      "amount": 20,
+      "item": "minecraft:soul_soil",
+      "probability": 0.1
+    },
+    {
+      "amount": 5,
+      "item": "minecraft:magma_block",
+      "probability": 0.1
+    },
+    {
+      "amount": 20,
+      "item": "minecraft:soul_sand",
+      "probability": 0.25
+    },
+    {
+      "amount": 1,
+      "item": "minecraft:ancient_debris",
+      "probability": 0.05
+    },
+    {
+      "amount": 4,
+      "item": "minecraft:glowstone",
+      "probability": 0.15
+    },
+    {
+      "amount": 6,
+      "item": "minecraft:nether_quartz_ore",
+      "probability": 0.15
+    },
+    {
+      "amount": 1,
+      "item": "minecraft:nether_gold_ore",
+      "probability": 0.25
+    }
+  ]
+}

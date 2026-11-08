@@ -1,0 +1,27 @@
+{
+  "type": "moderntech:macerator",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:lignite_coal_crushed_dust"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:lignite_coal_dust"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:lignite_coal_dust",
+      "probability": 0.5
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:sulfur_dust",
+      "probability": 0.5
+    }
+  ]
+}

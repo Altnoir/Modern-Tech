@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "moderntech:block/overclocker_unit",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "moderntech:block/overclocker_unit"
+    },
+    "axis=z": {
+      "model": "moderntech:block/overclocker_unit",
+      "x": 90
+    }
+  }
+}

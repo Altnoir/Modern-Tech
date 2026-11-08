@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "moderntech:block/fire_clay_bricks",
+    "side": "moderntech:block/casings/bricked_bronze",
+    "top": "moderntech:block/bronze_machine_casing"
+  }
+}

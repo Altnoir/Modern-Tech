@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:iridium_machine_hull"
+    },
+    {
+      "item": "moderntech:titanium_distillery"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:iridium_distillery"
+  }
+}

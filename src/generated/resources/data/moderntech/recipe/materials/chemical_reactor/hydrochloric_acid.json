@@ -1,0 +1,22 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 100,
+  "energy": 8,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:hydrogen"
+    },
+    {
+      "amount": 1000,
+      "fluid": "moderntech:chlorine"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 2000,
+      "fluid": "moderntech:hydrochloric_acid"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

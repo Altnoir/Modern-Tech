@@ -1,0 +1,21 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 2,
+      "item": "moderntech:copper_fine_wire"
+    },
+    {
+      "amount": 1,
+      "tag": "c:dusts/coal"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 12,
+      "item": "moderntech:resistor"
+    }
+  ]
+}

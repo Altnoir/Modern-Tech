@@ -1,0 +1,28 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 2,
+  "fluid_inputs": [
+    {
+      "amount": 100,
+      "fluid": "moderntech:soldering_alloy"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 4,
+      "tag": "c:plates/aluminum"
+    },
+    {
+      "amount": 1,
+      "tag": "c:ingots/aluminum"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:aluminum_rotor"
+    }
+  ],
+  "level": "electric"
+}

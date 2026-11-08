@@ -1,0 +1,26 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 400,
+  "energy": 16,
+  "fluid_inputs": [
+    {
+      "amount": 12000,
+      "fluid": "moderntech:sulfuric_crude_oil"
+    },
+    {
+      "amount": 2000,
+      "fluid": "moderntech:hydrogen"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 12000,
+      "fluid": "moderntech:crude_oil"
+    },
+    {
+      "amount": 2000,
+      "fluid": "moderntech:sulfuric_acid"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

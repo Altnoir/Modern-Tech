@@ -1,0 +1,18 @@
+{
+  "type": "moderntech:blast_furnace",
+  "duration": 20,
+  "energy": 64,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:tiny_dusts/annealed_copper"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:annealed_copper_nugget"
+    }
+  ],
+  "level": "stainless_steel"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "moderntech:item/le_uranium_tiny_dust"
+  }
+}

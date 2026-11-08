@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:aluminum_alloy_machine_hull"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:large_pump"
+    },
+    {
+      "item": "moderntech:aluminum_large_plate"
+    },
+    {
+      "item": "moderntech:pump"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:vacuum_freezer"
+  }
+}

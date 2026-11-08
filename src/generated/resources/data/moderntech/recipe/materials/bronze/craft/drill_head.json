@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "tag": "c:gears/bronze"
+    },
+    "R": {
+      "tag": "c:rods/bronze"
+    },
+    "b": {
+      "item": "moderntech:bronze_bolt"
+    },
+    "c": {
+      "tag": "c:plates/bronze"
+    },
+    "p": {
+      "tag": "c:plates/bronze"
+    }
+  },
+  "pattern": [
+    "bcp",
+    "GRc",
+    "bGb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:bronze_drill_head"
+  }
+}

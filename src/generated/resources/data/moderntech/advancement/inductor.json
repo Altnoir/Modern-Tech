@@ -1,0 +1,33 @@
+{
+  "parent": "moderntech:steel_wiremill",
+  "criteria": {
+    "checkInv": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moderntech:inductor"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.inductor.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moderntech:inductor"
+    },
+    "title": {
+      "translate": "advancements.moderntech.inductor"
+    }
+  },
+  "requirements": [
+    [
+      "checkInv"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

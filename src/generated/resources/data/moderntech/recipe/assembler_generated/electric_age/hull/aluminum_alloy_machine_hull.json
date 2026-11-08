@@ -1,0 +1,30 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 3,
+      "item": "moderntech:electrum_wire"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:silicon_battery"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:electronic_circuit"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:aluminum_alloy_machine_casing"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:aluminum_alloy_machine_hull"
+    }
+  ],
+  "level": "electric"
+}

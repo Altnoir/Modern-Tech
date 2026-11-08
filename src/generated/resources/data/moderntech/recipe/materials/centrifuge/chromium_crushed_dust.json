@@ -1,0 +1,22 @@
+{
+  "type": "moderntech:centrifuge",
+  "duration": 2400,
+  "energy": 16,
+  "item_inputs": [
+    {
+      "amount": 6,
+      "tag": "c:dusts/ruby"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:chromium_crushed_dust"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:aluminum_dust"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

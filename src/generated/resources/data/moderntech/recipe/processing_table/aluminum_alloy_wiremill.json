@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:aluminum_alloy_machine_hull"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:steel_gear"
+    },
+    {
+      "item": "moderntech:steel_rod"
+    },
+    {
+      "item": "moderntech:steel_plate"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:aluminum_alloy_wiremill"
+  }
+}

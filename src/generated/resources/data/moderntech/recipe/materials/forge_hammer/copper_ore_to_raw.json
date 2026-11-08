@@ -1,0 +1,10 @@
+{
+  "type": "moderntech:forge_hammer",
+  "ingredient": {
+    "tag": "c:ores/copper"
+  },
+  "result": {
+    "count": 5,
+    "id": "minecraft:raw_copper"
+  }
+}

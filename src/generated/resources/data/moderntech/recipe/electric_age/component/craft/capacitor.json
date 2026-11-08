@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "tag": "c:plates/gold"
+    },
+    "S": {
+      "item": "moderntech:rubber_sheet"
+    },
+    "w": {
+      "item": "moderntech:copper_wire"
+    }
+  },
+  "pattern": [
+    " P ",
+    "wSw",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:capacitor"
+  }
+}

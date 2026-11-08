@@ -1,0 +1,11 @@
+{
+  "casing": "titanium",
+  "default_overlays": {
+    "fluid_auto": "moderntech:block/overlays/fluid_auto",
+    "front": "moderntech:block/machines/furnace/overlay_front",
+    "front_active": "moderntech:block/machines/furnace/overlay_front_active",
+    "item_auto": "moderntech:block/overlays/item_auto",
+    "output": "moderntech:block/overlays/output"
+  },
+  "loader": "moderntech:machine"
+}

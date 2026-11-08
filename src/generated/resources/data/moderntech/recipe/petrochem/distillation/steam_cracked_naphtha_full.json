@@ -1,0 +1,46 @@
+{
+  "type": "moderntech:distillation_tower",
+  "duration": 200,
+  "energy": 120,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:steam_cracked_naphtha"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 150,
+      "fluid": "moderntech:methane"
+    },
+    {
+      "amount": 50,
+      "fluid": "moderntech:acetylene"
+    },
+    {
+      "amount": 250,
+      "fluid": "moderntech:ethylene"
+    },
+    {
+      "amount": 75,
+      "fluid": "moderntech:propene"
+    },
+    {
+      "amount": 125,
+      "fluid": "moderntech:butadiene"
+    },
+    {
+      "amount": 150,
+      "fluid": "moderntech:benzene"
+    },
+    {
+      "amount": 100,
+      "fluid": "moderntech:toluene"
+    },
+    {
+      "amount": 100,
+      "fluid": "moderntech:ethylbenzene"
+    }
+  ],
+  "level": "electric"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "moderntech:forge_hammer",
+  "ingredient": {
+    "tag": "c:ores/coal"
+  },
+  "result": {
+    "count": 2,
+    "id": "moderntech:coal_crushed_dust"
+  }
+}

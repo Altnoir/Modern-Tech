@@ -1,0 +1,15 @@
+{
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "center": "moderntech:block/bronze_plated_bricks/center",
+    "empty": "moderntech:block/bronze_plated_bricks/empty",
+    "horizontal": "moderntech:block/bronze_plated_bricks/horizontal",
+    "particle": "moderntech:block/bronze_plated_bricks/particle",
+    "vertical": "moderntech:block/bronze_plated_bricks/vertical"
+  },
+  "variants": {
+    "": {
+      "model": "moderntech:block/bronze_plated_bricks"
+    }
+  }
+}

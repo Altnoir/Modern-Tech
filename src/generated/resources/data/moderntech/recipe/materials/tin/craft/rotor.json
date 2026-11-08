@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "tag": "c:plates/tin"
+    },
+    "R": {
+      "tag": "c:ingots/tin"
+    }
+  },
+  "pattern": [
+    " B ",
+    "BRB",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:tin_rotor"
+  }
+}

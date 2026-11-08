@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "tag": "c:plates/iron"
+    },
+    "R": {
+      "tag": "c:ingots/iron"
+    },
+    "b": {
+      "item": "moderntech:iron_bolt"
+    }
+  },
+  "pattern": [
+    "PbP",
+    "bRb",
+    "PbP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:iron_gear"
+  }
+}

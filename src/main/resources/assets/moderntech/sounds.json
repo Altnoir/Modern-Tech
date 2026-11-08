@@ -1,0 +1,182 @@
+{
+  "machine/assembler": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/assembler"
+    ]
+  },
+  "machine/blast_furnace": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/blast_furnace"
+    ]
+  },
+  "machine/boiler": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/boiler"
+    ]
+  },
+  "machine/centrifuge": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/centrifuge"
+    ]
+  },
+  "machine/chemical_reactor": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/chemical_reactor"
+    ]
+  },
+  "machine/coke_oven": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/coke_oven"
+    ]
+  },
+  "machine/compressor": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/compressor"
+    ]
+  },
+  "machine/cutting_machine": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/cutting_machine"
+    ]
+  },
+  "machine/diesel": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/diesel"
+    ]
+  },
+  "machine/distillation_tower": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/distillation_tower"
+    ]
+  },
+  "machine/distillery": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/distillery"
+    ]
+  },
+  "machine/electric_blast_furnace": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/electric_blast_furnace"
+    ]
+  },
+  "machine/electrolyzer": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/electrolyzer"
+    ]
+  },
+  "machine/fission_reactor": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/fission_reactor"
+    ]
+  },
+  "machine/furnace": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/furnace"
+    ]
+  },
+  "machine/fusion_reactor": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/fusion_reactor"
+    ]
+  },
+  "machine/heat_exchanger": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/heat_exchanger"
+    ]
+  },
+  "machine/implosion_compressor": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/implosion_compressor"
+    ]
+  },
+  "machine/macerator": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/macerator"
+    ]
+  },
+  "machine/mixer": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/mixer"
+    ]
+  },
+  "machine/oil_drilling_rig": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/oil_drilling_rig"
+    ]
+  },
+  "machine/packer": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/packer"
+    ]
+  },
+  "machine/polarizer": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/polarizer"
+    ]
+  },
+  "machine/pressurizer": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/pressurizer"
+    ]
+  },
+  "machine/quarry": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/quarry"
+    ]
+  },
+  "machine/replicator": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/replicator"
+    ]
+  },
+  "machine/turbine": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/turbine"
+    ]
+  },
+  "machine/unpacker": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/unpacker"
+    ]
+  },
+  "machine/vacuum_freezer": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/vacuum_freezer"
+    ]
+  },
+  "machine/wiremill": {
+    "category": "block",
+    "sounds": [
+      "moderntech:machine/wiremill"
+    ]
+  }
+}

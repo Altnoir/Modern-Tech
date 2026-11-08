@@ -1,0 +1,33 @@
+{
+  "parent": "moderntech:nuke",
+  "criteria": {
+    "checkInv": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moderntech:singularity"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.singularity.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moderntech:singularity"
+    },
+    "title": {
+      "translate": "advancements.moderntech.singularity"
+    }
+  },
+  "requirements": [
+    [
+      "checkInv"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

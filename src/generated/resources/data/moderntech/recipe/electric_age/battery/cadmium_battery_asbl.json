@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "moderntech:battery_alloy_plate"
+    },
+    "a": {
+      "tag": "c:plates/battery_alloy"
+    },
+    "c": {
+      "item": "moderntech:annealed_copper_wire"
+    },
+    "r": {
+      "tag": "c:dusts/cadmium"
+    }
+  },
+  "pattern": [
+    "cac",
+    "BrB",
+    "BrB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:cadmium_battery"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 5,
+      "tag": "c:plates/steel"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:motor"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 2,
+      "item": "minecraft:hopper"
+    }
+  ]
+}

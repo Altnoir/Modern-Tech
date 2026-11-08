@@ -1,0 +1,10 @@
+{
+  "type": "moderntech:forge_hammer",
+  "ingredient": {
+    "tag": "c:ores/tin"
+  },
+  "result": {
+    "count": 4,
+    "id": "moderntech:tin_dust"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "r": {
+      "tag": "c:rods/steel"
+    },
+    "w": {
+      "item": "moderntech:copper_wire"
+    }
+  },
+  "pattern": [
+    "www",
+    "wrw",
+    "www"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:inductor"
+  }
+}

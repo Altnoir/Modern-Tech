@@ -1,0 +1,34 @@
+{
+  "parent": "moderntech:raw_iridium",
+  "criteria": {
+    "checkInv": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moderntech:gravichestplate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.gravichestplate.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "moderntech:gravichestplate"
+    },
+    "title": {
+      "translate": "advancements.moderntech.gravichestplate"
+    }
+  },
+  "requirements": [
+    [
+      "checkInv"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

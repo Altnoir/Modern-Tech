@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:plates/nuclear_alloy"
+    },
+    "C": {
+      "item": "moderntech:nuclear_casing"
+    },
+    "R": {
+      "item": "moderntech:cadmium_control_rod"
+    }
+  },
+  "pattern": [
+    "ARA",
+    "RCR",
+    "ARA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "moderntech:control_rod"
+  }
+}

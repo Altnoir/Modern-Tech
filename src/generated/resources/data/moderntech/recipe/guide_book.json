@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:book"
+    },
+    "c": {
+      "tag": "c:nuggets/copper"
+    }
+  },
+  "pattern": [
+    "ccc",
+    "cbc",
+    "ccc"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:guidebook"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "moderntech:stainless_steel_large_plate"
+    },
+    "P": {
+      "tag": "c:plates/invar"
+    },
+    "p": {
+      "item": "moderntech:pump"
+    }
+  },
+  "pattern": [
+    "pPp",
+    "PLP",
+    "pPp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:small_heat_exchanger"
+  }
+}

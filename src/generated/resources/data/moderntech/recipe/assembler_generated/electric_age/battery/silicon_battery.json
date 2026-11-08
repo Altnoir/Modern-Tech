@@ -1,0 +1,30 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:plates/battery_alloy"
+    },
+    {
+      "amount": 4,
+      "item": "moderntech:battery_alloy_plate"
+    },
+    {
+      "amount": 2,
+      "tag": "c:dusts/silicon"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:electrum_wire"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:silicon_battery"
+    }
+  ],
+  "level": "electric"
+}

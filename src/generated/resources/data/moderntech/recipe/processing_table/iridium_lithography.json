@@ -1,0 +1,32 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:titanium_lithography"
+  },
+  "ingredients": [
+    {
+      "tag": "c:plates/iridium"
+    },
+    {
+      "tag": "c:plates/iridium"
+    },
+    {
+      "tag": "c:glass_blocks"
+    },
+    {
+      "item": "moderntech:robot_arm"
+    },
+    {
+      "item": "moderntech:processor"
+    }
+  ],
+  "pattern": [
+    " X ",
+    "XXX",
+    " X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:iridium_lithography"
+  }
+}

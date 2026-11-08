@@ -1,0 +1,21 @@
+{
+  "type": "moderntech:mixer",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 2,
+      "item": "moderntech:brick_dust"
+    },
+    {
+      "amount": 2,
+      "item": "minecraft:clay_ball"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 4,
+      "item": "moderntech:fire_clay_dust"
+    }
+  ]
+}

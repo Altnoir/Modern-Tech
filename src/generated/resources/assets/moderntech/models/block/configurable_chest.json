@@ -1,0 +1,9 @@
+{
+  "casing": "steel_crate",
+  "default_overlays": {
+    "fluid_auto": "moderntech:block/overlays/fluid_auto",
+    "item_auto": "moderntech:block/overlays/item_auto",
+    "output": "moderntech:block/overlays/output"
+  },
+  "loader": "moderntech:machine"
+}

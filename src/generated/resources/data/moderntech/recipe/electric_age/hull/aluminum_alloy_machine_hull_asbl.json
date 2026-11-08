@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "moderntech:silicon_battery"
+    },
+    "C": {
+      "item": "moderntech:aluminum_alloy_machine_casing"
+    },
+    "c": {
+      "item": "moderntech:electronic_circuit"
+    },
+    "p": {
+      "item": "moderntech:electrum_wire"
+    }
+  },
+  "pattern": [
+    " c ",
+    "BCB",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:aluminum_alloy_machine_hull"
+  }
+}

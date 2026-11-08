@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "moderntech:aluminum_alloy_machine_hull"
+    },
+    "L": {
+      "tag": "c:plates/battery_alloy"
+    },
+    "b": {
+      "item": "moderntech:silicon_battery"
+    }
+  },
+  "pattern": [
+    "bbb",
+    "LHL",
+    "bbb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:aluminum_alloy_storage_unit"
+  }
+}

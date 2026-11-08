@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "moderntech:block/clean_stainless_steel_machine_casing"
+  }
+}

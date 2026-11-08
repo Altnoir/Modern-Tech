@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:electric_machine_hull"
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:blast_furnace"
+    },
+    {
+      "item": "moderntech:cupronickel_wire_magnetic"
+    },
+    {
+      "item": "moderntech:analog_circuit"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:electric_blast_furnace"
+  }
+}

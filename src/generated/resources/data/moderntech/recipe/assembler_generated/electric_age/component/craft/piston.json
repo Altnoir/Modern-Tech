@@ -1,0 +1,34 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 3,
+      "tag": "c:plates/steel"
+    },
+    {
+      "amount": 2,
+      "tag": "c:rods/steel"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:tin_wire"
+    },
+    {
+      "amount": 1,
+      "tag": "c:gears/steel"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:motor"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:piston"
+    }
+  ],
+  "level": "electric"
+}

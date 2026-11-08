@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "moderntech:aluminum_drill_head"
+    },
+    "M": {
+      "item": "moderntech:motor"
+    },
+    "P": {
+      "item": "moderntech:pump"
+    },
+    "c": {
+      "item": "moderntech:analog_circuit"
+    },
+    "r": {
+      "item": "moderntech:invar_rotary_blade"
+    },
+    "t": {
+      "item": "moderntech:aluminum_tank"
+    }
+  },
+  "pattern": [
+    "crH",
+    "MPr",
+    "tMc"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:diesel_mining_drill"
+  }
+}

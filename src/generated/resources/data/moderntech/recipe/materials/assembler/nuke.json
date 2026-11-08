@@ -1,0 +1,39 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 600,
+  "energy": 32,
+  "fluid_inputs": [
+    {
+      "amount": 50,
+      "fluid": "moderntech:tritium"
+    },
+    {
+      "amount": 100,
+      "fluid": "moderntech:deuterium"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 6,
+      "item": "moderntech:industrial_tnt"
+    },
+    {
+      "amount": 4,
+      "item": "moderntech:plutonium_ingot"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:processor"
+    },
+    {
+      "amount": 4,
+      "item": "moderntech:nuclear_alloy_plate"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 2,
+      "item": "moderntech:nuke"
+    }
+  ]
+}

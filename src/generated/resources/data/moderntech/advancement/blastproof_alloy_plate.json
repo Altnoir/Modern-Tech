@@ -1,0 +1,33 @@
+{
+  "parent": "moderntech:titanium_ingot",
+  "criteria": {
+    "checkInv": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moderntech:blastproof_alloy_plate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.blastproof_alloy_plate.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moderntech:blastproof_alloy_plate"
+    },
+    "title": {
+      "translate": "advancements.moderntech.blastproof_alloy_plate"
+    }
+  },
+  "requirements": [
+    [
+      "checkInv"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:titanium_machine_hull"
+    },
+    {
+      "item": "moderntech:stainless_steel_mixer"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:titanium_mixer"
+  }
+}

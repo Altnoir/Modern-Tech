@@ -1,0 +1,25 @@
+{
+  "type": "moderntech:implosion_compressor",
+  "duration": 10,
+  "energy": 1,
+  "item_inputs": [
+    {
+      "amount": 9,
+      "tag": "c:tiny_dusts/tungsten"
+    },
+    {
+      "amount": 1,
+      "tag": "c:nuggets/stainless_steel"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:industrial_tnt"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:tungsten_ingot"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 3,
+      "item": "moderntech:pump"
+    },
+    {
+      "amount": 3,
+      "item": "moderntech:aluminum_rotor"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:electronic_circuit"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:large_motor"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:large_pump"
+    }
+  ],
+  "level": "electric"
+}

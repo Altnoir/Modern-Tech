@@ -1,0 +1,32 @@
+{
+  "type": "moderntech:centrifuge",
+  "duration": 600,
+  "energy": 32,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "minecraft:lava"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 17,
+      "item": "moderntech:sulfur_dust"
+    },
+    {
+      "amount": 11,
+      "item": "moderntech:copper_nugget"
+    },
+    {
+      "amount": 3,
+      "item": "moderntech:aluminum_nugget",
+      "probability": 0.5
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:chromium_nugget",
+      "probability": 0.25
+    }
+  ],
+  "level": "aluminum_alloy"
+}

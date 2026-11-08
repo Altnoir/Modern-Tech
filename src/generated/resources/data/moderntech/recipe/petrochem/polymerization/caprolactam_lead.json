@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 700,
+  "energy": 12,
+  "fluid_inputs": [
+    {
+      "amount": 500,
+      "fluid": "moderntech:caprolactam"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 300,
+      "fluid": "moderntech:nylon"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 4,
+      "tag": "c:tiny_dusts/lead"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

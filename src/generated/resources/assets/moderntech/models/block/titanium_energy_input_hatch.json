@@ -1,0 +1,7 @@
+{
+  "casing": "titanium",
+  "default_overlays": {
+    "side": "moderntech:block/machines/hatch_energy/overlay_side"
+  },
+  "loader": "moderntech:machine"
+}

@@ -1,0 +1,29 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:titanium_machine_hull"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:large_motor"
+    },
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "item": "minecraft:glass"
+    },
+    {
+      "item": "moderntech:invar_plate"
+    }
+  ],
+  "pattern": [
+    " X ",
+    "X X",
+    " X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:titanium_chemical_reactor"
+  }
+}

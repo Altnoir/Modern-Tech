@@ -1,0 +1,15 @@
+{
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "center": "moderntech:block/tungsten_casing/center",
+    "empty": "moderntech:block/tungsten_casing/empty",
+    "horizontal": "moderntech:block/tungsten_casing/horizontal",
+    "particle": "moderntech:block/tungsten_casing/particle",
+    "vertical": "moderntech:block/tungsten_casing/vertical"
+  },
+  "variants": {
+    "": {
+      "model": "moderntech:block/tungsten_casing"
+    }
+  }
+}

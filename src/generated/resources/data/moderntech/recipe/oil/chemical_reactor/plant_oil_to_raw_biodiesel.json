@@ -1,0 +1,26 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 300,
+  "energy": 12,
+  "fluid_inputs": [
+    {
+      "amount": 6000,
+      "fluid": "moderntech:plant_oil"
+    },
+    {
+      "amount": 400,
+      "fluid": "moderntech:ethanol"
+    },
+    {
+      "amount": 100,
+      "fluid": "moderntech:sodium_hydroxide"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 1500,
+      "fluid": "moderntech:raw_biodiesel"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

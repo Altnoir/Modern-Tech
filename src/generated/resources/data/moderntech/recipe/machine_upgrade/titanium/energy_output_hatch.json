@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:titanium_machine_hull"
+    },
+    {
+      "item": "moderntech:stainless_steel_energy_output_hatch"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:titanium_energy_output_hatch"
+  }
+}

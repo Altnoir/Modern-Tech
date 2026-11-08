@@ -1,0 +1,22 @@
+{
+  "type": "moderntech:lithography",
+  "duration": 6400,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 2,
+      "item": "moderntech:superconductor_plate"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:silicon_plate"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:quantum_processor"
+    }
+  ],
+  "level": "titanium"
+}

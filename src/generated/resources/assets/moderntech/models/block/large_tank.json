@@ -1,0 +1,10 @@
+{
+  "casing": "steel",
+  "default_overlays": {
+    "fluid_auto": "moderntech:block/overlays/fluid_auto",
+    "front": "moderntech:block/machines/large_tank/overlay_front",
+    "item_auto": "moderntech:block/overlays/item_auto",
+    "output": "moderntech:block/overlays/output"
+  },
+  "loader": "moderntech:machine"
+}

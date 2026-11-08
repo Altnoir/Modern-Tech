@@ -1,0 +1,32 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:stainless_steel_lithography"
+  },
+  "ingredients": [
+    {
+      "tag": "c:plates/titanium"
+    },
+    {
+      "tag": "c:plates/titanium"
+    },
+    {
+      "tag": "c:glass_blocks"
+    },
+    {
+      "item": "moderntech:robot_arm"
+    },
+    {
+      "item": "moderntech:digital_circuit"
+    }
+  ],
+  "pattern": [
+    " X ",
+    "XXX",
+    " X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:titanium_lithography"
+  }
+}

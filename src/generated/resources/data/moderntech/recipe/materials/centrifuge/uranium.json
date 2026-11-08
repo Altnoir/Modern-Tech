@@ -1,0 +1,33 @@
+{
+  "type": "moderntech:centrifuge",
+  "duration": 6000,
+  "energy": 64,
+  "fluid_outputs": [
+    {
+      "amount": 150,
+      "fluid": "moderntech:helium",
+      "probability": 0.5
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 9,
+      "tag": "c:dusts/uranium"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:uranium_235_tiny_dust"
+    },
+    {
+      "amount": 64,
+      "item": "moderntech:uranium_238_tiny_dust"
+    },
+    {
+      "amount": 16,
+      "item": "moderntech:uranium_238_tiny_dust"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

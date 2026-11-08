@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:plates/bronze"
+    },
+    "H": {
+      "item": "moderntech:fire_clay_bricks"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "AHA",
+    "AAA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:bronze_plated_bricks"
+  }
+}

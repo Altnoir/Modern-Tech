@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "U": {
+      "item": "moderntech:electrum_wire"
+    },
+    "V": {
+      "item": "moderntech:aluminum_alloy_machine_hull"
+    }
+  },
+  "pattern": [
+    "U",
+    "V"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:aluminum_alloy_energy_input_hatch"
+  }
+}

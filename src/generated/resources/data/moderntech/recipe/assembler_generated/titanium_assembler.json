@@ -1,0 +1,33 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:titanium_machine_hull"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:robot_arm"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:conveyor"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:analog_circuit"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:steel_gear"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:titanium_assembler"
+    }
+  ]
+}

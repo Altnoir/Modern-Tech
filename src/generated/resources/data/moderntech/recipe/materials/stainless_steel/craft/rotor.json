@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "tag": "c:plates/stainless_steel"
+    },
+    "R": {
+      "tag": "c:ingots/stainless_steel"
+    }
+  },
+  "pattern": [
+    " B ",
+    "BRB",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:stainless_steel_rotor"
+  }
+}

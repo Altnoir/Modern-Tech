@@ -1,0 +1,26 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 200,
+  "energy": 16,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:raw_biodiesel"
+    },
+    {
+      "amount": 1000,
+      "fluid": "moderntech:steam"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 700,
+      "fluid": "moderntech:biodiesel"
+    },
+    {
+      "amount": 250,
+      "fluid": "moderntech:ethanol"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

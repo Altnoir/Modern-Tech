@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:sulfur_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "moderntech:sulfur_dust"
+  }
+}

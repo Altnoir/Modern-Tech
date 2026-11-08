@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:aluminum_alloy_machine_hull"
+    },
+    {
+      "item": "moderntech:electric_energy_input_hatch"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:aluminum_alloy_energy_input_hatch"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "moderntech:blast_furnace",
+  "duration": 200,
+  "energy": 128,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:dusts/he_uranium"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:he_uranium_ingot"
+    }
+  ],
+  "level": "iridium"
+}

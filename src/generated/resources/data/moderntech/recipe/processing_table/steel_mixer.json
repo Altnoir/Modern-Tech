@@ -1,0 +1,18 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:steel_machine_hull"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:tin_rotor"
+    }
+  ],
+  "pattern": [
+    "X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:steel_mixer"
+  }
+}

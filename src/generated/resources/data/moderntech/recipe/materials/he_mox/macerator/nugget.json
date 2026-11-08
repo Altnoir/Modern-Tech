@@ -1,0 +1,17 @@
+{
+  "type": "moderntech:macerator",
+  "duration": 800,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:nuggets/he_mox"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:he_mox_tiny_dust"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "moderntech:stainless_steel_rotor"
+    },
+    "a": {
+      "tag": "c:plates/aluminum"
+    },
+    "r": {
+      "tag": "c:plates/stainless_steel"
+    }
+  },
+  "pattern": [
+    "ara",
+    "rRr",
+    "ara"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:air_intake"
+  }
+}

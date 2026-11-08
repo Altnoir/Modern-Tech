@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:electric_machine_hull"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:analog_circuit"
+    },
+    {
+      "item": "moderntech:tin_rotor"
+    },
+    {
+      "item": "moderntech:copper_wire"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:electric_steam_turbine"
+  }
+}

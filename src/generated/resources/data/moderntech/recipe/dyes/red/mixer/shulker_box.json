@@ -1,0 +1,21 @@
+{
+  "type": "moderntech:mixer",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:dyes/red"
+    },
+    {
+      "amount": 1,
+      "tag": "c:shulker_boxes"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:red_shulker_box"
+    }
+  ]
+}

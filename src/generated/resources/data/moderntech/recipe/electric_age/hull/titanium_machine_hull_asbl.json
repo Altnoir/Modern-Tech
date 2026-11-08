@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "moderntech:cadmium_battery"
+    },
+    "C": {
+      "item": "moderntech:titanium_machine_casing"
+    },
+    "c": {
+      "item": "moderntech:processor"
+    },
+    "p": {
+      "item": "moderntech:annealed_copper_wire"
+    }
+  },
+  "pattern": [
+    " c ",
+    "BCB",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:titanium_machine_hull"
+  }
+}

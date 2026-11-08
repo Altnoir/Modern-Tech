@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "tag": "c:plates/titanium"
+    },
+    "R": {
+      "tag": "c:ingots/titanium"
+    }
+  },
+  "pattern": [
+    " B ",
+    "BRB",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:titanium_rotor"
+  }
+}

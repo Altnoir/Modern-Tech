@@ -1,0 +1,22 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:tin_wire"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:electric_machine_hull"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:electric_energy_input_hatch"
+    }
+  ],
+  "level": "electric"
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "moderntech:electronic_circuit",
+  "criteria": {
+    "checkInv": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moderntech:aluminum_alloy_distillery"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.electric_distillery.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moderntech:aluminum_alloy_distillery"
+    },
+    "title": {
+      "translate": "advancements.moderntech.electric_distillery"
+    }
+  },
+  "requirements": [
+    [
+      "checkInv"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

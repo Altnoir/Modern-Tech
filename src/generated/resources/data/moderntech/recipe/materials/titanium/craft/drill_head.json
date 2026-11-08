@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "tag": "c:gears/titanium"
+    },
+    "R": {
+      "tag": "c:rods/titanium"
+    },
+    "b": {
+      "item": "moderntech:titanium_bolt"
+    },
+    "c": {
+      "tag": "c:plates/titanium"
+    },
+    "p": {
+      "tag": "c:plates/titanium"
+    }
+  },
+  "pattern": [
+    "bcp",
+    "GRc",
+    "bGb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:titanium_drill_head"
+  }
+}

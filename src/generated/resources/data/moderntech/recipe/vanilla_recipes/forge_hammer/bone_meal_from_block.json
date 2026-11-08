@@ -1,0 +1,10 @@
+{
+  "type": "moderntech:forge_hammer",
+  "ingredient": {
+    "item": "minecraft:bone_block"
+  },
+  "result": {
+    "count": 9,
+    "id": "minecraft:bone_meal"
+  }
+}

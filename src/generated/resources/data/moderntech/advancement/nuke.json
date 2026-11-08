@@ -1,0 +1,33 @@
+{
+  "parent": "moderntech:nuclear_reactor",
+  "criteria": {
+    "checkInv": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moderntech:nuke"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.nuke.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moderntech:nuke"
+    },
+    "title": {
+      "translate": "advancements.moderntech.nuke"
+    }
+  },
+  "requirements": [
+    [
+      "checkInv"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

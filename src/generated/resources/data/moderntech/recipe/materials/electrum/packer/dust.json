@@ -1,0 +1,17 @@
+{
+  "type": "moderntech:packer",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 9,
+      "tag": "c:tiny_dusts/electrum"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:electrum_dust"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "moderntech:motor"
+    },
+    "R": {
+      "item": "moderntech:rubber_sheet"
+    },
+    "c": {
+      "item": "moderntech:analog_circuit"
+    },
+    "r": {
+      "item": "moderntech:invar_rotary_blade"
+    },
+    "t": {
+      "item": "moderntech:aluminum_tank"
+    }
+  },
+  "pattern": [
+    "cRr",
+    "MrR",
+    "tMc"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:diesel_chainsaw"
+  }
+}

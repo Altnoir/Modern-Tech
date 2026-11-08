@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "U": {
+      "item": "moderntech:titanium_machine_hull"
+    },
+    "V": {
+      "item": "moderntech:annealed_copper_wire"
+    }
+  },
+  "pattern": [
+    "U",
+    "V"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:titanium_energy_output_hatch"
+  }
+}

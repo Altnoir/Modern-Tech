@@ -1,0 +1,32 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 300,
+  "energy": 16,
+  "fluid_inputs": [
+    {
+      "amount": 750,
+      "fluid": "moderntech:ethanol"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 375,
+      "fluid": "moderntech:butadiene"
+    },
+    {
+      "amount": 750,
+      "fluid": "minecraft:water"
+    },
+    {
+      "amount": 250,
+      "fluid": "moderntech:hydrogen"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:tiny_dusts/aluminum"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

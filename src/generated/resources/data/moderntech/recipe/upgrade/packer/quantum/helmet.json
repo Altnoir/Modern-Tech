@@ -1,0 +1,22 @@
+{
+  "type": "moderntech:packer",
+  "duration": 200,
+  "energy": 1000000,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:netherite_helmet"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:quantum_upgrade"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:quantum_helmet"
+    }
+  ],
+  "level": "iridium"
+}

@@ -1,0 +1,30 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 4,
+      "item": "moderntech:superconductor_coil"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:large_heat_exchanger"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:plasma_handling_iridium_machine_casing"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:nuclear_alloy_large_plate"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:fusion_chamber"
+    }
+  ],
+  "level": "electric"
+}

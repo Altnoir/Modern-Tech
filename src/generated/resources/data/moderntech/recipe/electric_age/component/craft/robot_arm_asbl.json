@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "moderntech:analog_circuit"
+    },
+    "c": {
+      "item": "moderntech:tin_wire"
+    },
+    "m": {
+      "item": "moderntech:motor"
+    },
+    "p": {
+      "item": "moderntech:piston"
+    },
+    "r": {
+      "tag": "c:rods/steel"
+    }
+  },
+  "pattern": [
+    "ccc",
+    "mrm",
+    "pCr"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:robot_arm"
+  }
+}

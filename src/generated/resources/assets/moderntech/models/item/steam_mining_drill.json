@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "moderntech:item/steam_mining_drill"
+  }
+}

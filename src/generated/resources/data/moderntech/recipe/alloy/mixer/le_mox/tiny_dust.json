@@ -1,0 +1,21 @@
+{
+  "type": "moderntech:mixer",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 8,
+      "tag": "c:tiny_dusts/uranium_238"
+    },
+    {
+      "amount": 1,
+      "tag": "c:tiny_dusts/plutonium"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 9,
+      "item": "moderntech:le_mox_tiny_dust"
+    }
+  ]
+}

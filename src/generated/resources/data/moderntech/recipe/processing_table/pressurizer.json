@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:stainless_steel_machine_hull"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:digital_circuit"
+    },
+    {
+      "item": "moderntech:solid_titanium_machine_casing"
+    },
+    {
+      "item": "moderntech:titanium_plate"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:pressurizer"
+  }
+}

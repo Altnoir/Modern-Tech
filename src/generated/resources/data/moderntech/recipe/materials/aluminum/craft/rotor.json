@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "tag": "c:plates/aluminum"
+    },
+    "R": {
+      "tag": "c:ingots/aluminum"
+    }
+  },
+  "pattern": [
+    " B ",
+    "BRB",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:aluminum_rotor"
+  }
+}

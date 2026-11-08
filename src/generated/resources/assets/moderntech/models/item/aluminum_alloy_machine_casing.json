@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "moderntech:block/aluminum_alloy_machine_casing"
+  }
+}

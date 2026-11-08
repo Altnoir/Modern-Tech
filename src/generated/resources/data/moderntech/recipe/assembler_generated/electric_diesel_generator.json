@@ -1,0 +1,29 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:electric_machine_hull"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:tin_wire"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:tin_gear"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:motor"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:electric_diesel_generator"
+    }
+  ]
+}

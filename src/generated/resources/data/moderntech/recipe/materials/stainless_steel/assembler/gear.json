@@ -1,0 +1,28 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 400,
+  "energy": 2,
+  "fluid_inputs": [
+    {
+      "amount": 100,
+      "fluid": "moderntech:soldering_alloy"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 4,
+      "tag": "c:plates/stainless_steel"
+    },
+    {
+      "amount": 1,
+      "tag": "c:ingots/stainless_steel"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 2,
+      "item": "moderntech:stainless_steel_gear"
+    }
+  ],
+  "level": "electric"
+}

@@ -1,0 +1,29 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:steel_machine_hull"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:invar_rotary_blade"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:steel_drill_head"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:steel_plate"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:steam_quarry"
+    }
+  ]
+}

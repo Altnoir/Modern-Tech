@@ -1,0 +1,27 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 1000,
+  "energy": 32,
+  "fluid_inputs": [
+    {
+      "amount": 50,
+      "fluid": "moderntech:uu_matter"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 8,
+      "item": "moderntech:quantum_processor"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:singularity"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:quantum_upgrade"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "moderntech:electronic_circuit"
+    },
+    "m": {
+      "item": "moderntech:motor"
+    },
+    "r": {
+      "tag": "c:rods/aluminum"
+    }
+  },
+  "pattern": [
+    "mmm",
+    "Crr",
+    "mmm"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:large_motor"
+  }
+}

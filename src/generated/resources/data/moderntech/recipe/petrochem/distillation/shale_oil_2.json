@@ -1,0 +1,18 @@
+{
+  "type": "moderntech:distillery",
+  "duration": 200,
+  "energy": 10,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:shale_oil"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 500,
+      "fluid": "moderntech:sulfuric_naphtha"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

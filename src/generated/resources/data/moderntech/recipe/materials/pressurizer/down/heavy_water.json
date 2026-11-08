@@ -1,0 +1,17 @@
+{
+  "type": "moderntech:pressurizer",
+  "duration": 100,
+  "energy": 2,
+  "fluid_inputs": [
+    {
+      "amount": 125,
+      "fluid": "moderntech:high_pressure_heavy_water"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:heavy_water"
+    }
+  ]
+}

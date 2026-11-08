@@ -1,0 +1,21 @@
+{
+  "type": "moderntech:implosion_compressor",
+  "duration": 10,
+  "energy": 1,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:dusts/diamond"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:industrial_tnt"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:diamond"
+    }
+  ]
+}

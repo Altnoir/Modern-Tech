@@ -1,0 +1,10 @@
+{
+  "type": "moderntech:forge_hammer",
+  "ingredient": {
+    "item": "minecraft:brick"
+  },
+  "result": {
+    "count": 3,
+    "id": "moderntech:brick_tiny_dust"
+  }
+}

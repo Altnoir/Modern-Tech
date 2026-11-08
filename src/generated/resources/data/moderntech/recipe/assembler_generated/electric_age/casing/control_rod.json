@@ -1,0 +1,26 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 4,
+      "tag": "c:plates/nuclear_alloy"
+    },
+    {
+      "amount": 4,
+      "item": "moderntech:cadmium_control_rod"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:nuclear_casing"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 4,
+      "item": "moderntech:control_rod"
+    }
+  ],
+  "level": "electric"
+}

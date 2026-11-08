@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "moderntech:electronic_circuit"
+    },
+    "c": {
+      "item": "moderntech:electrum_wire"
+    },
+    "d": {
+      "item": "moderntech:aluminum_drill_head"
+    },
+    "g": {
+      "tag": "c:gears/iron"
+    },
+    "m": {
+      "item": "moderntech:pump"
+    },
+    "p": {
+      "tag": "c:plates/aluminum"
+    }
+  },
+  "pattern": [
+    "gpd",
+    "mCp",
+    "cmg"
+  ],
+  "result": {
+    "count": 4,
+    "id": "moderntech:aluminum_drill"
+  }
+}

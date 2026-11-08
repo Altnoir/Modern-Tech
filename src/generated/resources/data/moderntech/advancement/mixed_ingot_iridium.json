@@ -1,0 +1,33 @@
+{
+  "parent": "moderntech:implosion_compressor",
+  "criteria": {
+    "checkInv": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moderntech:mixed_ingot_iridium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.mixed_ingot_iridium.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moderntech:mixed_ingot_iridium"
+    },
+    "title": {
+      "translate": "advancements.moderntech.mixed_ingot_iridium"
+    }
+  },
+  "requirements": [
+    [
+      "checkInv"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

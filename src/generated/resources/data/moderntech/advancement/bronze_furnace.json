@@ -1,0 +1,33 @@
+{
+  "parent": "moderntech:fire_clay_bricks",
+  "criteria": {
+    "checkInv": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moderntech:bronze_furnace"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.bronze_furnace.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moderntech:bronze_furnace"
+    },
+    "title": {
+      "translate": "advancements.moderntech.bronze_furnace"
+    }
+  },
+  "requirements": [
+    [
+      "checkInv"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

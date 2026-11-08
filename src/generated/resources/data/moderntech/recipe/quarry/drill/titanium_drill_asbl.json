@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "moderntech:processor"
+    },
+    "c": {
+      "item": "moderntech:annealed_copper_wire"
+    },
+    "d": {
+      "item": "moderntech:titanium_drill_head"
+    },
+    "g": {
+      "tag": "c:gears/iron"
+    },
+    "m": {
+      "item": "moderntech:large_motor"
+    },
+    "p": {
+      "tag": "c:plates/titanium"
+    }
+  },
+  "pattern": [
+    "gpd",
+    "mCp",
+    "cmg"
+  ],
+  "result": {
+    "count": 4,
+    "id": "moderntech:titanium_drill"
+  }
+}

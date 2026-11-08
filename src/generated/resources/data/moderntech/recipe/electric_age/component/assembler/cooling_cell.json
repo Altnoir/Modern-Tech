@@ -1,0 +1,31 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 400,
+  "energy": 16,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:cryofluid"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 3,
+      "item": "moderntech:bronze_plate"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:small_heat_exchanger"
+    },
+    {
+      "amount": 6,
+      "tag": "c:plates/tin"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:cooling_cell"
+    }
+  ]
+}

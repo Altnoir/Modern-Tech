@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "moderntech:stainless_steel_machine_hull"
+    },
+    "L": {
+      "tag": "c:plates/battery_alloy"
+    },
+    "b": {
+      "item": "moderntech:sodium_battery"
+    }
+  },
+  "pattern": [
+    "bbb",
+    "LHL",
+    "bbb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:stainless_steel_storage_unit"
+  }
+}

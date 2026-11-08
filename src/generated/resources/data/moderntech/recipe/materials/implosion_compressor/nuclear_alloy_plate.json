@@ -1,0 +1,21 @@
+{
+  "type": "moderntech:implosion_compressor",
+  "duration": 10,
+  "energy": 1,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:mixed_plate_nuclear"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:industrial_tnt"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 3,
+      "item": "moderntech:nuclear_alloy_plate"
+    }
+  ]
+}

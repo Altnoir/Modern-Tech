@@ -1,0 +1,32 @@
+{
+  "parent": "moderntech:electronic_circuit",
+  "criteria": {
+    "buildMultiblock": {
+      "conditions": {
+        "multiblock": {
+          "id": "moderntech:vacuum_freezer"
+        }
+      },
+      "trigger": "moderntech:built_multiblock"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.vacuum_freezer.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "moderntech:vacuum_freezer"
+    },
+    "title": {
+      "translate": "advancements.moderntech.vacuum_freezer"
+    }
+  },
+  "requirements": [
+    [
+      "buildMultiblock"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

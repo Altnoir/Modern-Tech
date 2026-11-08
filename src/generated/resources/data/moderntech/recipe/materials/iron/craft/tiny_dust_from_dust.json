@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:iron_dust"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "moderntech:iron_tiny_dust"
+  }
+}

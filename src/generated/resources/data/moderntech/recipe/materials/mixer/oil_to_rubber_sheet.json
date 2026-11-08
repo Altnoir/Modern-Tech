@@ -1,0 +1,23 @@
+{
+  "type": "moderntech:mixer",
+  "duration": 100,
+  "energy": 2,
+  "fluid_inputs": [
+    {
+      "amount": 100,
+      "fluid": "moderntech:synthetic_oil"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:paper"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 2,
+      "item": "moderntech:rubber_sheet"
+    }
+  ]
+}

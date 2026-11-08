@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:bronze_boiler"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:analog_circuit"
+    },
+    {
+      "item": "moderntech:bronze_plate"
+    },
+    {
+      "item": "moderntech:copper_plate"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:large_steam_boiler"
+  }
+}

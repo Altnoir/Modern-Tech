@@ -1,0 +1,15 @@
+{
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "center": "moderntech:block/plasma_handling_iridium_machine_casing/center",
+    "empty": "moderntech:block/plasma_handling_iridium_machine_casing/empty",
+    "horizontal": "moderntech:block/plasma_handling_iridium_machine_casing/horizontal",
+    "particle": "moderntech:block/plasma_handling_iridium_machine_casing/particle",
+    "vertical": "moderntech:block/plasma_handling_iridium_machine_casing/vertical"
+  },
+  "variants": {
+    "": {
+      "model": "moderntech:block/plasma_handling_iridium_machine_casing"
+    }
+  }
+}

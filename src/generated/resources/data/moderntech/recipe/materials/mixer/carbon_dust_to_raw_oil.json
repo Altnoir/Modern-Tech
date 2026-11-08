@@ -1,0 +1,23 @@
+{
+  "type": "moderntech:mixer",
+  "duration": 400,
+  "energy": 2,
+  "fluid_inputs": [
+    {
+      "amount": 100,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 200,
+      "fluid": "moderntech:raw_synthetic_oil"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:carbon_dust"
+    }
+  ]
+}

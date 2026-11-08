@@ -1,0 +1,15 @@
+{
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "center": "moderntech:block/cupronickel_coil/center",
+    "empty": "moderntech:block/cupronickel_coil/empty",
+    "horizontal": "moderntech:block/cupronickel_coil/horizontal",
+    "particle": "moderntech:block/cupronickel_coil/particle",
+    "vertical": "moderntech:block/cupronickel_coil/vertical"
+  },
+  "variants": {
+    "": {
+      "model": "moderntech:block/cupronickel_coil"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "moderntech:mixer",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 4,
+      "tag": "minecraft:sand"
+    },
+    {
+      "amount": 5,
+      "item": "minecraft:gunpowder"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 2,
+      "item": "minecraft:tnt"
+    }
+  ]
+}

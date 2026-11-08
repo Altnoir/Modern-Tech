@@ -1,0 +1,25 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 80,
+  "energy": 10,
+  "fluid_inputs": [
+    {
+      "amount": 25,
+      "fluid": "moderntech:acrylic_glue"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:slime_ball",
+      "probability": 0.0
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:slime_ball"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

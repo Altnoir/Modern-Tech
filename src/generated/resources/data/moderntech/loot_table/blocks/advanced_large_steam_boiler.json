@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "moderntech:advanced_large_steam_boiler"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "moderntech:blocks/advanced_large_steam_boiler"
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "moderntech:plutonium_battery"
+    },
+    "C": {
+      "item": "moderntech:iridium_machine_casing"
+    },
+    "c": {
+      "item": "moderntech:quantum_processor"
+    },
+    "p": {
+      "item": "moderntech:superconductor_wire"
+    }
+  },
+  "pattern": [
+    " c ",
+    "BCB",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:iridium_machine_hull"
+  }
+}

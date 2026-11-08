@@ -1,0 +1,33 @@
+{
+  "parent": "moderntech:steel_machine_casing",
+  "criteria": {
+    "checkInv": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moderntech:steel_wiremill"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.steel_wiremill.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moderntech:steel_wiremill"
+    },
+    "title": {
+      "translate": "advancements.moderntech.steel_wiremill"
+    }
+  },
+  "requirements": [
+    [
+      "checkInv"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,26 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 240,
+  "energy": 10,
+  "fluid_inputs": [
+    {
+      "amount": 400,
+      "fluid": "moderntech:propene"
+    },
+    {
+      "amount": 600,
+      "fluid": "moderntech:oxygen"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 400,
+      "fluid": "moderntech:acrylic_acid"
+    },
+    {
+      "amount": 400,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

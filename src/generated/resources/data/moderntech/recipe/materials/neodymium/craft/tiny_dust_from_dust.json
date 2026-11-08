@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:neodymium_dust"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "moderntech:neodymium_tiny_dust"
+  }
+}

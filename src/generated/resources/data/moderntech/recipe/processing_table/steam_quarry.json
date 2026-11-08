@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:steel_machine_hull"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:invar_rotary_blade"
+    },
+    {
+      "item": "moderntech:steel_drill_head"
+    },
+    {
+      "item": "moderntech:steel_plate"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:steam_quarry"
+  }
+}

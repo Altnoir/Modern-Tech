@@ -1,0 +1,17 @@
+{
+  "type": "moderntech:packer",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 4,
+      "item": "minecraft:spruce_log"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 3,
+      "item": "minecraft:spruce_wood"
+    }
+  ]
+}

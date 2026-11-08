@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "tag": "c:gears/copper"
+    },
+    "R": {
+      "tag": "c:rods/copper"
+    },
+    "b": {
+      "item": "moderntech:copper_bolt"
+    },
+    "c": {
+      "tag": "c:plates/copper"
+    },
+    "p": {
+      "tag": "c:plates/copper"
+    }
+  },
+  "pattern": [
+    "bcp",
+    "GRc",
+    "bGb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:copper_drill_head"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:plates/titanium"
+    },
+    "C": {
+      "tag": "c:plates/chromium"
+    },
+    "H": {
+      "item": "moderntech:stainless_steel_machine_hull"
+    }
+  },
+  "pattern": [
+    "ACA",
+    "CHC",
+    "ACA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:titanium_machine_casing"
+  }
+}

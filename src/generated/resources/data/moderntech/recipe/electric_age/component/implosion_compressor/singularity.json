@@ -1,0 +1,21 @@
+{
+  "type": "moderntech:implosion_compressor",
+  "duration": 10,
+  "energy": 1,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:ultradense_metal_ball"
+    },
+    {
+      "amount": 64,
+      "item": "moderntech:nuke"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:singularity"
+    }
+  ]
+}

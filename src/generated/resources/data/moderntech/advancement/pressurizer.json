@@ -1,0 +1,31 @@
+{
+  "parent": "moderntech:titanium_ingot",
+  "criteria": {
+    "buildMultiblock": {
+      "conditions": {
+        "multiblock": {
+          "id": "moderntech:pressurizer"
+        }
+      },
+      "trigger": "moderntech:built_multiblock"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.pressurizer.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moderntech:pressurizer"
+    },
+    "title": {
+      "translate": "advancements.moderntech.pressurizer"
+    }
+  },
+  "requirements": [
+    [
+      "buildMultiblock"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

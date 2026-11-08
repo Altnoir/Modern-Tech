@@ -1,0 +1,6 @@
+{
+  "parent": "moderntech:base/tank",
+  "textures": {
+    "0": "moderntech:block/creative_tank"
+  }
+}

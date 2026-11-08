@@ -1,0 +1,22 @@
+{
+  "type": "moderntech:macerator",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:raw_materials/uranium"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:uranium_dust"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:uranium_dust",
+      "probability": 0.5
+    }
+  ]
+}

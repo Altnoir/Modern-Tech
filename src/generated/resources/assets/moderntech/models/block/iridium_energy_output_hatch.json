@@ -1,0 +1,8 @@
+{
+  "casing": "iridium",
+  "default_overlays": {
+    "output": "moderntech:block/overlays/output_energy",
+    "side": "moderntech:block/machines/hatch_energy/overlay_side"
+  },
+  "loader": "moderntech:machine"
+}

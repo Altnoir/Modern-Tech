@@ -1,0 +1,11 @@
+{
+  "type": "moderntech:forge_hammer",
+  "count": 3,
+  "ingredient": {
+    "tag": "c:raw_materials/gold"
+  },
+  "result": {
+    "count": 4,
+    "id": "moderntech:gold_dust"
+  }
+}

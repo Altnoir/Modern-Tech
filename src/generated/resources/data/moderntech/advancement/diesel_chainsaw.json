@@ -1,0 +1,34 @@
+{
+  "parent": "moderntech:electric_blast_furnace",
+  "criteria": {
+    "checkInv": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moderntech:diesel_chainsaw"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.diesel_chainsaw.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "moderntech:diesel_chainsaw"
+    },
+    "title": {
+      "translate": "advancements.moderntech.diesel_chainsaw"
+    }
+  },
+  "requirements": [
+    [
+      "checkInv"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

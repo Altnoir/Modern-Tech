@@ -1,0 +1,18 @@
+{
+  "type": "moderntech:distillery",
+  "duration": 200,
+  "energy": 15,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:steam_cracked_naphtha"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 150,
+      "fluid": "moderntech:methane"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

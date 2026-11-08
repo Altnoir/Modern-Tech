@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "moderntech:superconductor_coil"
+    },
+    "P": {
+      "item": "moderntech:superconductor_plate"
+    },
+    "c": {
+      "item": "moderntech:cooling_cell"
+    }
+  },
+  "pattern": [
+    "P P",
+    "PCP",
+    "cPc"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:gravichestplate"
+  }
+}

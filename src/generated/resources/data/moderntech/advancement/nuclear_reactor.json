@@ -1,0 +1,32 @@
+{
+  "parent": "moderntech:implosion_compressor",
+  "criteria": {
+    "buildMultiblock": {
+      "conditions": {
+        "multiblock": {
+          "id": "moderntech:nuclear_reactor"
+        }
+      },
+      "trigger": "moderntech:built_multiblock"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.nuclear_reactor.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "moderntech:nuclear_reactor"
+    },
+    "title": {
+      "translate": "advancements.moderntech.nuclear_reactor"
+    }
+  },
+  "requirements": [
+    [
+      "buildMultiblock"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

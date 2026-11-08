@@ -1,0 +1,18 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:aluminum_alloy_machine_hull"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:bronze_drill_head"
+    }
+  ],
+  "pattern": [
+    "X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:aluminum_alloy_macerator"
+  }
+}

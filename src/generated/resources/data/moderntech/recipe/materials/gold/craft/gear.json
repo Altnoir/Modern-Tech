@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "tag": "c:plates/gold"
+    },
+    "R": {
+      "tag": "c:ingots/gold"
+    },
+    "b": {
+      "item": "moderntech:gold_bolt"
+    }
+  },
+  "pattern": [
+    "PbP",
+    "bRb",
+    "PbP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:gold_gear"
+  }
+}

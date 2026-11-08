@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:deepslate_lignite_coal_ore"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:lignite_coal_ore"
+  }
+}

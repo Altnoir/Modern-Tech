@@ -1,0 +1,36 @@
+{
+  "type": "moderntech:quarry",
+  "duration": 600,
+  "energy": 128,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:titanium_drill",
+      "reusable": true
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:uranium_ore",
+      "probability": 0.2
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:iridium_ore",
+      "probability": 0.05
+    },
+    {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mekanism"
+        }
+      ],
+      "amount": 1,
+      "item": "mekanism:fluorite_ore",
+      "probability": 0.3
+    }
+  ],
+  "level": "bronze"
+}

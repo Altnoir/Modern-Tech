@@ -1,0 +1,21 @@
+{
+  "type": "moderntech:mixer",
+  "duration": 600,
+  "energy": 8,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:heavy_fuel"
+    },
+    {
+      "amount": 5000,
+      "fluid": "moderntech:light_fuel"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 6000,
+      "fluid": "moderntech:diesel"
+    }
+  ]
+}

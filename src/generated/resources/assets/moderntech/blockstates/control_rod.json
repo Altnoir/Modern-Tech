@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "moderntech:block/control_rod",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "moderntech:block/control_rod"
+    },
+    "axis=z": {
+      "model": "moderntech:block/control_rod",
+      "x": 90
+    }
+  }
+}

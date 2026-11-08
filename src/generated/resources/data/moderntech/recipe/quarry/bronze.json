@@ -1,0 +1,72 @@
+{
+  "type": "moderntech:quarry",
+  "duration": 600,
+  "energy": 4,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:bronze_drill",
+      "reusable": true
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:iron_ore",
+      "probability": 0.4
+    },
+    {
+      "amount": 1,
+      "item": "minecraft:coal_ore",
+      "probability": 0.4
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:lignite_coal_ore",
+      "probability": 0.24
+    },
+    {
+      "amount": 1,
+      "item": "minecraft:copper_ore",
+      "probability": 0.2
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:tin_ore",
+      "probability": 0.3
+    },
+    {
+      "amount": 1,
+      "item": "minecraft:gold_ore",
+      "probability": 0.15
+    },
+    {
+      "amount": 1,
+      "item": "minecraft:redstone_ore",
+      "probability": 0.2
+    },
+    {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "create"
+        }
+      ],
+      "amount": 1,
+      "item": "create:zinc_ore",
+      "probability": 0.08
+    },
+    {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mekanism"
+        }
+      ],
+      "amount": 1,
+      "item": "mekanism:osmium_ore",
+      "probability": 0.12
+    }
+  ],
+  "level": "bronze"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "moderntech:macerator",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:ores/redstone"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 6,
+      "item": "moderntech:redstone_crushed_dust"
+    }
+  ]
+}

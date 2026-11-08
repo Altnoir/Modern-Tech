@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:large_steam_boiler"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:electronic_circuit"
+    },
+    {
+      "item": "moderntech:large_pump"
+    },
+    {
+      "item": "moderntech:invar_plate"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:advanced_large_steam_boiler"
+  }
+}

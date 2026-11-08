@@ -1,0 +1,21 @@
+{
+  "type": "moderntech:mixer",
+  "duration": 200,
+  "energy": 16,
+  "item_inputs": [
+    {
+      "amount": 4,
+      "item": "minecraft:netherite_scrap"
+    },
+    {
+      "amount": 4,
+      "item": "minecraft:gold_ingot"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 2,
+      "item": "minecraft:netherite_ingot"
+    }
+  ]
+}

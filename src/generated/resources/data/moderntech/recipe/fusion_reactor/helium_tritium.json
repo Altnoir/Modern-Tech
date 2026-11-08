@@ -1,0 +1,30 @@
+{
+  "type": "moderntech:fusion_reactor",
+  "duration": 300,
+  "energy": 16000,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:helium_3"
+    },
+    {
+      "amount": 1000,
+      "fluid": "moderntech:tritium"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:helium_plasma"
+    },
+    {
+      "amount": 1000,
+      "fluid": "moderntech:deuterium"
+    },
+    {
+      "amount": 1000,
+      "fluid": "moderntech:hydrogen"
+    }
+  ],
+  "level": "iridium"
+}

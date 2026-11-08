@@ -1,0 +1,22 @@
+{
+  "type": "moderntech:macerator",
+  "duration": 50,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:raw_materials/copper"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:copper_dust"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:copper_dust",
+      "probability": 0.5
+    }
+  ]
+}

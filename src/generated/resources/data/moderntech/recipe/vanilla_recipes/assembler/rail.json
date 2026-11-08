@@ -1,0 +1,27 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "fluid_inputs": [
+    {
+      "amount": 100,
+      "tag": "c:creosote"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 6,
+      "tag": "c:rods/steel"
+    },
+    {
+      "amount": 1,
+      "item": "minecraft:stick"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 16,
+      "item": "minecraft:rail"
+    }
+  ]
+}

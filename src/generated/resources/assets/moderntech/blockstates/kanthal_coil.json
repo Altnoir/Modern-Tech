@@ -1,0 +1,15 @@
+{
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "center": "moderntech:block/kanthal_coil/center",
+    "empty": "moderntech:block/kanthal_coil/empty",
+    "horizontal": "moderntech:block/kanthal_coil/horizontal",
+    "particle": "moderntech:block/kanthal_coil/particle",
+    "vertical": "moderntech:block/kanthal_coil/vertical"
+  },
+  "variants": {
+    "": {
+      "model": "moderntech:block/kanthal_coil"
+    }
+  }
+}

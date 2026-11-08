@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:electrolyzer",
+  "duration": 400,
+  "energy": 8,
+  "fluid_outputs": [
+    {
+      "amount": 125,
+      "fluid": "moderntech:chlorine"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 2,
+      "tag": "c:dusts/salt"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:sodium_dust"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

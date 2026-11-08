@@ -1,0 +1,15 @@
+{
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "center": "moderntech:block/heatproof_machine_casing/center",
+    "empty": "moderntech:block/heatproof_machine_casing/empty",
+    "horizontal": "moderntech:block/heatproof_machine_casing/horizontal",
+    "particle": "moderntech:block/heatproof_machine_casing/particle",
+    "vertical": "moderntech:block/heatproof_machine_casing/vertical"
+  },
+  "variants": {
+    "": {
+      "model": "moderntech:block/heatproof_machine_casing"
+    }
+  }
+}

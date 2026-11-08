@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:sodium_dust"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "moderntech:sodium_tiny_dust"
+  }
+}

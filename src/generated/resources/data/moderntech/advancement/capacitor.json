@@ -1,0 +1,33 @@
+{
+  "parent": "moderntech:steel_wiremill",
+  "criteria": {
+    "checkInv": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moderntech:capacitor"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.capacitor.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moderntech:capacitor"
+    },
+    "title": {
+      "translate": "advancements.moderntech.capacitor"
+    }
+  },
+  "requirements": [
+    [
+      "checkInv"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,42 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 2,
+      "tag": "c:plates/stainless_steel"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:pump"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:aluminum_wire"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:digital_circuit"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:stainless_steel_drill_head"
+    },
+    {
+      "amount": 2,
+      "tag": "c:gears/iron"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:motor"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 4,
+      "item": "moderntech:stainless_steel_drill"
+    }
+  ],
+  "level": "electric"
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "moderntech:aluminum_alloy_steam_turbine",
+  "criteria": {
+    "checkInv": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moderntech:stainless_steel_steam_turbine"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.stainless_steel_steam_turbine.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moderntech:stainless_steel_steam_turbine"
+    },
+    "title": {
+      "translate": "advancements.moderntech.stainless_steel_steam_turbine"
+    }
+  },
+  "requirements": [
+    [
+      "checkInv"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

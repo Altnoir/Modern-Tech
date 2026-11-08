@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "tag": "c:gears/invar"
+    },
+    "d": {
+      "tag": "c:dusts/diamond"
+    }
+  },
+  "pattern": [
+    " d ",
+    "dGd",
+    " d "
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:invar_rotary_blade"
+  }
+}

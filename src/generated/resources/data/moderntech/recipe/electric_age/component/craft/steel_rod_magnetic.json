@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "r": {
+      "tag": "c:rods/steel"
+    }
+  },
+  "pattern": [
+    " RR",
+    "RrR",
+    "RR "
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:steel_rod_magnetic"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 100,
+  "energy": 2,
+  "fluid_inputs": [
+    {
+      "amount": 100,
+      "fluid": "moderntech:soldering_alloy"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 4,
+      "tag": "c:plates/copper"
+    },
+    {
+      "amount": 1,
+      "tag": "c:ingots/copper"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:copper_rotor"
+    }
+  ],
+  "level": "electric"
+}

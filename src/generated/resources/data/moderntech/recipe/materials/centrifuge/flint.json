@@ -1,0 +1,18 @@
+{
+  "type": "moderntech:centrifuge",
+  "duration": 300,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:gravel"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 2,
+      "item": "minecraft:flint"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

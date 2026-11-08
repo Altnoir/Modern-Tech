@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "tag": "c:plates/copper"
+    },
+    "R": {
+      "tag": "c:ingots/copper"
+    }
+  },
+  "pattern": [
+    " B ",
+    "BRB",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:copper_rotor"
+  }
+}

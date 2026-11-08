@@ -1,0 +1,26 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 300,
+  "energy": 12,
+  "fluid_inputs": [
+    {
+      "amount": 750,
+      "fluid": "moderntech:benzene"
+    },
+    {
+      "amount": 750,
+      "fluid": "moderntech:ethylene"
+    },
+    {
+      "amount": 100,
+      "fluid": "moderntech:hydrochloric_acid"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 750,
+      "fluid": "moderntech:ethylbenzene"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

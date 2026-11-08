@@ -1,0 +1,25 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 100,
+  "energy": 8,
+  "fluid_inputs": [
+    {
+      "amount": 20,
+      "fluid": "moderntech:nylon"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:string",
+      "probability": 0.0
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:string"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

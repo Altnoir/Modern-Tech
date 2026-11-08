@@ -1,0 +1,17 @@
+{
+  "type": "moderntech:vacuum_freezer",
+  "duration": 2400,
+  "energy": 2,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "minecraft:lava"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:obsidian"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 4,
+      "tag": "c:plates/battery_alloy"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:analog_circuit"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:battery_alloy_plate"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:tin_wire"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:portable_storage_unit"
+    }
+  ],
+  "level": "electric"
+}

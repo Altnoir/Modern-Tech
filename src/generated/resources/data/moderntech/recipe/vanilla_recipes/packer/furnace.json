@@ -1,0 +1,17 @@
+{
+  "type": "moderntech:packer",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 8,
+      "tag": "minecraft:stone_crafting_materials"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:furnace"
+    }
+  ]
+}

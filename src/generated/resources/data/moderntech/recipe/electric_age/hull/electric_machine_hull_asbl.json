@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "moderntech:analog_circuit"
+    },
+    "B": {
+      "item": "moderntech:redstone_battery"
+    },
+    "C": {
+      "item": "moderntech:steel_machine_casing"
+    },
+    "c": {
+      "item": "moderntech:tin_wire"
+    }
+  },
+  "pattern": [
+    " A ",
+    "BCB",
+    "ccc"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:electric_machine_hull"
+  }
+}

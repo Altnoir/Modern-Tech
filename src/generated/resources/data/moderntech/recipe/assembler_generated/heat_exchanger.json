@@ -1,0 +1,29 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:stainless_steel_machine_hull"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:large_heat_exchanger"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:clean_stainless_steel_machine_casing"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:pump"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:heat_exchanger"
+    }
+  ]
+}

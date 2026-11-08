@@ -1,0 +1,22 @@
+{
+  "type": "moderntech:blast_furnace",
+  "duration": 200,
+  "energy": 32,
+  "item_inputs": [
+    {
+      "amount": 3,
+      "tag": "c:dusts/aluminum"
+    },
+    {
+      "amount": 1,
+      "tag": "c:dusts/invar"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 4,
+      "item": "moderntech:aluminum_alloy_ingot"
+    }
+  ],
+  "level": "electric"
+}

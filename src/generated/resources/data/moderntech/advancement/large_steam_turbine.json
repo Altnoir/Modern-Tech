@@ -1,0 +1,31 @@
+{
+  "parent": "moderntech:stainless_steel_steam_turbine",
+  "criteria": {
+    "buildMultiblock": {
+      "conditions": {
+        "multiblock": {
+          "id": "moderntech:large_steam_turbine"
+        }
+      },
+      "trigger": "moderntech:built_multiblock"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.large_steam_turbine.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moderntech:large_steam_turbine"
+    },
+    "title": {
+      "translate": "advancements.moderntech.large_steam_turbine"
+    }
+  },
+  "requirements": [
+    [
+      "buildMultiblock"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

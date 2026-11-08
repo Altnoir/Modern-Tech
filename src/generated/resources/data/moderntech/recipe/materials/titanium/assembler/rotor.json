@@ -1,0 +1,28 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 400,
+  "energy": 2,
+  "fluid_inputs": [
+    {
+      "amount": 100,
+      "fluid": "moderntech:soldering_alloy"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 4,
+      "tag": "c:plates/titanium"
+    },
+    {
+      "amount": 1,
+      "tag": "c:ingots/titanium"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:titanium_rotor"
+    }
+  ],
+  "level": "electric"
+}

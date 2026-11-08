@@ -1,0 +1,32 @@
+{
+  "parent": "moderntech:quantum_circuit",
+  "criteria": {
+    "buildMultiblock": {
+      "conditions": {
+        "multiblock": {
+          "id": "moderntech:fusion_reactor"
+        }
+      },
+      "trigger": "moderntech:built_multiblock"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.fusion_reactor.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "moderntech:fusion_reactor"
+    },
+    "title": {
+      "translate": "advancements.moderntech.fusion_reactor"
+    }
+  },
+  "requirements": [
+    [
+      "buildMultiblock"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,8 @@
+{
+  "casing": "nuclear_casing",
+  "default_overlays": {
+    "item_auto": "moderntech:block/overlays/item_auto",
+    "top": "moderntech:block/overlays/output_item"
+  },
+  "loader": "moderntech:machine"
+}

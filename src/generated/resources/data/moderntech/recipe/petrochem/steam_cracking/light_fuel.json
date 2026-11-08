@@ -1,0 +1,22 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 100,
+  "energy": 8,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:light_fuel"
+    },
+    {
+      "amount": 100,
+      "fluid": "moderntech:steam"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:steam_cracked_light_fuel"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

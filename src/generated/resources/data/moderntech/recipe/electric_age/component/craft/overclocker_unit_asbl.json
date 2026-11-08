@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "moderntech:electronic_circuit_board"
+    },
+    "d": {
+      "item": "moderntech:diode"
+    },
+    "t": {
+      "item": "moderntech:transistor"
+    },
+    "w": {
+      "item": "moderntech:electrum_fine_wire"
+    }
+  },
+  "pattern": [
+    "wdw",
+    "tbt",
+    "wdw"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:overclocker_unit"
+  }
+}

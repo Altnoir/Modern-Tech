@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "moderntech:sodium_battery"
+    },
+    "C": {
+      "item": "moderntech:stainless_steel_machine_casing"
+    },
+    "c": {
+      "item": "moderntech:digital_circuit"
+    },
+    "p": {
+      "item": "moderntech:aluminum_wire"
+    }
+  },
+  "pattern": [
+    " c ",
+    "BCB",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:stainless_steel_machine_hull"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "moderntech:electrolyzer",
+  "duration": 2500,
+  "energy": 40,
+  "fluid_outputs": [
+    {
+      "amount": 1,
+      "fluid": "moderntech:uu_matter"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:singularity",
+      "probability": 0.0
+    }
+  ],
+  "level": "aluminum_alloy"
+}

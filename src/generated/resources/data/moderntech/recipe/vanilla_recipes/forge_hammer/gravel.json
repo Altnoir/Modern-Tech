@@ -1,0 +1,10 @@
+{
+  "type": "moderntech:forge_hammer",
+  "ingredient": {
+    "item": "minecraft:cobblestone"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:gravel"
+  }
+}

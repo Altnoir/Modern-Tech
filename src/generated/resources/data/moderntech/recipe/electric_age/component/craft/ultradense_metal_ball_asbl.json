@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "c:plates/iridium"
+    },
+    "T": {
+      "item": "moderntech:tungsten_large_plate"
+    },
+    "l": {
+      "tag": "c:plates/lead"
+    }
+  },
+  "pattern": [
+    "TlT",
+    "lIl",
+    "TlT"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:ultradense_metal_ball"
+  }
+}

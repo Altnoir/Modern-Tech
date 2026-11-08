@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:ruby_dust"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "moderntech:ruby_tiny_dust"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "moderntech:item/uncooked_steel_dust"
+  }
+}

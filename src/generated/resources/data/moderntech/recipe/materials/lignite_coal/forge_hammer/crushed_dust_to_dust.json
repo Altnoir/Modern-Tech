@@ -1,0 +1,11 @@
+{
+  "type": "moderntech:forge_hammer",
+  "count": 3,
+  "ingredient": {
+    "item": "moderntech:lignite_coal_crushed_dust"
+  },
+  "result": {
+    "count": 4,
+    "id": "moderntech:lignite_coal_dust"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:stainless_steel_machine_hull"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:large_heat_exchanger"
+    },
+    {
+      "item": "moderntech:clean_stainless_steel_machine_casing"
+    },
+    {
+      "item": "moderntech:pump"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:heat_exchanger"
+  }
+}

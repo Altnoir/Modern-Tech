@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:quartz_dust"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "moderntech:quartz_tiny_dust"
+  }
+}

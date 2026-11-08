@@ -1,0 +1,22 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 8,
+      "tag": "c:plates/nuclear_alloy"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:stainless_steel_machine_hull"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:nuclear_casing"
+    }
+  ],
+  "level": "electric"
+}

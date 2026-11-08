@@ -1,0 +1,34 @@
+{
+  "type": "moderntech:heat_exchanger",
+  "duration": 10,
+  "energy": 8,
+  "fluid_inputs": [
+    {
+      "amount": 20,
+      "fluid": "moderntech:cryofluid"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 13,
+      "fluid": "moderntech:argon"
+    },
+    {
+      "amount": 5,
+      "fluid": "moderntech:helium"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:titanium_hot_ingot"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:titanium_ingot"
+    }
+  ],
+  "level": "electric"
+}

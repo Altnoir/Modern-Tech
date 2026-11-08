@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "tag": "c:plates/steel"
+    },
+    "S": {
+      "tag": "c:plates/silicon"
+    },
+    "e": {
+      "item": "moderntech:electrum_fine_wire"
+    },
+    "g": {
+      "tag": "c:glass_blocks"
+    }
+  },
+  "pattern": [
+    "ePg",
+    "eSg",
+    "ePg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:diode"
+  }
+}

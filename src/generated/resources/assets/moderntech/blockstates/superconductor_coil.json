@@ -1,0 +1,15 @@
+{
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "center": "moderntech:block/superconductor_coil/center",
+    "empty": "moderntech:block/superconductor_coil/empty",
+    "horizontal": "moderntech:block/superconductor_coil/horizontal",
+    "particle": "moderntech:block/superconductor_coil/particle",
+    "vertical": "moderntech:block/superconductor_coil/vertical"
+  },
+  "variants": {
+    "": {
+      "model": "moderntech:block/superconductor_coil"
+    }
+  }
+}

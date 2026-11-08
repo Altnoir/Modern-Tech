@@ -1,0 +1,28 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 100,
+  "energy": 2,
+  "fluid_inputs": [
+    {
+      "amount": 100,
+      "fluid": "moderntech:soldering_alloy"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 4,
+      "tag": "c:plates/tin"
+    },
+    {
+      "amount": 1,
+      "tag": "c:ingots/tin"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 2,
+      "item": "moderntech:tin_gear"
+    }
+  ],
+  "level": "electric"
+}

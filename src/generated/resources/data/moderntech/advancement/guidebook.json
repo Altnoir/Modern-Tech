@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "logged_in": {
+      "trigger": "moderntech:player_logged_in"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "moderntech:textures/block/fire_clay_bricks.png",
+    "description": {
+      "translate": "advancements.moderntech.guidebook.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moderntech:guidebook"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "text.moderntech.ModernIndustrialization"
+    }
+  },
+  "requirements": [
+    [
+      "logged_in"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

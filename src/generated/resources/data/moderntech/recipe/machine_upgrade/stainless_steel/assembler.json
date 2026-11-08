@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:stainless_steel_machine_hull"
+    },
+    {
+      "item": "moderntech:aluminum_alloy_assembler"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:stainless_steel_assembler"
+  }
+}

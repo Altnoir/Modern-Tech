@@ -1,0 +1,32 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 100,
+  "energy": 2,
+  "fluid_inputs": [
+    {
+      "amount": 75,
+      "fluid": "moderntech:soldering_alloy"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 3,
+      "tag": "c:plates/bronze"
+    },
+    {
+      "amount": 1,
+      "tag": "c:rods/bronze"
+    },
+    {
+      "amount": 2,
+      "tag": "c:gears/bronze"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:bronze_drill_head"
+    }
+  ],
+  "level": "electric"
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "moderntech:electric_steam_turbine",
+  "criteria": {
+    "buildMultiblock": {
+      "conditions": {
+        "multiblock": {
+          "id": "moderntech:electric_blast_furnace"
+        }
+      },
+      "trigger": "moderntech:built_multiblock"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.electric_blast_furnace.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "moderntech:electric_blast_furnace"
+    },
+    "title": {
+      "translate": "advancements.moderntech.electric_blast_furnace"
+    }
+  },
+  "requirements": [
+    [
+      "buildMultiblock"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

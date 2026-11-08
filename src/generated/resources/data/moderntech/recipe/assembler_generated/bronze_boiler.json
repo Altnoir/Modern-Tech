@@ -1,0 +1,29 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:fire_clay_bricks"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:bronze_furnace"
+    },
+    {
+      "amount": 1,
+      "item": "minecraft:bucket"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:bronze_plate"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:bronze_boiler"
+    }
+  ]
+}

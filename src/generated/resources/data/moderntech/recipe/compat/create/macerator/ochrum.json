@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "moderntech:macerator",
+  "duration": 100,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "create:stone_types/ochrum"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:gold_dust",
+      "probability": 0.2
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:gold_tiny_dust",
+      "probability": 0.2
+    }
+  ],
+  "level": "electric"
+}

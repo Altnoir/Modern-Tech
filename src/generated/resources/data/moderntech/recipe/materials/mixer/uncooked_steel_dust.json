@@ -1,0 +1,21 @@
+{
+  "type": "moderntech:mixer",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 7,
+      "tag": "c:dusts/iron"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:coke_dust"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 9,
+      "item": "moderntech:uncooked_steel_dust"
+    }
+  ]
+}

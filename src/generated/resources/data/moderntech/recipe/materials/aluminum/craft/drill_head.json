@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "tag": "c:gears/aluminum"
+    },
+    "R": {
+      "tag": "c:rods/aluminum"
+    },
+    "b": {
+      "item": "moderntech:aluminum_bolt"
+    },
+    "c": {
+      "tag": "c:plates/aluminum"
+    },
+    "p": {
+      "tag": "c:plates/aluminum"
+    }
+  },
+  "pattern": [
+    "bcp",
+    "GRc",
+    "bGb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:aluminum_drill_head"
+  }
+}

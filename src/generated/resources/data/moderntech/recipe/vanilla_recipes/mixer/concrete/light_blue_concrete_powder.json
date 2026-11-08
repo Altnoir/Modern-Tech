@@ -1,0 +1,25 @@
+{
+  "type": "moderntech:mixer",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 4,
+      "item": "minecraft:sand"
+    },
+    {
+      "amount": 4,
+      "item": "minecraft:gravel"
+    },
+    {
+      "amount": 1,
+      "item": "minecraft:light_blue_dye"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 8,
+      "item": "minecraft:light_blue_concrete_powder"
+    }
+  ]
+}

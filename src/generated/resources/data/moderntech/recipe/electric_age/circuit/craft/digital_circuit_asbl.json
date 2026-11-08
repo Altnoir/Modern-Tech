@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "moderntech:op_amp"
+    },
+    "b": {
+      "item": "moderntech:digital_circuit_board"
+    },
+    "c": {
+      "item": "moderntech:electronic_circuit"
+    },
+    "w": {
+      "item": "moderntech:aluminum_wire"
+    }
+  },
+  "pattern": [
+    "cAc",
+    "wbw",
+    "cAc"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:digital_circuit"
+  }
+}

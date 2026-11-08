@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:steel_machine_hull"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:conveyor"
+    },
+    {
+      "item": "moderntech:steel_plate"
+    },
+    {
+      "item": "moderntech:steel_gear"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:steel_packer"
+  }
+}

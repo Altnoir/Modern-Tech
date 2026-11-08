@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "moderntech:copper_drill_head"
+    },
+    "P": {
+      "item": "moderntech:iron_large_plate"
+    },
+    "b": {
+      "item": "minecraft:bucket"
+    },
+    "d": {
+      "item": "minecraft:diamond"
+    },
+    "f": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "pattern": [
+    "fdd",
+    "PDd",
+    "bPf"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:steam_mining_drill"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "casing": "steel",
+  "default_overlays": {
+    "fluid_auto": "moderntech:block/overlays/fluid_auto",
+    "front": "moderntech:block/machines/compressor/overlay_front",
+    "front_active": "moderntech:block/machines/compressor/overlay_front_active",
+    "item_auto": "moderntech:block/overlays/item_auto",
+    "output": "moderntech:block/overlays/output",
+    "side": "moderntech:block/machines/compressor/overlay_side",
+    "side_active": "moderntech:block/machines/compressor/overlay_side_active",
+    "top": "moderntech:block/machines/compressor/overlay_top",
+    "top_active": "moderntech:block/machines/compressor/overlay_top_active"
+  },
+  "loader": "moderntech:machine"
+}

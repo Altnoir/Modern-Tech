@@ -1,0 +1,34 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:piston"
+    },
+    {
+      "amount": 2,
+      "tag": "c:rods/steel"
+    },
+    {
+      "amount": 3,
+      "item": "moderntech:tin_wire"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:analog_circuit"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:motor"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:robot_arm"
+    }
+  ],
+  "level": "electric"
+}

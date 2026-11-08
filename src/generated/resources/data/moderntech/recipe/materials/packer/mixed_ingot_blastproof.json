@@ -1,0 +1,25 @@
+{
+  "type": "moderntech:packer",
+  "duration": 200,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:ingots/tungsten"
+    },
+    {
+      "amount": 1,
+      "tag": "c:ingots/titanium"
+    },
+    {
+      "amount": 1,
+      "tag": "c:ingots/stainless_steel"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:mixed_ingot_blastproof"
+    }
+  ]
+}

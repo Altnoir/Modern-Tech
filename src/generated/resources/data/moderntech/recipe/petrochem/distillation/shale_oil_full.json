@@ -1,0 +1,26 @@
+{
+  "type": "moderntech:distillation_tower",
+  "duration": 200,
+  "energy": 30,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:shale_oil"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 50,
+      "fluid": "moderntech:helium"
+    },
+    {
+      "amount": 450,
+      "fluid": "moderntech:sulfuric_crude_oil"
+    },
+    {
+      "amount": 500,
+      "fluid": "moderntech:sulfuric_naphtha"
+    }
+  ],
+  "level": "electric"
+}

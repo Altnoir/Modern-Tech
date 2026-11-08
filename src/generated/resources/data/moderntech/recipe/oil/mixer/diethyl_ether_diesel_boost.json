@@ -1,0 +1,21 @@
+{
+  "type": "moderntech:mixer",
+  "duration": 300,
+  "energy": 12,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:diesel"
+    },
+    {
+      "amount": 250,
+      "fluid": "moderntech:diethyl_ether"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 1200,
+      "fluid": "moderntech:boosted_diesel"
+    }
+  ]
+}

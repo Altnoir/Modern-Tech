@@ -1,0 +1,26 @@
+{
+  "type": "moderntech:centrifuge",
+  "duration": 240,
+  "energy": 10,
+  "item_inputs": [
+    {
+      "amount": 9,
+      "tag": "c:tiny_dusts/monazite"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 3,
+      "item": "moderntech:neodymium_tiny_dust"
+    },
+    {
+      "amount": 3,
+      "item": "moderntech:yttrium_tiny_dust"
+    },
+    {
+      "amount": 3,
+      "item": "moderntech:cadmium_tiny_dust"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:tin_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "moderntech:tin_nugget"
+  }
+}

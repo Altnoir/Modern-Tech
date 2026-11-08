@@ -1,0 +1,18 @@
+{
+  "type": "moderntech:centrifuge",
+  "duration": 1200,
+  "energy": 32,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 20,
+      "fluid": "moderntech:heavy_water"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

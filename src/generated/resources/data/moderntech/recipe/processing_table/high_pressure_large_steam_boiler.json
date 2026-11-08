@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:clean_stainless_steel_machine_casing"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:advanced_large_steam_boiler"
+    },
+    {
+      "item": "moderntech:digital_circuit"
+    },
+    {
+      "item": "moderntech:stainless_steel_large_plate"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:high_pressure_large_steam_boiler"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "moderntech:centrifuge",
+  "duration": 2400,
+  "energy": 10,
+  "fluid_outputs": [
+    {
+      "amount": 300,
+      "fluid": "moderntech:helium",
+      "probability": 0.5
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 9,
+      "tag": "c:dusts/monazite"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 3,
+      "item": "moderntech:neodymium_dust"
+    },
+    {
+      "amount": 3,
+      "item": "moderntech:yttrium_dust"
+    },
+    {
+      "amount": 3,
+      "item": "moderntech:cadmium_dust"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

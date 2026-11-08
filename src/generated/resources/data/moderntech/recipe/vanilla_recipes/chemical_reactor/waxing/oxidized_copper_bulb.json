@@ -1,0 +1,22 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 100,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:oxidized_copper_bulb"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:wax"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "minecraft:waxed_oxidized_copper_bulb"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

@@ -1,0 +1,26 @@
+{
+  "type": "moderntech:centrifuge",
+  "duration": 600,
+  "energy": 24,
+  "fluid_inputs": [
+    {
+      "amount": 3000,
+      "fluid": "moderntech:liquid_air"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 650,
+      "fluid": "moderntech:oxygen"
+    },
+    {
+      "amount": 2315,
+      "fluid": "moderntech:nitrogen"
+    },
+    {
+      "amount": 35,
+      "fluid": "moderntech:argon"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

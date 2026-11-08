@@ -1,0 +1,26 @@
+{
+  "type": "moderntech:centrifuge",
+  "duration": 6000,
+  "energy": 32,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:he_uranium_fuel_rod_depleted"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 36,
+      "item": "moderntech:uranium_238_tiny_dust"
+    },
+    {
+      "amount": 18,
+      "item": "moderntech:plutonium_tiny_dust"
+    },
+    {
+      "amount": 18,
+      "item": "moderntech:uranium_235_tiny_dust"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

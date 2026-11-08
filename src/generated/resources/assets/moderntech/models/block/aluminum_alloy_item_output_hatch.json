@@ -1,0 +1,9 @@
+{
+  "casing": "aluminum_alloy",
+  "default_overlays": {
+    "item_auto": "moderntech:block/overlays/item_auto",
+    "output": "moderntech:block/overlays/output_item",
+    "side": "moderntech:block/machines/hatch_item/overlay_side"
+  },
+  "loader": "moderntech:machine"
+}

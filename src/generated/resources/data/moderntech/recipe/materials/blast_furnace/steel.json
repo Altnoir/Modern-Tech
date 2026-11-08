@@ -1,0 +1,17 @@
+{
+  "type": "moderntech:steam_blast_furnace",
+  "duration": 600,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:uncooked_steel_dust"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:steel_ingot"
+    }
+  ]
+}

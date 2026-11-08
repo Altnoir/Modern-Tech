@@ -1,0 +1,40 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 16,
+  "fluid_inputs": [
+    {
+      "amount": 500,
+      "fluid": "moderntech:soldering_alloy"
+    },
+    {
+      "amount": 100,
+      "fluid": "moderntech:helium"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 2,
+      "item": "moderntech:blastproof_alloy_plate"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:large_motor"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:robot_arm"
+    },
+    {
+      "amount": 18,
+      "tag": "c:rods/le_uranium"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:le_uranium_fuel_rod"
+    }
+  ],
+  "level": "electric"
+}

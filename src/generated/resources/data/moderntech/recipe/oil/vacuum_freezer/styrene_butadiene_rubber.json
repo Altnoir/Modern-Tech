@@ -1,0 +1,17 @@
+{
+  "type": "moderntech:vacuum_freezer",
+  "duration": 300,
+  "energy": 128,
+  "fluid_inputs": [
+    {
+      "amount": 200,
+      "fluid": "moderntech:styrene_butadiene_rubber"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 64,
+      "item": "moderntech:rubber_sheet"
+    }
+  ]
+}

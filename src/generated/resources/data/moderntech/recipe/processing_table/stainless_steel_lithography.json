@@ -1,0 +1,32 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:aluminum_alloy_machine_hull"
+  },
+  "ingredients": [
+    {
+      "tag": "c:plates/stainless_steel"
+    },
+    {
+      "tag": "c:plates/stainless_steel"
+    },
+    {
+      "tag": "c:glass_blocks"
+    },
+    {
+      "item": "moderntech:robot_arm"
+    },
+    {
+      "item": "moderntech:electronic_circuit"
+    }
+  ],
+  "pattern": [
+    " X ",
+    "XXX",
+    " X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:stainless_steel_lithography"
+  }
+}

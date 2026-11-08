@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "tag": "c:gears/steel"
+    },
+    "R": {
+      "tag": "c:rods/steel"
+    },
+    "b": {
+      "item": "moderntech:steel_bolt"
+    },
+    "c": {
+      "tag": "c:plates/steel"
+    },
+    "p": {
+      "tag": "c:plates/steel"
+    }
+  },
+  "pattern": [
+    "bcp",
+    "GRc",
+    "bGb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:steel_drill_head"
+  }
+}

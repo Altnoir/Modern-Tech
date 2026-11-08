@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:aluminum_dust"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "moderntech:aluminum_tiny_dust"
+  }
+}

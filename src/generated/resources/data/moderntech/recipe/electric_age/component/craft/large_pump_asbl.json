@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "moderntech:electronic_circuit"
+    },
+    "M": {
+      "item": "moderntech:large_motor"
+    },
+    "p": {
+      "item": "moderntech:pump"
+    },
+    "r": {
+      "item": "moderntech:aluminum_rotor"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "rMr",
+    "CrC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:large_pump"
+  }
+}

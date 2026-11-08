@@ -1,0 +1,31 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 500,
+  "energy": 16,
+  "fluid_inputs": [
+    {
+      "amount": 750,
+      "fluid": "moderntech:polyethylene"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 6,
+      "item": "moderntech:aluminum_wire"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:silicon_battery"
+    },
+    {
+      "amount": 4,
+      "item": "moderntech:stainless_steel_plate"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:digital_circuit_board"
+    }
+  ]
+}

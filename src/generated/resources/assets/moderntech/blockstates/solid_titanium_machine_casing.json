@@ -1,0 +1,15 @@
+{
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "center": "moderntech:block/solid_titanium_machine_casing/center",
+    "empty": "moderntech:block/solid_titanium_machine_casing/empty",
+    "horizontal": "moderntech:block/solid_titanium_machine_casing/horizontal",
+    "particle": "moderntech:block/solid_titanium_machine_casing/particle",
+    "vertical": "moderntech:block/solid_titanium_machine_casing/vertical"
+  },
+  "variants": {
+    "": {
+      "model": "moderntech:block/solid_titanium_machine_casing"
+    }
+  }
+}

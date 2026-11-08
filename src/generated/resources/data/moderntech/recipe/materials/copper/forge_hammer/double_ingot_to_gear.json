@@ -1,0 +1,11 @@
+{
+  "type": "moderntech:forge_hammer",
+  "count": 4,
+  "ingredient": {
+    "item": "moderntech:copper_double_ingot"
+  },
+  "result": {
+    "count": 1,
+    "id": "moderntech:copper_gear"
+  }
+}

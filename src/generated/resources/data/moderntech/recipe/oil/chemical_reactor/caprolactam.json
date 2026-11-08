@@ -1,0 +1,28 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 300,
+  "energy": 16,
+  "fluid_inputs": [
+    {
+      "amount": 500,
+      "fluid": "moderntech:benzene"
+    },
+    {
+      "amount": 750,
+      "fluid": "moderntech:hydrogen"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 600,
+      "fluid": "moderntech:caprolactam"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 4,
+      "tag": "c:tiny_dusts/nickel"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

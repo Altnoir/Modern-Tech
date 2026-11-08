@@ -1,0 +1,21 @@
+{
+  "type": "moderntech:packer",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 4,
+      "item": "minecraft:rail"
+    },
+    {
+      "amount": 1,
+      "item": "minecraft:redstone_torch"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 4,
+      "item": "minecraft:activator_rail"
+    }
+  ]
+}

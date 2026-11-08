@@ -1,0 +1,21 @@
+{
+  "type": "moderntech:macerator",
+  "duration": 100,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:gold_drill_head"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 64,
+      "item": "moderntech:gold_tiny_dust"
+    },
+    {
+      "amount": 3,
+      "item": "moderntech:gold_tiny_dust"
+    }
+  ]
+}

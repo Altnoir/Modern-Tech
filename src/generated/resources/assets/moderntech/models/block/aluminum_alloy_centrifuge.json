@@ -1,0 +1,15 @@
+{
+  "casing": "aluminum_alloy",
+  "default_overlays": {
+    "fluid_auto": "moderntech:block/overlays/fluid_auto",
+    "front": "moderntech:block/machines/centrifuge/overlay_front",
+    "front_active": "moderntech:block/machines/centrifuge/overlay_front_active",
+    "item_auto": "moderntech:block/overlays/item_auto",
+    "output": "moderntech:block/overlays/output",
+    "side": "moderntech:block/machines/centrifuge/overlay_side",
+    "side_active": "moderntech:block/machines/centrifuge/overlay_side_active",
+    "top": "moderntech:block/machines/centrifuge/overlay_top",
+    "top_active": "moderntech:block/machines/centrifuge/overlay_top_active"
+  },
+  "loader": "moderntech:machine"
+}

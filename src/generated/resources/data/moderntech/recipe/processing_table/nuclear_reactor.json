@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:titanium_machine_hull"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:processor"
+    },
+    {
+      "item": "moderntech:nuclear_alloy_large_plate"
+    },
+    {
+      "item": "moderntech:titanium_plate"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:nuclear_reactor"
+  }
+}

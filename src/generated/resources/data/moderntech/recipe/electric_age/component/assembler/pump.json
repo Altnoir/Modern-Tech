@@ -1,0 +1,31 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "fluid_inputs": [
+    {
+      "amount": 100,
+      "fluid": "moderntech:soldering_alloy"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 3,
+      "item": "moderntech:bronze_plate"
+    },
+    {
+      "amount": 3,
+      "item": "moderntech:tin_rotor"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:motor"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:pump"
+    }
+  ]
+}

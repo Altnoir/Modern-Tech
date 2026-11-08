@@ -1,0 +1,26 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 4,
+      "tag": "c:plates/invar"
+    },
+    {
+      "amount": 4,
+      "item": "moderntech:pump"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:stainless_steel_large_plate"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:small_heat_exchanger"
+    }
+  ],
+  "level": "electric"
+}

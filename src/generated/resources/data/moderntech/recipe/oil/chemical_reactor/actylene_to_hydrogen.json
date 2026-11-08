@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 200,
+  "energy": 12,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:acetylene"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 2000,
+      "fluid": "moderntech:hydrogen"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:dusts/coal"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

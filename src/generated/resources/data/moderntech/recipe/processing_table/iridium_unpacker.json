@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:iridium_machine_hull"
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:chest"
+    },
+    {
+      "item": "moderntech:steel_gear"
+    },
+    {
+      "item": "moderntech:steel_plate"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:iridium_unpacker"
+  }
+}

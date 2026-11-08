@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "moderntech:superconductor_coil"
+    },
+    "H": {
+      "item": "moderntech:plasma_handling_iridium_machine_casing"
+    },
+    "L": {
+      "item": "moderntech:nuclear_alloy_large_plate"
+    },
+    "h": {
+      "item": "moderntech:large_heat_exchanger"
+    }
+  },
+  "pattern": [
+    "ChC",
+    "LHL",
+    "ChC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:fusion_chamber"
+  }
+}

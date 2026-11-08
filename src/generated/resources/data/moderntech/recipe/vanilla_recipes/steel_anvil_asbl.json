@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "moderntech:steel_block"
+    },
+    "i": {
+      "item": "moderntech:steel_ingot"
+    }
+  },
+  "pattern": [
+    "III",
+    " i ",
+    "iii"
+  ],
+  "result": {
+    "count": 2,
+    "id": "minecraft:anvil"
+  }
+}

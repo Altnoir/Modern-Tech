@@ -1,0 +1,22 @@
+{
+  "type": "moderntech:chemical_reactor",
+  "duration": 500,
+  "energy": 16,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:acetylene"
+    },
+    {
+      "amount": 1000,
+      "fluid": "moderntech:hydrochloric_acid"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:vinyl_chloride"
+    }
+  ],
+  "level": "aluminum_alloy"
+}

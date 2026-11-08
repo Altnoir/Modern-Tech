@@ -1,0 +1,28 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 100,
+  "energy": 2,
+  "fluid_inputs": [
+    {
+      "amount": 100,
+      "fluid": "moderntech:soldering_alloy"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 4,
+      "tag": "c:plates/bronze"
+    },
+    {
+      "amount": 1,
+      "tag": "c:ingots/bronze"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 2,
+      "item": "moderntech:bronze_gear"
+    }
+  ],
+  "level": "electric"
+}

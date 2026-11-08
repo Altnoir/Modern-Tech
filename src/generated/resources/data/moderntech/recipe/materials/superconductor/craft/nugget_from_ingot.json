@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "moderntech:superconductor_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "moderntech:superconductor_nugget"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "moderntech:item/synthetic_rubber_bucket"
+  }
+}

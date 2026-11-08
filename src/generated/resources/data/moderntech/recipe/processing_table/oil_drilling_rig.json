@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:aluminum_alloy_machine_hull"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:electronic_circuit"
+    },
+    {
+      "item": "moderntech:aluminum_alloy_large_plate"
+    },
+    {
+      "item": "moderntech:steel_gear"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:oil_drilling_rig"
+  }
+}

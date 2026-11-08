@@ -1,0 +1,24 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:steel_machine_hull"
+  },
+  "ingredients": [
+    {
+      "tag": "c:chests"
+    },
+    {
+      "item": "moderntech:analog_circuit"
+    },
+    {
+      "item": "minecraft:glass"
+    }
+  ],
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:configurable_chest"
+  }
+}

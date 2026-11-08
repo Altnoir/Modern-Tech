@@ -1,0 +1,9 @@
+{
+  "casing": "aluminum_alloy",
+  "default_overlays": {
+    "front": "moderntech:block/machines/steam_turbine/overlay_front",
+    "front_active": "moderntech:block/machines/steam_turbine/overlay_front_active",
+    "output": "moderntech:block/overlays/output_energy"
+  },
+  "loader": "moderntech:machine"
+}

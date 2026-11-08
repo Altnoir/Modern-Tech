@@ -1,0 +1,17 @@
+{
+  "type": "moderntech:compressor",
+  "duration": 400,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:kanthal_double_ingot"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 2,
+      "item": "moderntech:kanthal_plate"
+    }
+  ]
+}

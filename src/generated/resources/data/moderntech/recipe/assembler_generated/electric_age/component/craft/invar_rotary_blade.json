@@ -1,0 +1,22 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 4,
+      "tag": "c:dusts/diamond"
+    },
+    {
+      "amount": 1,
+      "tag": "c:gears/invar"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:invar_rotary_blade"
+    }
+  ],
+  "level": "electric"
+}

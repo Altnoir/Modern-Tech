@@ -1,0 +1,130 @@
+{
+  "values": {
+    "moderntech:aluminum_alloy_gear": {
+      "components": [
+        {
+          "color": "#A9A9A9",
+          "italic": false,
+          "translate": "text.moderntech.HasBetterYieldAssemblerRecipe"
+        }
+      ]
+    },
+    "moderntech:aluminum_gear": {
+      "components": [
+        {
+          "color": "#A9A9A9",
+          "italic": false,
+          "translate": "text.moderntech.HasBetterYieldAssemblerRecipe"
+        }
+      ]
+    },
+    "moderntech:bronze_gear": {
+      "components": [
+        {
+          "color": "#A9A9A9",
+          "italic": false,
+          "translate": "text.moderntech.HasBetterYieldAssemblerRecipe"
+        }
+      ]
+    },
+    "moderntech:capacitor": {
+      "components": [
+        {
+          "color": "#A9A9A9",
+          "italic": false,
+          "translate": "text.moderntech.HasBetterYieldAssemblerRecipe"
+        }
+      ]
+    },
+    "moderntech:copper_gear": {
+      "components": [
+        {
+          "color": "#A9A9A9",
+          "italic": false,
+          "translate": "text.moderntech.HasBetterYieldAssemblerRecipe"
+        }
+      ]
+    },
+    "moderntech:gold_gear": {
+      "components": [
+        {
+          "color": "#A9A9A9",
+          "italic": false,
+          "translate": "text.moderntech.HasBetterYieldAssemblerRecipe"
+        }
+      ]
+    },
+    "moderntech:inductor": {
+      "components": [
+        {
+          "color": "#A9A9A9",
+          "italic": false,
+          "translate": "text.moderntech.HasBetterYieldAssemblerRecipe"
+        }
+      ]
+    },
+    "moderntech:invar_gear": {
+      "components": [
+        {
+          "color": "#A9A9A9",
+          "italic": false,
+          "translate": "text.moderntech.HasBetterYieldAssemblerRecipe"
+        }
+      ]
+    },
+    "moderntech:iron_gear": {
+      "components": [
+        {
+          "color": "#A9A9A9",
+          "italic": false,
+          "translate": "text.moderntech.HasBetterYieldAssemblerRecipe"
+        }
+      ]
+    },
+    "moderntech:resistor": {
+      "components": [
+        {
+          "color": "#A9A9A9",
+          "italic": false,
+          "translate": "text.moderntech.HasBetterYieldAssemblerRecipe"
+        }
+      ]
+    },
+    "moderntech:stainless_steel_gear": {
+      "components": [
+        {
+          "color": "#A9A9A9",
+          "italic": false,
+          "translate": "text.moderntech.HasBetterYieldAssemblerRecipe"
+        }
+      ]
+    },
+    "moderntech:steel_gear": {
+      "components": [
+        {
+          "color": "#A9A9A9",
+          "italic": false,
+          "translate": "text.moderntech.HasBetterYieldAssemblerRecipe"
+        }
+      ]
+    },
+    "moderntech:tin_gear": {
+      "components": [
+        {
+          "color": "#A9A9A9",
+          "italic": false,
+          "translate": "text.moderntech.HasBetterYieldAssemblerRecipe"
+        }
+      ]
+    },
+    "moderntech:titanium_gear": {
+      "components": [
+        {
+          "color": "#A9A9A9",
+          "italic": false,
+          "translate": "text.moderntech.HasBetterYieldAssemblerRecipe"
+        }
+      ]
+    }
+  }
+}

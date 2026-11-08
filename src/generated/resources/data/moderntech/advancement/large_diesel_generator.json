@@ -1,0 +1,31 @@
+{
+  "parent": "moderntech:stainless_steel_diesel_generator",
+  "criteria": {
+    "buildMultiblock": {
+      "conditions": {
+        "multiblock": {
+          "id": "moderntech:large_diesel_generator"
+        }
+      },
+      "trigger": "moderntech:built_multiblock"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moderntech.large_diesel_generator.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moderntech:large_diesel_generator"
+    },
+    "title": {
+      "translate": "advancements.moderntech.large_diesel_generator"
+    }
+  },
+  "requirements": [
+    [
+      "buildMultiblock"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

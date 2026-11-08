@@ -1,0 +1,18 @@
+{
+  "type": "moderntech:oil_drilling_rig",
+  "duration": 200,
+  "energy": 32,
+  "fluid_outputs": [
+    {
+      "amount": 4000,
+      "fluid": "moderntech:shale_oil"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "moderntech:stainless_steel_drill",
+      "reusable": true
+    }
+  ]
+}

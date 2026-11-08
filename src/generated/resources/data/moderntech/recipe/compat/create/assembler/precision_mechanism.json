@@ -1,0 +1,37 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "moderntech:assembler",
+  "duration": 500,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:plates/gold"
+    },
+    {
+      "amount": 5,
+      "item": "create:cogwheel"
+    },
+    {
+      "amount": 5,
+      "item": "create:large_cogwheel"
+    },
+    {
+      "amount": 5,
+      "item": "moderntech:iron_bolt"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "create:precision_mechanism",
+      "probability": 0.8
+    }
+  ],
+  "level": "electric"
+}

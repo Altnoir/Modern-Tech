@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "moderntech:large_pump"
+    },
+    "R": {
+      "item": "moderntech:aluminum_rotor"
+    },
+    "g": {
+      "tag": "c:gears/invar"
+    },
+    "h": {
+      "item": "moderntech:small_heat_exchanger"
+    }
+  },
+  "pattern": [
+    "ghg",
+    "RLR",
+    "ghg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:large_heat_exchanger"
+  }
+}

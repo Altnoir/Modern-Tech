@@ -1,0 +1,38 @@
+{
+  "type": "moderntech:assembler",
+  "duration": 200,
+  "energy": 8,
+  "item_inputs": [
+    {
+      "amount": 2,
+      "tag": "c:plates/steel"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:tin_wire"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:analog_circuit"
+    },
+    {
+      "amount": 1,
+      "item": "moderntech:steel_drill_head"
+    },
+    {
+      "amount": 2,
+      "tag": "c:gears/iron"
+    },
+    {
+      "amount": 2,
+      "item": "moderntech:motor"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 4,
+      "item": "moderntech:steel_drill"
+    }
+  ],
+  "level": "electric"
+}

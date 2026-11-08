@@ -1,0 +1,15 @@
+{
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "center": "moderntech:block/nuclear_casing/center",
+    "empty": "moderntech:block/nuclear_casing/empty",
+    "horizontal": "moderntech:block/nuclear_casing/horizontal",
+    "particle": "moderntech:block/nuclear_casing/particle",
+    "vertical": "moderntech:block/nuclear_casing/vertical"
+  },
+  "variants": {
+    "": {
+      "model": "moderntech:block/nuclear_casing"
+    }
+  }
+}

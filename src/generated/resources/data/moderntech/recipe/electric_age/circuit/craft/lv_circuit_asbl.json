@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "moderntech:analog_circuit_board"
+    },
+    "C": {
+      "item": "moderntech:capacitor"
+    },
+    "L": {
+      "item": "moderntech:inductor"
+    },
+    "R": {
+      "item": "moderntech:resistor"
+    },
+    "w": {
+      "item": "moderntech:copper_wire"
+    }
+  },
+  "pattern": [
+    "RLR",
+    "CBC",
+    "www"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:analog_circuit"
+  }
+}

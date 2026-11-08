@@ -1,0 +1,30 @@
+{
+  "type": "moderntech:distillation_tower",
+  "duration": 200,
+  "energy": 80,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "moderntech:steam_cracked_heavy_fuel"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 500,
+      "fluid": "moderntech:light_fuel"
+    },
+    {
+      "amount": 100,
+      "fluid": "moderntech:methane"
+    },
+    {
+      "amount": 250,
+      "fluid": "moderntech:butadiene"
+    },
+    {
+      "amount": 150,
+      "fluid": "moderntech:benzene"
+    }
+  ],
+  "level": "electric"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:plates/stainless_steel"
+    },
+    "H": {
+      "item": "moderntech:aluminum_alloy_machine_hull"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "AHA",
+    "AAA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:stainless_steel_machine_casing"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "moderntech:macerator",
+  "duration": 800,
+  "energy": 2,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "tag": "c:rods/he_uranium"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 4,
+      "item": "moderntech:he_uranium_tiny_dust"
+    }
+  ]
+}

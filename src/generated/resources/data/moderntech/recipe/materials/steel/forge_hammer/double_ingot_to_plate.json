@@ -1,0 +1,10 @@
+{
+  "type": "moderntech:forge_hammer",
+  "ingredient": {
+    "item": "moderntech:steel_double_ingot"
+  },
+  "result": {
+    "count": 1,
+    "id": "moderntech:steel_plate"
+  }
+}

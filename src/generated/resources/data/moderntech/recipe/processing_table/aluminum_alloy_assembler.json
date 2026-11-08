@@ -1,0 +1,29 @@
+{
+  "type": "moderntech:processing_table",
+  "casing": {
+    "item": "moderntech:aluminum_alloy_machine_hull"
+  },
+  "ingredients": [
+    {
+      "item": "moderntech:robot_arm"
+    },
+    {
+      "item": "moderntech:conveyor"
+    },
+    {
+      "item": "moderntech:analog_circuit"
+    },
+    {
+      "item": "moderntech:steel_gear"
+    }
+  ],
+  "pattern": [
+    " X ",
+    "X X",
+    " X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:aluminum_alloy_assembler"
+  }
+}
