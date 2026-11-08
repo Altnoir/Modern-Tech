@@ -26,7 +26,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jspecify.annotations.Nullable;
@@ -159,7 +158,7 @@ public class MultiblockBuild implements GuiComponentServer<Unit, MultiblockBuild
     }
 
     /**
-     * Replaces the air and water blocks of the active shape, consuming one item per placed block except in creative.
+     * Fills replaceable positions of the active shape, consuming one item per placed block except in creative.
      */
     public void build(Player player) {
         Level level = machine.getLevel();
@@ -176,24 +175,27 @@ public class MultiblockBuild implements GuiComponentServer<Unit, MultiblockBuild
             }
 
             BlockState currentState = level.getBlockState(pos);
-            if (!currentState.isAir() && !currentState.is(Blocks.WATER)) {
+            if (!ShapeMatcher.canReplaceForBuild(currentState)) {
                 continue;
             }
 
             SimpleMember member = matcher.getSimpleMember(pos);
             BlockState placeState;
+            ItemStack stack = ItemStack.EMPTY;
             if (creative) {
                 placeState = member.getPreviewState();
             } else {
-                ItemStack stack = findStack(player.getInventory(), member.getItemPreviewState(level.registryAccess()));
+                stack = findStack(player.getInventory(), member.getItemPreviewState(level.registryAccess()));
                 if (stack.isEmpty()) {
                     continue;
                 }
                 placeState = ((BlockItem) stack.getItem()).getBlock().defaultBlockState();
-                stack.shrink(1);
             }
 
-            level.setBlock(pos, ShapeMatcher.toWorldState(level, pos, placeState, matcher.controllerDirection), Block.UPDATE_ALL);
+            if (level.setBlock(pos, ShapeMatcher.toWorldState(level, pos, placeState, matcher.controllerDirection), Block.UPDATE_ALL)
+                    && !creative) {
+                stack.shrink(1);
+            }
         }
     }
 

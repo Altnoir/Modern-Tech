@@ -11,7 +11,6 @@ import aztech.milite.machines.multiblocks.ShapeMatcher;
 import aztech.milite.machines.multiblocks.ShapeTemplate;
 import aztech.milite.machines.multiblocks.SimpleMember;
 import aztech.milite.MITags;
-import aztech.milite.MI;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
@@ -36,7 +35,6 @@ import java.util.WeakHashMap;
 public class MultiblockMachineBER extends MachineBlockEntityRenderer<MultiblockMachineBlockEntity> {
     private static final int HIGHLIGHT_CACHE_TICKS = 10;
     private static final Map<MultiblockMachineBlockEntity, HighlightScan> highlightScans = new WeakHashMap<>();
-    private static boolean loggedOutlineHighlight = false;
 
     public MultiblockMachineBER(BlockEntityRendererProvider.Context ctx) {
         super(ctx);
@@ -88,7 +86,7 @@ public class MultiblockMachineBER extends MachineBlockEntityRenderer<MultiblockM
             }
 
             BlockState state = level.getBlockState(pos);
-            if (state.isAir() || state.canBeReplaced()) {
+            if (ShapeMatcher.canReplaceForBuild(state)) {
                 BlockState previewState = ShapeMatcher.toWorldState(level, pos, member.getPreviewState(), matcher.controllerDirection);
                 previews.add(new MissingPreview(pos, previewState, member.newBlockEntity(level.registryAccess(), level, pos, previewState), member, hatchFlags));
             } else {
@@ -102,7 +100,7 @@ public class MultiblockMachineBER extends MachineBlockEntityRenderer<MultiblockM
     /**
      * Whether the player's look ray hits the given block position.
      */
-    private static boolean isTargetingPos(BlockPos pos, boolean isForHatch) {
+    private static boolean isTargetingPos(BlockPos pos) {
         var player = Minecraft.getInstance().player;
         if (player == null) {
             return false;
@@ -110,11 +108,7 @@ public class MultiblockMachineBER extends MachineBlockEntityRenderer<MultiblockM
         var eyePos = player.getEyePosition();
         var view = player.getViewVector(1).scale(player.blockInteractionRange());
         var endPos = eyePos.add(view);
-        var bounds = new AABB(pos);
-        if (!isForHatch) {
-            bounds = bounds.contract(0.5, 0.5, 0.5).move(0.25, 0.25, 0.25);
-        }
-        return bounds.clip(eyePos, endPos).isPresent();
+        return new AABB(pos).clip(eyePos, endPos).isPresent();
     }
 
     @Override
@@ -130,10 +124,9 @@ public class MultiblockMachineBER extends MachineBlockEntityRenderer<MultiblockM
         boolean shapeValid = be.isShapeValid();
         boolean holdingWrench = isHoldingWrench();
         boolean drawWrenchHighlights = holdingWrench && !shapeValid;
-        boolean drawOutline = !holdingWrench && !shapeValid;
         HatchType hatchType = getHeldHatchType();
 
-        if ((!drawWrenchHighlights && !drawOutline && hatchType == null) || be.getLevel() == null) {
+        if ((!drawWrenchHighlights && hatchType == null) || be.getLevel() == null) {
             // Nothing to draw. In particular, a completed shape is never scanned again.
             highlightScans.remove(be);
             return;
@@ -148,7 +141,7 @@ public class MultiblockMachineBER extends MachineBlockEntityRenderer<MultiblockM
             for (HatchPreview hatch : scan.hatches()) {
                 if (hatch.flags().allows(hatchType) && isClose(hatch.pos(), maxDistanceSqr)) {
                     MultiblockHighlight.enqueueHatchHighlight(hatch.pos());
-                    if (tooltipOverlay && isTargetingPos(hatch.pos(), true)) {
+                    if (tooltipOverlay && isTargetingPos(hatch.pos())) {
                         MultiblockHighlight.enqueueHighlightTargetPos(hatch.pos(), hatch.member(), hatch.flags());
                     }
                 }
@@ -157,30 +150,18 @@ public class MultiblockMachineBER extends MachineBlockEntityRenderer<MultiblockM
 
         if (drawWrenchHighlights) {
             for (MissingPreview preview : scan.previews()) {
+                MultiblockHighlight.registerPreview(preview.pos(), preview.state(), preview.blockEntity());
                 if (isClose(preview.pos(), maxDistanceSqr)) {
                     MultiblockHighlight.enqueueErrorHighlight(preview.pos(), preview.state(), preview.blockEntity());
-                    if (tooltipOverlay && isTargetingPos(preview.pos(), false)) {
+                    if (tooltipOverlay && isTargetingPos(preview.pos())) {
                         MultiblockHighlight.enqueueHighlightTargetPos(preview.pos(), preview.member(), preview.hatchFlags());
                     }
                 }
             }
             for (BlockedPos blockedPos : scan.blocked()) {
                 if (isClose(blockedPos.pos(), maxDistanceSqr)) {
-                    MultiblockHighlight.enqueueBlockedHighlight(blockedPos.pos());
-                    if (tooltipOverlay && isTargetingPos(blockedPos.pos(), false)) {
-                        MultiblockHighlight.enqueueHighlightTargetPos(blockedPos.pos(), blockedPos.member(), blockedPos.hatchFlags());
-                    }
-                }
-            }
-        } else if (drawOutline) {
-            for (BlockedPos blockedPos : scan.blocked()) {
-                if (isClose(blockedPos.pos(), maxDistanceSqr)) {
-                    if (!loggedOutlineHighlight) {
-                        loggedOutlineHighlight = true;
-                        MI.LOGGER.debug("Highlighting the blocked multiblock position at {} (outline only)", blockedPos.pos());
-                    }
                     MultiblockHighlight.enqueueOutlineHighlight(blockedPos.pos());
-                    if (tooltipOverlay && isTargetingPos(blockedPos.pos(), false)) {
+                    if (tooltipOverlay && isTargetingPos(blockedPos.pos())) {
                         MultiblockHighlight.enqueueHighlightTargetPos(blockedPos.pos(), blockedPos.member(), blockedPos.hatchFlags());
                     }
                 }
