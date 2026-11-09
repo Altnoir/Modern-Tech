@@ -13,7 +13,7 @@ item_ids:
 
 # 전기 용광로
 
-전기 용광로는 전기로 작동하는 용광로입니다. 새로운 조합법들을 활용할 수 있고, 다른 전기 멀티블록 기계들처럼 최대 128 RF/t 만큼의 오버클럭을 지원합니다.
+전기 용광로는 코일에 따라 처리할 수 있는 레시피 등급이 정해집니다. 높은 등급의 코일은 낮은 등급의 레시피도 처리합니다.
 
 <Recipe id="moderntech:processing_table/electric_blast_furnace" />
 
@@ -21,11 +21,11 @@ item_ids:
 
 <Recipe id="moderntech:materials/cupronickel/craft/coil" />
 
-전기 용광로는 전기를 받아들일 에너지 반입 해치가 없다면 작동하지 않습니다. 전력 에너지 반입 해치는 전기 용광로에 최대 32 RF/t까지 공급합니다.
+전기 용광로에 전력을 공급하려면 에너지 반입 해치가 필요합니다. 전력 에너지 반입 해치는 153,600 FE를 저장합니다.
 
 <Recipe id="moderntech:hatches/electric/energy_input_hatch" />
 
-알루미늄 합금 에너지 반입 해치는 최대 128 RF/t까지 공급합니다. 전기 용광로에 많은 에너지를 공급하고 싶다면 유용할 것입니다!
+알루미늄 합금 에너지 반입 해치는 614,400 FE를 저장합니다.
 
 <Recipe id="moderntech:hatches/aluminum_alloy/energy_input_hatch" />
 

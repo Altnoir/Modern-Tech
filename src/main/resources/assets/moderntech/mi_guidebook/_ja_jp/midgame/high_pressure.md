@@ -18,11 +18,11 @@ item_ids:
 
 <Recipe id="moderntech:processing_table/pressurizer" />
 
-高圧水が手に入れば、高圧大型蒸気ボイラーを使って高圧の蒸気を作ることができる。(br2)高圧蒸気1 mbは通常の蒸気8 mb、すなわと8 RFに相当する。
+高圧水が手に入れば、高圧大型蒸気ボイラーを使って高圧の蒸気を作ることができる。(br2)高圧蒸気1 mbは通常の蒸気8 mb、すなわと8 FEに相当する。
 
 <Recipe id="moderntech:processing_table/high_pressure_large_steam_boiler" />
 
-大型蒸気タービンは通常の蒸気(1 mb = 1 RF)と高圧蒸気(1 mb = 8 RF)の両方をRFに変換し、最大16384 RF/tを生み出すことができる！(l)ただし、通常の水とHPの水は戻ってこない。
+大型蒸気タービンは通常の蒸気(1 mb = 1 FE)と高圧蒸気(1 mb = 8 FE)の両方をFEに変換し、最大16384 FE/tを生み出すことができる！(l)ただし、通常の水とHPの水は戻ってこない。
 
 <Recipe id="moderntech:processing_table/large_steam_turbine" />
 
@@ -30,7 +30,7 @@ item_ids:
 
 <Recipe id="moderntech:processing_table/heat_exchanger" />
 
-小規模なセットアップにはステンレス鋼蒸気タービンを使うという選択肢もある。同じティアの他の発電機と同様512 RF/tを生み出す。これは通常の蒸気しか受け付けない。
+小規模なセットアップにはステンレス鋼蒸気タービンを使うという選択肢もある。同じティアの他の発電機と同様512 FE/tを生み出す。これは通常の蒸気しか受け付けない。
 
 <Recipe id="moderntech:processing_table/stainless_steel_steam_turbine" />
 

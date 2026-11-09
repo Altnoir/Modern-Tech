@@ -17,5 +17,6 @@
       "amount": 12,
       "item": "moderntech:resistor"
     }
-  ]
+  ],
+  "level": "electric"
 }

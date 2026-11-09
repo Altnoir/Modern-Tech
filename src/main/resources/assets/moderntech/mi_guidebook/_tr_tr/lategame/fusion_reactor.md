@@ -15,7 +15,7 @@ Füzyon Reaktörü nihai enerji kaynağıdır! Döteryum, Trityum ve/veya Helyum
 
 <Recipe id="moderntech:processing_table/fusion_reactor" />
 
-Plazma Türbini, Helyum Plazmasını mili kova başına 100 kRF oranında RF'ya dönüştürebilir. Maksimum üretim oranı kabaca 1 MRF/t'dir.
+Plazma Türbini, Helyum Plazmasını mili kova başına 100 kFE oranında FE'ya dönüştürebilir. Maksimum üretim oranı kabaca 1 MFE/t'dir.
 
 <Recipe id="moderntech:processing_table/plasma_turbine" />
 

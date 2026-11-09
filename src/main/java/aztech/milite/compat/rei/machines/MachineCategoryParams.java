@@ -2,7 +2,7 @@ package aztech.milite.compat.rei.machines;
 
 import aztech.milite.inventory.SlotPositions;
 import aztech.milite.machines.guicomponents.ProgressBar;
-import aztech.milite.machines.init.MachineTier;
+import aztech.milite.machines.init.MachineLevel;
 import aztech.milite.machines.recipe.MachineRecipe;
 import aztech.milite.machines.recipe.MachineRecipeType;
 import aztech.milite.MI;
@@ -71,7 +71,7 @@ public class MachineCategoryParams {
     }
 
     private boolean steelHatchRequired(MachineRecipe recipe) {
-        return steamMode.steam && isMultiblock && recipe.energy > MachineTier.BRONZE.getMaxFe();
+        return steamMode.steam && isMultiblock && recipe.level == MachineLevel.STEEL;
     }
 
     public boolean includeRecipeConditionDisplay(MachineRecipe recipe) {
@@ -99,9 +99,9 @@ public class MachineCategoryParams {
     public List<Component> getRecipeTooltip(MachineRecipe recipe) {
         List<Component> lines = new ArrayList<>();
         if (steamMode != SteamMode.NEITHER) {
-            lines.add(MIText.BaseFeTotal.text(TextHelper.getFeText((long) recipe.duration * recipe.energy)));
+            lines.add(MIText.BaseFeTotal.text(TextHelper.getFeText(recipe.getTotalFe())).withStyle(TextHelper.GOLD));
         }
-        if (steamMode.steam) {
+        if (steamMode.steam && MachineLevel.STEEL.canCraft(recipe.level)) {
             lines.add((steamMode.electric ? MIText.AcceptsSteamToo : MIText.AcceptsSteam).text().withStyle(ChatFormatting.GRAY));
             if (steelHatchRequired(recipe)) {
                 lines.add(MIText.RequiresSteelHatch0.text().setStyle(Style.EMPTY.withUnderlined(true)));

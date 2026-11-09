@@ -13,7 +13,7 @@ item_ids:
 
 # 電動高炉
 
-電動高炉は蒸気高炉の電気版である。新しいレシピが解放され、他のマルチブロック電気マシンと同様にオーバークロックはデフォルトで128 RF/tまでに制限されている。
+電力高炉で加工できるレシピの等級はコイルによって決まる。上位のコイルは下位のレシピも加工できる。
 
 <Recipe id="moderntech:processing_table/electric_blast_furnace" />
 
@@ -21,11 +21,11 @@ item_ids:
 
 <Recipe id="moderntech:materials/cupronickel/craft/coil" />
 
-エネルギー搬入ハッチを忘れずに追加するように！電力エネルギー搬入ハッチは電動高炉へ最大32 RF/tまで供給できる。
+高炉に給電するにはエネルギー搬入ハッチが必要。電力エネルギー搬入ハッチの容量は153,600 FE。
 
 <Recipe id="moderntech:hatches/electric/energy_input_hatch" />
 
-アルミニウム合金エネルギー搬入ハッチは最大128 RF/tを搬入でき、電動高炉に大量のエネルギーが必要な場合に役立つ！
+アルミニウム合金エネルギー搬入ハッチの容量は614,400 FE。
 
 <Recipe id="moderntech:hatches/aluminum_alloy/energy_input_hatch" />
 

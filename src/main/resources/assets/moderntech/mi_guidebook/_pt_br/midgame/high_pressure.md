@@ -33,7 +33,7 @@ O Pressurizador é um novo multibloco feito de titânio que pode transformar ág
 
 Quando você tiver acesso à água HP, poderá usar uma Caldeira de Vapor Grande de Alta Pressão para produzir vapor HP.
 
-Um milibalde de vapor HP vale 8 mb de vapor comum, ou seja, 8 RF.
+Um milibalde de vapor HP vale 8 mb de vapor comum, ou seja, 8 FE.
 
 <Recipe id="moderntech:processing_table/high_pressure_large_steam_boiler" />
 
@@ -51,7 +51,7 @@ Mais adiante, você também poderá construir a versão avançada da Caldeira de
     <MultiblockShape controller="large_steam_turbine" />
 </GameScene>
 
-Uma Turbina de Vapor Grande aceitará tanto vapor comum (1 mb = 1 RF) quanto vapor HP (1 mb = 8 RF) e os converterá em RF, podendo gerar até 16384 RF/t! **No entanto, ela não devolverá nem água comum nem água HP.**
+Uma Turbina de Vapor Grande aceitará tanto vapor comum (1 mb = 1 FE) quanto vapor HP (1 mb = 8 FE) e os converterá em FE, podendo gerar até 16384 FE/t! **No entanto, ela não devolverá nem água comum nem água HP.**
 
 <Recipe id="moderntech:processing_table/large_steam_turbine" />
 
@@ -67,7 +67,7 @@ Lembre-se de que pressurizar água em água HP consome muita energia, e a turbin
 
 ## Turbina de Vapor de Aço Inoxidável
 
-Outra opção para instalações menores é usar uma Turbina de Vapor de Aço Inoxidável. Como outros geradores desse nível, ela produzirá 512 RF/t. Esta aceitará apenas vapor comum.
+Outra opção para instalações menores é usar uma Turbina de Vapor de Aço Inoxidável. Como outros geradores desse nível, ela produzirá 512 FE/t. Esta aceitará apenas vapor comum.
 
 <Recipe id="moderntech:processing_table/stainless_steel_steam_turbine" />
 

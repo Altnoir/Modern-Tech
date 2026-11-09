@@ -18,5 +18,6 @@
       "amount": 1,
       "item": "minecraft:diamond_block"
     }
-  ]
+  ],
+  "level": "steel"
 }

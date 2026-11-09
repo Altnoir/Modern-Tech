@@ -12,12 +12,12 @@ item_ids:
 
 # Çeliğe Yükseltme
 
-Artık çeliğe sahip olduğunuza göre, isterseniz bronz makinelerinizi yükseltebilirsiniz. Çelik makineler 4 RF/t'ye kadar tarifleri işleyebilir ve enerji kullanımı 4 RF/t'nin üzerine çıkmadığı sürece tarifleri iki kat daha hızlı işlerler. Temel olarak, bronz makinelerden iki kat daha hızlıdırlar ve ayrıca yeni tariflerin kilidini açabilirler.
+Çelik makineler bronz ve çelik kademe tarifleri işler. Bronz tarifleri, bronz makinenin temel hızının iki katıyla işler.
 
 Bronz bir makineyi yükseltmek için, bir Çelik Makine Gövdesi üretin ve bunu bir Çalışma Masasında uygulayın.
-Çelik kapaklar bronz kapaklardan daha fazla kapasiteye sahiptir ve en az bir çelik kapağı olan bir çoklu blok çelik kademesine yükseltilecektir. Bu, enerji kullanımı 4 RF/t'yi aşmazsa iki kat daha hızlı gideceği anlamına gelir.
+En az bir çelik kapağı olan buharlı çoklu blok çelik kademede çalışır.
 
-Çelik bir kazan bronz bir kazana göre iki kat daha fazla buhar üretecektir, yani 16 RF/t'ye kadar ve çelik bir su pompası bronz muadiline göre iki kat daha fazla su üretecektir, yani 2 kova / 5 saniyeye kadar.
+Çelik bir kazan bronz bir kazana göre iki kat daha fazla buhar üretecektir, yani 16 mB/t'ye kadar ve çelik bir su pompası bronz muadiline göre iki kat daha fazla su üretecektir, yani 2 kova / 5 saniyeye kadar.
 
 Çelik tanklar 16 kovaya kadar depolar.
 

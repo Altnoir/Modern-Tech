@@ -17,5 +17,6 @@
       "amount": 1,
       "item": "minecraft:tnt_minecart"
     }
-  ]
+  ],
+  "level": "steel"
 }

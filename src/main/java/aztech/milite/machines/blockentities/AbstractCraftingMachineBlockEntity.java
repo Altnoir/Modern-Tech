@@ -13,7 +13,6 @@ import aztech.milite.machines.guicomponents.MachineProblemsDisplay;
 import aztech.milite.machines.guicomponents.ProgressBar;
 import aztech.milite.machines.guicomponents.ReiSlotLocking;
 import aztech.milite.machines.init.MachineLevel;
-import aztech.milite.machines.init.MachineTier;
 import aztech.milite.machines.MachineBlockEntity;
 import aztech.milite.machines.recipe.MachineRecipeType;
 import aztech.milite.util.Tickable;
@@ -25,12 +24,11 @@ import java.util.UUID;
 public abstract class AbstractCraftingMachineBlockEntity extends MachineBlockEntity implements CrafterComponent.Behavior, Tickable,
         CrafterComponentHolder {
     public AbstractCraftingMachineBlockEntity(BEP bep, MachineRecipeType recipeType, MachineInventoryComponent inventory,
-            MachineGuiParameters guiParams, ProgressBar.Params progressBarParams, MachineTier tier, MachineLevel level) {
+            MachineGuiParameters guiParams, ProgressBar.Params progressBarParams, MachineLevel level) {
         super(bep, guiParams, new OrientationComponent.Params(true, inventory.itemOutputCount > 0, inventory.fluidOutputCount > 0));
         this.inventory = inventory;
         this.crafter = new CrafterComponent(this, inventory, this);
         this.type = recipeType;
-        this.tier = tier;
         this.machineLevel = level;
         this.isActiveComponent = new IsActiveComponent();
         registerGuiComponent(new AutoExtract(orientation));
@@ -44,7 +42,6 @@ public abstract class AbstractCraftingMachineBlockEntity extends MachineBlockEnt
     protected final CrafterComponent crafter;
 
     private final MachineRecipeType type;
-    public final MachineTier tier;
     private final MachineLevel machineLevel;
     protected IsActiveComponent isActiveComponent;
 

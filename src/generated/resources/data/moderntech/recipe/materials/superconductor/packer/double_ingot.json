@@ -18,5 +18,6 @@
       "amount": 1,
       "item": "moderntech:superconductor_double_ingot"
     }
-  ]
+  ],
+  "level": "steel"
 }

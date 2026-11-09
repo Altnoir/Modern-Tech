@@ -23,7 +23,7 @@ The structure of the multiblock is made of: Aluminum Alloy Machine Casings, Stee
 
 Crude Oil can be turned into various fuels and used for more efficient Rubber Sheet production.
 
-Various fuels can be burned in the Diesel Generator, and you can check in REI how many RF each fuel produces. The RF produced by these fuels in the Diesel Generator is doubled. The Diesel Generator will produce up to 256 RF/t.
+The Electric Diesel Generator can burn several fuels. The recipe viewer lists the energy each fuel provides. The generator doubles the base fuel value and produces up to 64 FE/t.
 
 <Recipe id="moderntech:processing_table/aluminum_alloy_diesel_generator" />
 

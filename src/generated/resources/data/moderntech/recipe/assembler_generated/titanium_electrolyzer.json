@@ -29,5 +29,6 @@
       "amount": 1,
       "item": "moderntech:titanium_electrolyzer"
     }
-  ]
+  ],
+  "level": "electric"
 }

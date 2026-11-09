@@ -23,5 +23,6 @@
       "amount": 1,
       "item": "moderntech:quantum_upgrade"
     }
-  ]
+  ],
+  "level": "electric"
 }

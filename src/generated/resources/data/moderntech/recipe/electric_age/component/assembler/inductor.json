@@ -17,5 +17,6 @@
       "amount": 4,
       "item": "moderntech:inductor"
     }
-  ]
+  ],
+  "level": "electric"
 }

@@ -143,16 +143,16 @@ public class FuelBurningComponent implements MachineComponent {
 
     @Override
     public void writeNbt(CompoundTag tag, HolderLookup.Provider registries) {
-        tag.putLong("burningEuBuffer", burningFeBuffer);
+        tag.putLong("burningFeBuffer", burningFeBuffer);
         if (burningItemTotalFe != 0) {
-            tag.putLong("burningItemTotalEu", burningItemTotalFe);
+            tag.putLong("burningItemTotalFe", burningItemTotalFe);
         }
     }
 
     @Override
     public void readNbt(CompoundTag tag, HolderLookup.Provider registries, boolean isUpgradingMachine) {
-        burningFeBuffer = tag.getLong("burningEuBuffer");
-        burningItemTotalFe = tag.getLong("burningItemTotalEu");
+        burningFeBuffer = tag.getLong("burningFeBuffer");
+        burningItemTotalFe = tag.getLong("burningItemTotalFe");
     }
 
     public List<Component> getTooltips(boolean acceptsFluid) {

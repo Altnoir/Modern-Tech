@@ -13,5 +13,6 @@
       "amount": 1,
       "item": "moderntech:raw_uranium_block"
     }
-  ]
+  ],
+  "level": "steel"
 }

@@ -7,11 +7,11 @@ For example:
 ```js
 MIMachineEvents.registerHatches(event => {
     // Takes the internal name of the tier.
-    event.energy("iv");
+    event.energy("custom_alloy");
 });
 ```
 
-The default generated model for energy hatches will use the casing corresponding to the tier.
+Register the custom tier first. The generated hatch model uses that tier's casing, and the hatch buffer holds 4,800 times its reference capacity in FE.
 
 See also [Adding machine tiers](ADDING_TIERS.md) for more information on how to add a tier.
 

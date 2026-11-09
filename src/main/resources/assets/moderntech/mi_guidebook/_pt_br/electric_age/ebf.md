@@ -17,7 +17,7 @@ item_ids:
     <MultiblockShape controller="electric_blast_furnace" />
 </GameScene>
 
-O Alto-forno Elétrico é a versão elétrica do Alto-forno a Vapor. Ele desbloqueia novas receitas e, como outras máquinas multibloco elétricas, seu overclock é limitado a 128 RF/t por padrão.
+O Alto-forno Elétrico usa a bobina para determinar quais níveis de receita pode processar. Uma bobina de nível maior também processa as receitas dos níveis inferiores.
 
 <Recipe id="moderntech:processing_table/electric_blast_furnace" />
 
@@ -25,11 +25,11 @@ O EBF é composto por uma camada de Estruturas de Máquina à Prova de Calor, du
 
 <Recipe id="moderntech:materials/cupronickel/craft/coil" />
 
-Não esqueça de adicionar Escotilha(s) de Entrada de Energia ou o EBF não terá energia! Uma Escotilha de Entrada de Energia Elétrica fornece no máximo 32 RF/t ao EBF.
+Adicione escotilhas de entrada de energia para alimentar o alto-forno. A escotilha elétrica armazena 153.600 FE.
 
 <Recipe id="moderntech:hatches/electric/energy_input_hatch" />
 
-Escotilhas de Entrada de Energia de Liga de Alumínio movem até 128 RF/t, o que pode ser útil se você precisar de muita energia para o seu EBF!
+A escotilha de entrada de liga de alumínio armazena 614.400 FE.
 
 <Recipe id="moderntech:hatches/aluminum_alloy/energy_input_hatch" />
 

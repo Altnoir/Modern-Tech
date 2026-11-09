@@ -21,5 +21,6 @@
       "amount": 2000,
       "fluid": "moderntech:high_pressure_heavy_water_steam"
     }
-  ]
+  ],
+  "level": "stainless_steel"
 }

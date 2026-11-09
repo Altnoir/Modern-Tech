@@ -64,14 +64,6 @@ public final class SingleBlockCraftingMachines {
         return level == MachineLevel.BRONZE || level == MachineLevel.STEEL;
     }
 
-    private static MachineTier machineTierOf(MachineLevel level) {
-        return switch (level) {
-            case BRONZE -> MachineTier.BRONZE;
-            case STEEL -> MachineTier.STEEL;
-            default -> MachineTier.ELECTRIC;
-        };
-    }
-
     public static void init() {
         // @formatter:off
         registerMachineTiers(
@@ -224,7 +216,6 @@ public final class SingleBlockCraftingMachines {
             if (isSteam(level)) {
                 SlotPositions items = new SlotPositions.Builder().buildWithConsumer(itemPositions);
                 SlotPositions fluids = new SlotPositions.Builder().addSlot(12, 35).buildWithConsumer(fluidPositions);
-                MachineTier tier = machineTierOf(level);
                 String prefix = prefixOf(level);
                 int steamBuckets = level == MachineLevel.BRONZE ? 2 : 4;
                 String id = prefix + machine;
@@ -236,7 +227,7 @@ public final class SingleBlockCraftingMachines {
                         bet -> new SteamCraftingMachineBlockEntity(bet, type,
                                 buildComponent(itemInputCount, itemOutputCount, fluidInputCount, fluidOutputCount, items, fluids, steamBuckets,
                                         ioBucketCapacity),
-                                builtGuiParams, guiProgressBarParams, tier, extraConfig.steamOverclockCatalysts),
+                                builtGuiParams, guiProgressBarParams, level, extraConfig.steamOverclockCatalysts),
                         bet -> {
                             if (itemInputCount + itemOutputCount > 0) {
                                 MachineBlockEntity.registerItemApi(bet);
@@ -244,7 +235,6 @@ public final class SingleBlockCraftingMachines {
                             MachineBlockEntity.registerFluidApi(bet);
                         });
                 MachineRegistrationHelper.addMachineModel(level, id, machine, frontOverlay, topOverlay, sideOverlay);
-                MachineRegistrationHelper.recordMachineLevel(type, level);
             } else {
                 SlotPositions items = new SlotPositions.Builder().buildWithConsumer(itemPositions);
                 SlotPositions fluids = new SlotPositions.Builder().buildWithConsumer(fluidPositions);
@@ -261,8 +251,7 @@ public final class SingleBlockCraftingMachines {
                                 buildComponent(itemInputCount, itemOutputCount, fluidInputCount, fluidOutputCount, items, fluids, 0,
                                         ioBucketCapacity),
                                 builtGuiParams,
-                                energyBarParams, guiProgressBarParams, MachineTier.ELECTRIC,
-                                level),
+                                energyBarParams, guiProgressBarParams, level),
                         bet -> {
                             ElectricCraftingMachineBlockEntity.registerEnergyApi(bet);
                             if (itemInputCount + itemOutputCount > 0) {
@@ -273,7 +262,6 @@ public final class SingleBlockCraftingMachines {
                             }
                         });
                 MachineRegistrationHelper.addMachineModel(level, id, machine, frontOverlay, topOverlay, sideOverlay);
-                MachineRegistrationHelper.recordMachineLevel(type, level);
             }
         }
 
@@ -313,6 +301,7 @@ public final class SingleBlockCraftingMachines {
 
         for (MachineLevel level : levels) {
             String itemId = prefixOf(level) + machine;
+            MachineRegistrationHelper.recordRecipeMachine(recipeType, itemId, level, 1);
             ReiMachineRecipes.registerWorkstation(categoryId, MI.id(itemId));
             ReiMachineRecipes.registerMachineClickArea(MI.id(itemId), clickAreaProgressBarParams.toRectangle());
             ReiMachineRecipes.registerRecipeCategoryForMachine(MI.id(itemId), category.category);

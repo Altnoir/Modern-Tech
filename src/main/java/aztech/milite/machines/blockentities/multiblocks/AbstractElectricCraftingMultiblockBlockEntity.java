@@ -23,6 +23,8 @@ import java.util.UUID;
 
 public abstract class AbstractElectricCraftingMultiblockBlockEntity extends AbstractCraftingMultiblockBlockEntity
         implements EnergyListComponentHolder, CrafterComponent.Behavior {
+    public static final int STANDARD_SPEED_BONUS = 2;
+
     public AbstractElectricCraftingMultiblockBlockEntity(BEP bep, ResourceLocation blockId, int guiHeight,
             OrientationComponent.Params orientationParams,
             ShapeTemplate[] shapeTemplates) {

@@ -8,7 +8,6 @@ import aztech.milite.machines.components.OrientationComponent;
 import aztech.milite.machines.guicomponents.ShapeSelection;
 import aztech.milite.machines.guicomponents.RedstoneControlGui;
 import aztech.milite.machines.init.MachineLevel;
-import aztech.milite.machines.init.MachineTier;
 import aztech.milite.machines.init.MIMachineRecipeTypes;
 import aztech.milite.machines.models.MachineCasings;
 import aztech.milite.machines.multiblocks.HatchFlags;
@@ -58,7 +57,7 @@ public class DistillationTowerBlockEntity extends AbstractElectricCraftingMultib
 
     @Override
     public int getSpeedBonus() {
-        return 2;
+        return STANDARD_SPEED_BONUS;
     }
 
     @Override

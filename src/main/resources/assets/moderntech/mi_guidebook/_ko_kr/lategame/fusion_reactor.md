@@ -15,7 +15,7 @@ item_ids:
 
 <Recipe id="moderntech:processing_table/fusion_reactor" />
 
-플라즈마 터빈은 헬륨 플라즈마를 에너지로 바꿀 수 있습니다. 1 mB당 100 kRF의 에너지를 얻을 수 있고, 최대 발전량은 대략 1 MRF/t 에 달합니다.
+플라즈마 터빈은 헬륨 플라즈마를 에너지로 바꿀 수 있습니다. 1 mB당 100 kFE의 에너지를 얻을 수 있고, 최대 발전량은 대략 1 MFE/t 에 달합니다.
 
 <Recipe id="moderntech:processing_table/plasma_turbine" />
 

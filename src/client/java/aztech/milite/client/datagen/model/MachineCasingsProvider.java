@@ -1,6 +1,6 @@
 package aztech.milite.client.datagen.model;
 
-import aztech.milite.api.energy.CableTier;
+import aztech.milite.api.energy.EnergyTier;
 import aztech.milite.client.machines.models.MachineBakedModel;
 import aztech.milite.machines.models.MachineCasing;
 import aztech.milite.machines.models.MachineCasings;
@@ -25,11 +25,11 @@ public class MachineCasingsProvider extends ModelProvider<BlockModelBuilder> {
             }
         }
 
-        imitateBlock(CableTier.ELECTRIC.casing, MIBlock.ELECTRIC_MACHINE_HULL.asBlock());
-        imitateBlock(CableTier.ALUMINUM.casing, MIBlock.ALUMINUM_MACHINE_HULL.asBlock());
-        imitateBlock(CableTier.STAINLESS_STEEL.casing, MIBlock.STAINLESS_STEEL_MACHINE_HULL.asBlock());
-        imitateBlock(CableTier.TITANIUM.casing, MIBlock.TITANIUM_MACHINE_HULL.asBlock());
-        imitateBlock(CableTier.IRIDIUM.casing, MIBlock.IRIDIUM_MACHINE_HULL.asBlock());
+        imitateBlock(EnergyTier.ELECTRIC.casing, MIBlock.ELECTRIC_MACHINE_HULL.asBlock());
+        imitateBlock(EnergyTier.ALUMINUM.casing, MIBlock.ALUMINUM_MACHINE_HULL.asBlock());
+        imitateBlock(EnergyTier.STAINLESS_STEEL.casing, MIBlock.STAINLESS_STEEL_MACHINE_HULL.asBlock());
+        imitateBlock(EnergyTier.TITANIUM.casing, MIBlock.TITANIUM_MACHINE_HULL.asBlock());
+        imitateBlock(EnergyTier.IRIDIUM.casing, MIBlock.IRIDIUM_MACHINE_HULL.asBlock());
 
         cubeBottomTop(MachineCasings.BRICKED_BRONZE, "block/casings/bricked_bronze", "block/fire_clay_bricks", "block/bronze_machine_casing");
         cubeBottomTop(MachineCasings.BRICKED_STEEL, "block/casings/bricked_steel/side", "block/casings/bricked_steel/bottom",

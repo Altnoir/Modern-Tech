@@ -19,5 +19,6 @@
       "amount": 1,
       "item": "create:raw_zinc_block"
     }
-  ]
+  ],
+  "level": "steel"
 }

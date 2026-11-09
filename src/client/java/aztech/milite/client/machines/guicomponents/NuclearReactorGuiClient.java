@@ -224,7 +224,7 @@ public class NuclearReactorGuiClient extends GuiComponentClient<Unit, NuclearRea
 
                             if (!variant.isBlank() && variant instanceof ItemVariant itemVariant) {
                                 if (itemVariant.getItem() instanceof NuclearComponentItem item) {
-                                    tooltip.add(MIText.MaxTemp.text(item.getMaxTemperature()).setStyle(TextHelper.YELLOW));
+                                    tooltip.add(MIText.MaxTemp.text(item.getMaxTemperature()).setStyle(TextHelper.GOLD));
                                 }
                             }
 
@@ -296,7 +296,7 @@ public class NuclearReactorGuiClient extends GuiComponentClient<Unit, NuclearRea
                                 if (component instanceof NuclearFuel fuel) {
                                     double efficiencyFactor = fuel.efficiencyFactor(tileData.getTemperature());
                                     tooltips.add(MIText.ThermalEfficiency.text(String.format("%.1f", efficiencyFactor * 100))
-                                            .setStyle(TextHelper.YELLOW));
+                                            .setStyle(TextHelper.GOLD));
                                 }
                             }
 

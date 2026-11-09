@@ -37,6 +37,8 @@ are not automatically migrated; back up worlds and update integrations before up
 2. Put this mod, [GuideME](https://modrinth.com/mod/guideme) and AbyssLib Reginth into your `mods` folder.
 3. Craft the guidebook in game, it walks you through the whole progression.
 
+If you are updating an existing world or modpack, see the [FE migration notes](docs/FE_MIGRATION.md) before opening it.
+
 ## Building from source
 
 Java 21 is required.

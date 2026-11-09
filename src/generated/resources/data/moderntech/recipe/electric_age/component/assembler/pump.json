@@ -27,5 +27,6 @@
       "amount": 1,
       "item": "moderntech:pump"
     }
-  ]
+  ],
+  "level": "electric"
 }

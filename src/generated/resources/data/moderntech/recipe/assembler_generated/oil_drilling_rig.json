@@ -25,5 +25,6 @@
       "amount": 1,
       "item": "moderntech:oil_drilling_rig"
     }
-  ]
+  ],
+  "level": "electric"
 }

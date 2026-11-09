@@ -3,6 +3,7 @@ package aztech.milite.machines.recipe;
 import aztech.milite.definition.FluidLike;
 import aztech.milite.machines.init.MachineLevel;
 import aztech.milite.machines.init.MIMachineRecipeTypes;
+import aztech.milite.machines.init.MachineRegistrationHelper;
 import aztech.milite.thirdparty.fabrictransfer.api.item.ItemVariant;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -24,6 +25,10 @@ public class MIRecipeJson<T extends MIRecipeJson<?>> {
     private static final int BRONZE_ENERGY = 2;
 
     protected final MachineRecipe recipe;
+
+    protected final void clampBuiltInLevel() {
+        recipe.level = MachineRegistrationHelper.clampBuiltInRecipeLevel(recipe.type, recipe.level);
+    }
 
     protected MIRecipeJson(MachineRecipeType machineRecipeType, int energy, int duration) {
         this.recipe = new MachineRecipe(machineRecipeType);

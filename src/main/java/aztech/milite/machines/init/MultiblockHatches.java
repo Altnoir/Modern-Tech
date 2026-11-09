@@ -1,6 +1,6 @@
 package aztech.milite.machines.init;
 
-import aztech.milite.api.energy.CableTier;
+import aztech.milite.api.energy.EnergyTier;
 import aztech.milite.compat.kubejs.KubeJSProxy;
 import aztech.milite.datagen.model.MachineModelProperties;
 import aztech.milite.datagen.model.MachineModelsToGenerate;
@@ -29,21 +29,21 @@ public class MultiblockHatches {
 
     public static final HatchPair<ItemHatch> BRONZE_ITEM = registerItemHatches("Bronze", "bronze", MachineCasings.BRONZE, 1, 1, 80, 28);
     public static final HatchPair<ItemHatch> STEEL_ITEM = registerItemHatches("Steel", "steel", MachineCasings.STEEL, 2, 1, 80, 19);
-    public static final HatchPair<ItemHatch> ALUMINUM_ITEM = registerItemHatches("Aluminum Alloy", "aluminum_alloy", CableTier.ALUMINUM.casing, 2, 2, 71, 19);
-    public static final HatchPair<ItemHatch> STAINLESS_STEEL_ITEM = registerItemHatches("Stainless Steel", "stainless_steel", CableTier.STAINLESS_STEEL.casing, 3, 3, 62, 21);
-    public static final HatchPair<ItemHatch> TITANIUM_ITEM = registerItemHatches("Titanium", "titanium", CableTier.TITANIUM.casing, 3, 5, 44, 18);
+    public static final HatchPair<ItemHatch> ALUMINUM_ITEM = registerItemHatches("Aluminum Alloy", "aluminum_alloy", EnergyTier.ALUMINUM.casing, 2, 2, 71, 19);
+    public static final HatchPair<ItemHatch> STAINLESS_STEEL_ITEM = registerItemHatches("Stainless Steel", "stainless_steel", EnergyTier.STAINLESS_STEEL.casing, 3, 3, 62, 21);
+    public static final HatchPair<ItemHatch> TITANIUM_ITEM = registerItemHatches("Titanium", "titanium", EnergyTier.TITANIUM.casing, 3, 5, 44, 18);
 
     public static final HatchPair<FluidHatch> BRONZE_FLUID = registerFluidHatches("Bronze", "bronze", MachineCasings.BRONZE, 4);
     public static final HatchPair<FluidHatch> STEEL_FLUID = registerFluidHatches("Steel", "steel", MachineCasings.STEEL, 16);
-    public static final HatchPair<FluidHatch> ALUMINUM_FLUID = registerFluidHatches("Aluminum Alloy", "aluminum_alloy", CableTier.ALUMINUM.casing, 64);
-    public static final HatchPair<FluidHatch> STAINLESS_STEEL_FLUID = registerFluidHatches("Stainless Steel", "stainless_steel", CableTier.STAINLESS_STEEL.casing, 256);
-    public static final HatchPair<FluidHatch> TITANIUM_FLUID = registerFluidHatches("Titanium", "titanium", CableTier.TITANIUM.casing, 1024);
+    public static final HatchPair<FluidHatch> ALUMINUM_FLUID = registerFluidHatches("Aluminum Alloy", "aluminum_alloy", EnergyTier.ALUMINUM.casing, 64);
+    public static final HatchPair<FluidHatch> STAINLESS_STEEL_FLUID = registerFluidHatches("Stainless Steel", "stainless_steel", EnergyTier.STAINLESS_STEEL.casing, 256);
+    public static final HatchPair<FluidHatch> TITANIUM_FLUID = registerFluidHatches("Titanium", "titanium", EnergyTier.TITANIUM.casing, 1024);
 
-    public static final HatchPair<EnergyHatch> ELECTRIC_ENERGY = registerEnergyHatches(CableTier.ELECTRIC);
-    public static final HatchPair<EnergyHatch> ALUMINUM_ENERGY = registerEnergyHatches(CableTier.ALUMINUM);
-    public static final HatchPair<EnergyHatch> STAINLESS_STEEL_ENERGY = registerEnergyHatches(CableTier.STAINLESS_STEEL);
-    public static final HatchPair<EnergyHatch> TITANIUM_ENERGY = registerEnergyHatches(CableTier.TITANIUM);
-    public static final HatchPair<EnergyHatch> IRIDIUM_ENERGY = registerEnergyHatches(CableTier.IRIDIUM);
+    public static final HatchPair<EnergyHatch> ELECTRIC_ENERGY = registerEnergyHatches(EnergyTier.ELECTRIC);
+    public static final HatchPair<EnergyHatch> ALUMINUM_ENERGY = registerEnergyHatches(EnergyTier.ALUMINUM);
+    public static final HatchPair<EnergyHatch> STAINLESS_STEEL_ENERGY = registerEnergyHatches(EnergyTier.STAINLESS_STEEL);
+    public static final HatchPair<EnergyHatch> TITANIUM_ENERGY = registerEnergyHatches(EnergyTier.TITANIUM);
+    public static final HatchPair<EnergyHatch> IRIDIUM_ENERGY = registerEnergyHatches(EnergyTier.IRIDIUM);
 
     public static final MachineDefinition<NuclearHatch> NUCLEAR_ITEM = MachineRegistrationHelper.registerMachine(
             "Nuclear Item Hatch", "nuclear_item_hatch",
@@ -141,13 +141,13 @@ public class MultiblockHatches {
         return new HatchPair<>(definitions.get(0), definitions.get(1));
     }
 
-    public static HatchPair<EnergyHatch> registerEnergyHatches(CableTier tier) {
+    public static HatchPair<EnergyHatch> registerEnergyHatches(EnergyTier tier) {
         List<MachineDefinition<EnergyHatch>> definitions = new ArrayList<>(2);
 
         for (int iter = 0; iter < 2; ++iter) {
             boolean input = iter == 0;
             String machine = tier.name + "_energy_" + (input ? "input" : "output") + "_hatch";
-            String englishName = tier.shortEnglishName + " Energy" + (input ? " Input" : " Output") + " Hatch";
+            String englishName = tier.englishName + " Energy" + (input ? " Input" : " Output") + " Hatch";
             var def = MachineRegistrationHelper.registerMachine(englishName, machine,
                     bet -> new EnergyHatch(bet, new MachineGuiParameters.Builder(machine, false).build(), input, tier),
                     EnergyHatch::registerEnergyApi);

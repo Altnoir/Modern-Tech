@@ -24,8 +24,8 @@ public class TextHelper {
     public static final Style MAX_TEMP_TEXT = Style.EMPTY.withColor(TextColor.fromRgb(0xd94a1e));
     public static final Style HEAT_CONDUCTION = Style.EMPTY.withColor(TextColor.fromRgb(0x0073ba));
     public static final Style NEUTRONS = Style.EMPTY.withColor(TextColor.fromRgb(0x29a329));
-    public static final Style YELLOW_BOLD = Style.EMPTY.withColor(ChatFormatting.YELLOW).withBold(true);
-    public static final Style YELLOW = Style.EMPTY.withColor(ChatFormatting.YELLOW);
+    public static final Style GOLD_BOLD = Style.EMPTY.withColor(ChatFormatting.GOLD).withBold(true);
+    public static final Style GOLD = Style.EMPTY.withColor(ChatFormatting.GOLD);
 
     public static final Style RED = Style.EMPTY.withColor(ChatFormatting.RED);
     public static final Style GREEN = Style.EMPTY.withColor(ChatFormatting.GREEN);
@@ -164,6 +164,10 @@ public class TextHelper {
 
     private static final DecimalFormat PROBABILITY_FORMAT = new DecimalFormat("#.#");
 
+    public static MutableComponent getNotConsumedTooltip() {
+        return MIText.NotConsumed.text().withStyle(GOLD);
+    }
+
     @Nullable
     public static Component getProbabilityTooltip(float probability, boolean input) {
         if (probability == 1) {
@@ -171,7 +175,7 @@ public class TextHelper {
         } else {
             MutableComponent text;
             if (probability == 0) {
-                text = MIText.NotConsumed.text();
+                return getNotConsumedTooltip();
             } else {
                 if (input) {
                     text = MIText.ChanceConsumption.text(PROBABILITY_FORMAT.format(probability * 100));
@@ -180,7 +184,7 @@ public class TextHelper {
                 }
 
             }
-            text.setStyle(YELLOW);
+            text.setStyle(GOLD);
             return text;
         }
     }

@@ -65,9 +65,6 @@ public class MIParts {
 
     public static final ControlRodPart CONTROL_ROD = new ControlRodPart();
 
-    public static final PartTemplate N_DOPED_PLATE = new PartTemplate("N-Doped %s Plate", "n_doped_plate").withOverlay(PLATE, "n_doped");
-    public static final PartTemplate P_DOPED_PLATE = new PartTemplate("P-Doped %s Plate", "p_doped_plate").withOverlay(PLATE, "p_doped");
-
     public static final PartTemplate[] ITEM_PURE_NON_METAL = new PartTemplate[]{TINY_DUST, DUST, CRUSHED_DUST};
     public static final PartTemplate[] ITEM_PURE_METAL = new PartTemplate[]{INGOT, NUGGET, TINY_DUST, DUST};
 

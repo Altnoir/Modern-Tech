@@ -17,5 +17,6 @@
       "amount": 2,
       "item": "minecraft:sea_lantern"
     }
-  ]
+  ],
+  "level": "electric"
 }

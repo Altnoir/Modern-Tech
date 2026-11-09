@@ -16,7 +16,7 @@ Every ModernTech machine, tank, barrel and multiblock hatch exposes the standard
 
 - **Fluid** - `IFluidHandler`, so any fluid pipe, pump or tank from another mod can fill and drain it.
 - **Items** - `IItemHandler`, so any item pipe, hopper or logistics mod can insert and extract.
-- **Energy** - `IEnergyStorage` (RF), so any RF cable, energy pipe or battery can power it.
+- **Energy** - `IEnergyStorage` (FE), so any FE cable, energy pipe or battery can power it.
 
 Because these are the standard capabilities, no compatibility module is needed: if the other mod's pipe can move fluids or items, it can work with these blocks.
 

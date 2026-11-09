@@ -13,5 +13,6 @@
       "amount": 1000,
       "fluid": "moderntech:heavy_water_steam"
     }
-  ]
+  ],
+  "level": "stainless_steel"
 }

@@ -18,8 +18,7 @@ import java.util.Map;
  * or the whole ladder must be migrated.
  *
  * <p>
- * This is deliberately separate from {@link MachineTier}, which carries the energy numbers of a machine. A machine keeps
- * using {@code MachineTier} for its energy buffer and its minimum consumption while this enum decides what it may craft.
+ * Energy buffer sizes come from the machine's casing or dedicated storage configuration.
  */
 public enum MachineLevel implements StringRepresentable {
     BRONZE("bronze", 1),
@@ -33,9 +32,8 @@ public enum MachineLevel implements StringRepresentable {
     public static final Codec<MachineLevel> CODEC = StringRepresentable.fromEnum(MachineLevel::values);
 
     /**
-     * How many times faster than {@link #BRONZE} this level works: a recipe duration is the number of ticks a bronze
-     * machine takes over it, and every level above bronze finishes it in {@code 1 / multiplier} of that time by eating
-     * the multiplier times as much FE per tick, so a craft costs the same FE on every level.
+     * The speed index of this level. A recipe uses its own level as the reference, so its speed depends on the ratio
+     * between the machine's index and the recipe's index.
      */
     private final int speedMultiplier;
 
@@ -48,10 +46,14 @@ public enum MachineLevel implements StringRepresentable {
     }
 
     /**
-     * @return how many times faster than a {@link #BRONZE} machine this level works, always at least 1
+     * @return the speed index relative to {@link #BRONZE}
      */
     public int speedMultiplier() {
         return speedMultiplier;
+    }
+
+    public int speedMultiplierFrom(MachineLevel required) {
+        return Math.max(1, speedMultiplier / required.speedMultiplier);
     }
 
     @Override
@@ -69,19 +71,6 @@ public enum MachineLevel implements StringRepresentable {
      */
     public boolean canCraft(MachineLevel required) {
         return required.ordinal() <= ordinal();
-    }
-
-    /**
-     * The level that goes with a machine tier, used by machines whose level is not stated explicitly. A multiblock takes
-     * its level from its own structure, so it states it instead of relying on this mapping.
-     */
-    public static MachineLevel of(MachineTier tier) {
-        return switch (tier) {
-            case BRONZE -> BRONZE;
-            case STEEL -> STEEL;
-            case ELECTRIC -> ELECTRIC;
-            case MULTIBLOCK, UNLIMITED -> throw new IllegalArgumentException("Machine tier " + tier + " has no level of its own");
-        };
     }
 
     public String getTranslationKey() {

@@ -21,7 +21,7 @@ public final class PartProgression {
             // What a furnace makes of that.
             "ingot", "nugget", "double_ingot", "hot_ingot", "gem",
             // What the rolling and cutting machines make of an ingot.
-            "plate", "large_plate", "n_doped_plate", "p_doped_plate",
+            "plate", "large_plate",
             // The machine parts, from the simple shapes to the assembled ones.
             "gear", "rod", "rod_magnetic", "bolt", "rotor", "wire", "wire_magnetic", "fine_wire",
             "drill_head", "drill",

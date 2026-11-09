@@ -4,6 +4,7 @@ import aztech.milite.client.compat.viewer.abstraction.ViewerCategory;
 import aztech.milite.client.compat.viewer.abstraction.ViewerPageManager;
 import aztech.milite.client.machines.gui.MachineScreen;
 import aztech.milite.MI;
+import aztech.milite.util.TextHelper;
 import aztech.milite.thirdparty.fabrictransfer.api.fluid.FluidVariant;
 import aztech.milite.thirdparty.fabrictransfer.api.item.ItemVariant;
 import aztech.milite.thirdparty.fabrictransfer.api.storage.TransferVariant;
@@ -242,6 +243,7 @@ class ViewerCategoryEmi<D> extends EmiRecipeCategory {
         }
         if (ing.isCatalyst) {
             slot.catalyst(true);
+            slot.appendTooltip(TextHelper.getNotConsumedTooltip());
         }
     }
 

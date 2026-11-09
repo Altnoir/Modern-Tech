@@ -27,5 +27,6 @@
       "amount": 1,
       "item": "moderntech:cooling_cell"
     }
-  ]
+  ],
+  "level": "electric"
 }

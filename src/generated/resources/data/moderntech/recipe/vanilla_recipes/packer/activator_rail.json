@@ -17,5 +17,6 @@
       "amount": 4,
       "item": "minecraft:activator_rail"
     }
-  ]
+  ],
+  "level": "steel"
 }

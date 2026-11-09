@@ -12,7 +12,7 @@ item_ids:
 
 # Electric Machines
 
-Electric machines process recipes using FE instead of steam. The electric level has a fixed speed multiplier of 4; aluminum alloy, stainless steel, titanium and iridium increase it to 8, 16, 32 and 64. Faster processing draws proportionally more FE/t, while total FE per craft stays the same. Recipes also specify a minimum machine level.
+Electric machines use FE. Each recipe lists its minimum machine level and its base processing time at that level. Each machine level above the recipe doubles the base processing speed and the FE drawn per tick. The total FE per craft stays the same.
 
 You can use REI to view the recipes for the electric version of the machines you are already familiar with.
 

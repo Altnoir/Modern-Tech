@@ -366,7 +366,7 @@ public class MachineScreen extends MIHandledScreen<MachineMenuClient> implements
         Optional<TooltipComponent> data = vanillaStack.getTooltipImage();
         var capacityText = Component.literal(String.valueOf(stack.getAdjustedCapacity()));
         if (stack.getAdjustedCapacity() != 64) {
-            capacityText.setStyle(TextHelper.YELLOW_BOLD);
+            capacityText.setStyle(TextHelper.GOLD_BOLD);
         }
         textTooltip.add(MIText.ConfigurableSlotCapacity.text(capacityText).setStyle(TextHelper.GRAY_TEXT));
         guiGraphics.renderTooltip(font, textTooltip, data, mouseX, mouseY);

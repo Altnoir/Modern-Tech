@@ -13,5 +13,6 @@
       "amount": 1,
       "item": "minecraft:iron_ingot"
     }
-  ]
+  ],
+  "level": "steel"
 }

@@ -1,6 +1,5 @@
 package aztech.milite.compat.kubejs.machine;
 
-import aztech.milite.api.energy.CableTier;
 import aztech.milite.compat.rei.machines.ReiMachineRecipes;
 import aztech.milite.inventory.SlotPositions;
 import aztech.milite.machines.BEP;
@@ -207,7 +206,6 @@ public class RegisterMachinesEventJS implements KubeEvent, ShapeTemplateHelper {
     public void simpleGeneratorSingleBlock(
             // General,
             String englishName, String internalName,
-            String cableTierName,
             long maxEnergyProduction,
             long energyCapacity,
             long fluidStorageCapacity,
@@ -221,7 +219,6 @@ public class RegisterMachinesEventJS implements KubeEvent, ShapeTemplateHelper {
                 bep -> new GeneratorMachineBlockEntity(bep,
                         internalName,
                         true, // Assume facing
-                        CableTier.getTier(cableTierName),
                         energyCapacity,
                         fluidStorageCapacity,
                         componentBuilder.build()),
@@ -237,14 +234,12 @@ public class RegisterMachinesEventJS implements KubeEvent, ShapeTemplateHelper {
             // General,
             String englishName,
             String internalName,
-            String cableTierName,
             long maxEnergyProduction,
             long energyCapacity,
             Consumer<FluidItemConsumerBuilder> builder,
             String casingName, String overlayFolder, boolean frontOverlay, boolean topOverlay, boolean sideOverlay) {
         simpleGeneratorSingleBlock(
                 englishName, internalName,
-                cableTierName,
                 maxEnergyProduction,
                 energyCapacity,
                 0,

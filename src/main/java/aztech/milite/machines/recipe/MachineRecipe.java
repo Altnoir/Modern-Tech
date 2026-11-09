@@ -105,6 +105,7 @@ public class MachineRecipe implements Recipe<RecipeInput> {
     final MachineRecipeType type;
 
     public int energy;
+    /** Ticks at the recipe's required level without additional speed bonuses. */
     public int duration;
     public MachineLevel level = MachineLevel.BRONZE;
     public List<ItemInput> itemInputs = new ArrayList<>();
@@ -119,6 +120,15 @@ public class MachineRecipe implements Recipe<RecipeInput> {
 
     public long getTotalFe() {
         return (long) energy * duration;
+    }
+
+    public long getFePerTick(int speed) {
+        return (long) energy * Math.min(speed, duration);
+    }
+
+    public int getProcessingTicks(MachineLevel machineLevel, int speedBonus) {
+        long speed = (long) machineLevel.speedMultiplierFrom(level) * speedBonus;
+        return (int) Math.ceilDiv(duration, speed);
     }
 
     @Override

@@ -13,7 +13,7 @@ item_ids:
 
 # Nükleer Reaktör
 
-Nükleer Reaktör, amacı nükleer yakıt tüketerek büyük miktarlarda enerji üretmek olan büyük bir çoklu bloktur. Dizele göre 100'lerce kat daha fazla RF/t üretebilir. Küçükten büyüğe çeşitli boyutlarda mevcuttur.
+Nükleer Reaktör, amacı nükleer yakıt tüketerek büyük miktarlarda enerji üretmek olan büyük bir çoklu bloktur. Dizele göre 100'lerce kat daha fazla FE/t üretebilir. Küçükten büyüğe çeşitli boyutlarda mevcuttur.
 
 <Recipe id="moderntech:processing_table/nuclear_reactor" />
 

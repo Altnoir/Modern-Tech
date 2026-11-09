@@ -27,11 +27,11 @@ item_ids:
 
 <Recipe id="moderntech:materials/cupronickel/craft/coil" />
 
-不要忘记添加能量输入仓，否则电力高炉将没有能量！电力能量输入仓最多向高炉输入32 RF/t。
+通过能量输入仓给电力高炉供电。电力能量输入仓可缓存 153,600 FE。
 
 <Recipe id="moderntech:hatches/electric/energy_input_hatch" />
 
-铝合金能量输入仓最多传输128 RF/t，如果你的电力高炉需要大量能量，这会非常有用！
+铝合金能量输入仓可缓存 614,400 FE。缓存越大，高炉在两次供电之间就能运行越久。
 
 <Recipe id="moderntech:hatches/aluminum_alloy/energy_input_hatch" />
 

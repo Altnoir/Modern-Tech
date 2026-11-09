@@ -33,7 +33,7 @@ The Pressurizer is a new multiblock made of titanium that can turn water into HP
 
 Once you have access to HP water, you can use a High Pressure Large Steam Boiler to produce HP steam.
 
-One millibucket of HP steam is worth 8 mb of regular steam, that is 8 RF.
+One millibucket of HP steam is worth 8 mb of regular steam, that is 8 FE.
 
 <Recipe id="moderntech:processing_table/high_pressure_large_steam_boiler" />
 
@@ -51,7 +51,7 @@ Later on, you will also be able to build the advanced version of the HP Large St
     <MultiblockShape controller="large_steam_turbine" />
 </GameScene>
 
-A Large Steam Turbine will accept both regular steam (1 mb = 1 RF) and HP steam (1 mb = 8 RF) into RF, and will generate up to 16384 RF/t! **However it will not give you back regular nor HP water.**
+A Large Steam Turbine will accept both regular steam (1 mb = 1 FE) and HP steam (1 mb = 8 FE) into FE, and will generate up to 16384 FE/t! **However it will not give you back regular nor HP water.**
 
 <Recipe id="moderntech:processing_table/large_steam_turbine" />
 
@@ -67,7 +67,7 @@ Remember that pressurizing water into HP water costs a lot of energy, but the tu
 
 ## Stainless Steel Steam Turbine
 
-Another option for small setups is to use a Stainless Steel Steam Turbine. Like other generators of that tier, it will produce 512 RF/t. This one will only accept regular steam.
+Another option for small setups is to use a Stainless Steel Steam Turbine. Like other generators of that tier, it will produce 512 FE/t. This one will only accept regular steam.
 
 <Recipe id="moderntech:processing_table/stainless_steel_steam_turbine" />
 

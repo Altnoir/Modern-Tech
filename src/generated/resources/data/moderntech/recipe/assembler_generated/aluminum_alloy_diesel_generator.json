@@ -25,5 +25,6 @@
       "amount": 1,
       "item": "moderntech:aluminum_alloy_diesel_generator"
     }
-  ]
+  ],
+  "level": "electric"
 }

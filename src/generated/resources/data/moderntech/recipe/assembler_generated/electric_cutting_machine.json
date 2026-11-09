@@ -17,5 +17,6 @@
       "amount": 1,
       "item": "moderntech:electric_cutting_machine"
     }
-  ]
+  ],
+  "level": "electric"
 }

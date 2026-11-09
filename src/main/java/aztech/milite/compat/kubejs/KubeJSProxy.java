@@ -37,7 +37,7 @@ public class KubeJSProxy {
 
     public void fireCustomConditionEvent() {}
 
-    public void fireCableTiersEvent() {}
+    public void fireEnergyTiersEvent() {}
 
     public void fireRegisterFluidNeutronInteractionsEvent() {}
 }

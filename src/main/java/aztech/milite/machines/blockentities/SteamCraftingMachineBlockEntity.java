@@ -8,7 +8,6 @@ import aztech.milite.machines.guicomponents.GunpowderOverclockGui;
 import aztech.milite.machines.guicomponents.ProgressBar;
 import aztech.milite.machines.helper.SteamHelper;
 import aztech.milite.machines.init.MachineLevel;
-import aztech.milite.machines.init.MachineTier;
 import aztech.milite.machines.models.MachineModelClientData;
 import aztech.milite.machines.recipe.MachineRecipeType;
 import aztech.milite.util.Simulation;
@@ -25,8 +24,8 @@ public class SteamCraftingMachineBlockEntity extends AbstractCraftingMachineBloc
     private final OverclockComponent overclockComponent;
 
     public SteamCraftingMachineBlockEntity(BEP bep, MachineRecipeType recipeType, MachineInventoryComponent inventory, MachineGuiParameters guiParams,
-            ProgressBar.Params progressBarParams, MachineTier tier, List<OverclockComponent.Catalyst> overclockCatalysts) {
-        super(bep, recipeType, inventory, guiParams, progressBarParams, tier, MachineLevel.of(tier));
+            ProgressBar.Params progressBarParams, MachineLevel level, List<OverclockComponent.Catalyst> overclockCatalysts) {
+        super(bep, recipeType, inventory, guiParams, progressBarParams, level);
         this.overclockComponent = new OverclockComponent(overclockCatalysts);
 
         GunpowderOverclockGui.Params gunpowderOverclockGuiParams = new GunpowderOverclockGui.Params(progressBarParams.renderX(),

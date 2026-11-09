@@ -15,18 +15,16 @@ public class AddEbfTiersEventJS implements KubeEvent {
     }
 
     /**
-     * Adds one more electric blast furnace. The coil is what the furnace is built around, so a new furnace always
-     * comes with its own coil and its own block.
+     * Adds a coil and recipe level to the electric blast furnace.
      *
-     * @param id          the block id of the new furnace
-     * @param englishName its name, which is also the name of its recipe category
+     * @param id          the identifier of the coil tier
+     * @param englishName the tier's English name
      * @param coilBlockId the coil its structure is built with
-     * @param maxBaseFE   the energy per tick the coil lets the furnace draw
      * @param level       the machine level this coil grants, as one of the {@link MachineLevel} names such as
      *                    {@code "titanium"}
      */
-    public void add(String id, String englishName, ResourceLocation coilBlockId, long maxBaseFE, String level) {
-        tierConsumer.accept(new ElectricBlastFurnaceBlockEntity.Tier(id, englishName, coilBlockId, maxBaseFE,
+    public void add(String id, String englishName, ResourceLocation coilBlockId, String level) {
+        tierConsumer.accept(new ElectricBlastFurnaceBlockEntity.Tier(id, englishName, coilBlockId,
                 MachineLevel.byName(level)));
     }
 }

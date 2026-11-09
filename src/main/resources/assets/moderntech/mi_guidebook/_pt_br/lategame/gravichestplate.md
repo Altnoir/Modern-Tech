@@ -12,7 +12,7 @@ navigation:
 
 O Peitoral Gravitacional™ usa tecnologia avançada de supercondutores para inverter o campo gravitacional ao redor do jogador que a estiver usando.
 
-Ela consome RF e pode ser carregada ao clicar com o botão direito em uma Unidade de Armazenamento.
+Ela consome FE e pode ser carregada ao clicar com o botão direito em uma Unidade de Armazenamento.
 
 Observe que a tecnologia atual da GSP permite voar e evita dano de queda, mas não protege contra outros tipos de dano.
 

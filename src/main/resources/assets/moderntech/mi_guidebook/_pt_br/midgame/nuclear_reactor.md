@@ -18,7 +18,7 @@ item_ids:
     <MultiblockShape controller="nuclear_reactor" useBigShape={true} x="-11" z="-3" />
 </GameScene>
 
-O Reator Nuclear é um grande multibloco cujo propósito é gerar enormes quantidades de energia consumindo combustível nuclear. Ele pode produzir centenas de vezes mais RF/t do que o diesel. Existem versões de tamanhos variados, de pequenas a grandes.
+O Reator Nuclear é um grande multibloco cujo propósito é gerar enormes quantidades de energia consumindo combustível nuclear. Ele pode produzir centenas de vezes mais FE/t do que o diesel. Existem versões de tamanhos variados, de pequenas a grandes.
 
 <Recipe id="moderntech:processing_table/nuclear_reactor" />
 

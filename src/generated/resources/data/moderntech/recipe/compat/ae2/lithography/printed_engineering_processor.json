@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    }
+  ],
+  "type": "moderntech:lithography",
+  "duration": 200,
+  "energy": 4,
+  "item_inputs": [
+    {
+      "amount": 1,
+      "item": "ae2:engineering_processor_press",
+      "reusable": true
+    },
+    {
+      "amount": 1,
+      "tag": "c:gems/diamond"
+    }
+  ],
+  "item_outputs": [
+    {
+      "amount": 1,
+      "item": "ae2:printed_engineering_processor"
+    }
+  ],
+  "level": "stainless_steel"
+}

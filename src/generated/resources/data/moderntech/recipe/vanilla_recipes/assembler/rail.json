@@ -23,5 +23,6 @@
       "amount": 16,
       "item": "minecraft:rail"
     }
-  ]
+  ],
+  "level": "electric"
 }

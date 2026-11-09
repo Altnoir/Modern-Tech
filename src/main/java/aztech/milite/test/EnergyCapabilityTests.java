@@ -43,7 +43,7 @@ public class EnergyCapabilityTests {
     }
 
     @MIGameTest
-    public void energyCapabilityRespectsCapacityAndLegacySaves(MIGameTestHelper helper) {
+    public void energyCapabilityRespectsCapacityAndSavedFe(MIGameTestHelper helper) {
         var pos = new BlockPos(0, 1, 0);
         helper.setBlock(pos, BuiltInRegistries.BLOCK.get(MI.id("electric_macerator")));
         long[] capacity = {1000};
@@ -51,9 +51,9 @@ public class EnergyCapabilityTests {
         var output = energy.buildExtractable();
         var registries = helper.getLevel().registryAccess();
         var saved = new CompoundTag();
-        saved.putLong("storedEu", 500);
+        saved.putLong("storedFe", 500);
         energy.readNbt(saved, registries, false);
-        helper.assertValueEqual(output.getEnergyStored(), 500, "legacy saved energy");
+        helper.assertValueEqual(output.getEnergyStored(), 500, "saved energy");
 
         capacity[0] = 100;
         helper.assertValueEqual(output.getEnergyStored(), 100, "energy after capacity shrinks");
@@ -62,12 +62,12 @@ public class EnergyCapabilityTests {
         helper.assertValueEqual(output.extractEnergy(200, false), 100, "bounded output");
         helper.assertValueEqual(output.getEnergyStored(), 0, "empty buffer");
 
-        saved.putLong("storedEu", -500);
+        saved.putLong("storedFe", -500);
         energy.readNbt(saved, registries, false);
         helper.assertValueEqual(output.getEnergyStored(), 0, "negative save energy");
         energy.insertFe(50, Simulation.ACT);
         energy.writeNbt(saved, registries);
-        helper.assertValueEqual(saved.getLong("storedEu"), 50L, "compatible saved energy key");
+        helper.assertValueEqual(saved.getLong("storedFe"), 50L, "saved FE");
         helper.succeed();
     }
 }

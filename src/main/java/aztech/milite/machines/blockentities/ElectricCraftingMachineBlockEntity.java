@@ -9,7 +9,6 @@ import aztech.milite.machines.guicomponents.ProgressBar;
 import aztech.milite.machines.guicomponents.RedstoneControlGui;
 import aztech.milite.machines.init.MachineLevel;
 import aztech.milite.machines.init.MachineRegistrationHelper;
-import aztech.milite.machines.init.MachineTier;
 import aztech.milite.machines.models.MachineModelClientData;
 import aztech.milite.machines.recipe.MachineRecipeType;
 import aztech.milite.MICapabilities;
@@ -25,8 +24,8 @@ import net.neoforged.neoforge.energy.IEnergyStorage;
 public class ElectricCraftingMachineBlockEntity extends AbstractCraftingMachineBlockEntity implements EnergyComponentHolder {
     public ElectricCraftingMachineBlockEntity(BEP bep, MachineRecipeType recipeType, MachineInventoryComponent inventory,
             MachineGuiParameters guiParams, EnergyBar.Params energyBarParams, ProgressBar.Params progressBarParams,
-            MachineTier tier, MachineLevel level) {
-        super(bep, recipeType, inventory, guiParams, progressBarParams, tier, level);
+            MachineLevel level) {
+        super(bep, recipeType, inventory, guiParams, progressBarParams, level);
         this.redstoneControl = new RedstoneControlComponent();
         this.casing = new CasingComponent(MachineRegistrationHelper.casingTierOf(level), level.speedMultiplier());
         this.energy = new EnergyComponent(this, casing::getFeCapacity);

@@ -29,5 +29,6 @@
       "amount": 1,
       "item": "moderntech:large_steam_turbine"
     }
-  ]
+  ],
+  "level": "electric"
 }

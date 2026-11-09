@@ -18,5 +18,6 @@
       "amount": 1,
       "item": "minecraft:coal_block"
     }
-  ]
+  ],
+  "level": "steel"
 }

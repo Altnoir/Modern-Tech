@@ -74,8 +74,6 @@ public final class MIItem {
     public static final ItemDefinition<Item> WOOD_PULP = item("Wood Pulp", "wood_pulp", ITEMS_ORDERED.next());
     public static final ItemDefinition<Item> INVAR_ROTARY_BLADE = item("Invar Rotary Blade", "invar_rotary_blade", ITEMS_ORDERED.next());
 
-    public static final ItemDefinition<Item> DIODE = item("Diode", "diode", ITEMS_ORDERED.next());
-    public static final ItemDefinition<Item> TRANSISTOR = item("Transistor", "transistor", ITEMS_ORDERED.next());
     public static final ItemDefinition<Item> OP_AMP = item("Op Amp", "op_amp", ITEMS_ORDERED.next());
 
 

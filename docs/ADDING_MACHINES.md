@@ -6,18 +6,17 @@ MI Lite supports adding EBF variants from KubeJS using the `addEbfTiers` event. 
 electric, stainless-steel and iridium levels.
 
 For each tier, call `event.add` with:
-- The new controller's ID path, without the `moderntech:` namespace.
-- The controller's English name.
+- A unique ID for the coil tier.
+- The tier's English name.
 - The coil block ID. Can be any block that also has an item.
-- The reference FE/t value shown for the coil.
 - The machine level, such as `aluminum_alloy` or `titanium`. Recipe eligibility uses this level.
 
-Controller IDs, coil block IDs and levels must be unique among EBF variants. A higher-level furnace can process lower-level EBF recipes.
+Tier IDs, coil block IDs and levels must be unique among EBF variants. The same controller uses each coil's level to determine which recipes it can process.
 
-Here is an example that adds gold blocks as an EBF coil with a maximum FE/t of 64:
+This example adds gold blocks as an aluminum alloy level EBF coil.
 ```js
 MIMachineEvents.addEbfTiers(event => {
-    event.add("gold_blast_furnace", "Gold Blast Furnace", "minecraft:gold_block", 64, "aluminum_alloy");
+    event.add("gold_coil", "Gold", "minecraft:gold_block", "aluminum_alloy");
 })
 ```
 
@@ -305,7 +304,7 @@ Methods that config exposes:
   * Groups or omits other machines into the workstations part of REI regardless of recipe type.
 * `reiExtra(rei => rei.steam(false))`
   * True to display the machine as steam only, false to show as both electric and steam.
-* `reiExtra(rei => rei.extraTest(recipe => recipe.eu > 4))`
+* `reiExtra(rei => rei.extraTest(recipe => recipe.energy > 4))`
   * Filters out showing REI recipes that don't match the test criteria.
 
 ## Adding new casing types
@@ -341,7 +340,6 @@ MIMachineEvents.registerMachines(event => {
     event.simpleGeneratorSingleBlock(
         "Titanium Diesel Generator", // the generator english name
         "ev_diesel_generator", // its internal name/id
-        "titanium", // the tier of the generator (electric, aluminum, stainless_steel, titanium, iridium)
         8192, // its maximum energy generation rate (FE/tick)
         50000, // its internal energy storage (FE)
         128000, // its fluid storage (mB), this is optional if it doesn't consume fluids (default is 0)

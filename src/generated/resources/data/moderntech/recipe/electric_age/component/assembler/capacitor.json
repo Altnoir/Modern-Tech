@@ -21,5 +21,6 @@
       "amount": 4,
       "item": "moderntech:capacitor"
     }
-  ]
+  ],
+  "level": "electric"
 }

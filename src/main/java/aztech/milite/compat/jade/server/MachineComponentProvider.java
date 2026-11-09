@@ -9,6 +9,7 @@ import aztech.milite.api.machine.holder.MultiblockInventoryComponentHolder;
 import aztech.milite.machines.MachineBlockEntity;
 import aztech.milite.MI;
 import aztech.milite.thirdparty.fabrictransfer.api.fluid.FluidVariant;
+import com.google.common.math.LongMath;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
@@ -46,8 +47,8 @@ public abstract sealed class MachineComponentProvider<S, C>
                     long capacity = 0;
 
                     for (var component : components) {
-                        stored += component.getFe();
-                        capacity += component.getCapacity();
+                        stored = LongMath.saturatedAdd(stored, component.getFe());
+                        capacity = LongMath.saturatedAdd(capacity, component.getCapacity());
                     }
 
                     return List.of(new ViewGroup<>(List.of(EnergyView.of(stored, capacity))));

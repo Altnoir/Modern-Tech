@@ -1,12 +1,11 @@
 package aztech.milite.machines.blockentities;
 
-import aztech.milite.api.energy.CableTier;
 import aztech.milite.machines.BEP;
 import net.minecraft.util.Mth;
 
 public class StorageMachineBlockEntity extends AbstractStorageMachineBlockEntity {
-    public StorageMachineBlockEntity(BEP bep, CableTier tier, String name, long feCapacity) {
-        super(bep, tier, tier, name, feCapacity);
+    public StorageMachineBlockEntity(BEP bep, String name, long feCapacity) {
+        super(bep, name, feCapacity);
     }
 
     @Override

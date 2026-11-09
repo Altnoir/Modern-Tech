@@ -22,7 +22,6 @@ import aztech.milite.machines.recipe.MachineRecipeType;
 import aztech.milite.MI;
 import aztech.milite.MIBlock;
 import aztech.milite.MIText;
-import com.google.common.base.Preconditions;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
@@ -39,15 +38,14 @@ public class ElectricBlastFurnaceBlockEntity extends AbstractElectricCraftingMul
 
     static {
         List<Tier> registrationTiers = new ArrayList<>();
-        registrationTiers.add(new Tier("electric", "Cupronickel", MI.id("cupronickel_coil"), 32,
+        registrationTiers.add(new Tier("electric", "Cupronickel", MI.id("cupronickel_coil"),
                 MachineLevel.ELECTRIC));
-        registrationTiers.add(new Tier("stainless_steel", "Kanthal", MI.id("kanthal_coil"), 128,
+        registrationTiers.add(new Tier("stainless_steel", "Kanthal", MI.id("kanthal_coil"),
                 MachineLevel.STAINLESS_STEEL));
-        registrationTiers.add(new Tier("iridium", "Superconductor", MI.id("superconductor_coil"), 512,
+        registrationTiers.add(new Tier("iridium", "Superconductor", MI.id("superconductor_coil"),
                 MachineLevel.IRIDIUM));
 
         KubeJSProxy.instance.fireAddEbfTiersEvent(tier -> {
-            Preconditions.checkArgument(tier.maxBaseFE() > 4, "EBF tier FE/t must be greater than 4.");
             for (var t : registrationTiers) {
                 if (t.id().equals(tier.id())) {
                     throw new IllegalArgumentException("An EBF with id " + tier.id() + " is already registered.");
@@ -159,7 +157,7 @@ public class ElectricBlastFurnaceBlockEntity extends AbstractElectricCraftingMul
 
     @Override
     public int getSpeedBonus() {
-        return 2;
+        return STANDARD_SPEED_BONUS;
     }
 
     /**
@@ -168,8 +166,7 @@ public class ElectricBlastFurnaceBlockEntity extends AbstractElectricCraftingMul
      * @param id          the tier id, which KubeJS also uses to add tiers
      * @param englishName the tier name
      * @param coilBlockId the coil of this tier, and the only coil its shape accepts
-     * @param maxBaseFE   the FE/t the coil is rated for, shown on the coil tooltip
      * @param level       the level of recipe it runs, and of every tier below it
      */
-    public record Tier(String id, String englishName, ResourceLocation coilBlockId, long maxBaseFE, MachineLevel level) {}
+    public record Tier(String id, String englishName, ResourceLocation coilBlockId, MachineLevel level) {}
 }

@@ -193,9 +193,9 @@ public class ElectricAgeRecipesProvider extends FixedRecipesProvider {
 
         shaped(consumer, "electric_age/circuit/craft/electronic_circuit_asbl",
                 new ShapedRecipeJson("moderntech:electronic_circuit", 1, "cdc", "tbt", "cdc")
-                        .addInput('d', "moderntech:diode")
+                        .addInput('d', "#c:plates/steel")
                         .addInput('c', "moderntech:analog_circuit")
-                        .addInput('t', "moderntech:transistor")
+                        .addInput('t', "#c:plates/silicon")
                         .addInput('b', "moderntech:electronic_circuit_board"));
 
         new MachineRecipeBuilder(MIMachineRecipeTypes.ASSEMBLER, 8, 200)
@@ -268,20 +268,6 @@ public class ElectricAgeRecipesProvider extends FixedRecipesProvider {
                 .addItemOutput("moderntech:monocrystalline_silicon", 1, 1.0f)
                 .offerTo(consumer, "electric_age/component/blast_furnace/monocrystalline_silicon");
 
-        new MachineRecipeBuilder(MIMachineRecipeTypes.CHEMICAL_REACTOR, 8, 400)
-                .level("aluminum_alloy")
-                .addItemInput("#c:plates/silicon", 1, 1.0f)
-                .addItemInput("#c:tiny_dusts/antimony", 1, 1.0f)
-                .addItemOutput("moderntech:silicon_n_doped_plate", 1, 1.0f)
-                .offerTo(consumer, "electric_age/component/chemical_reactor/n_doped_silicon");
-
-        new MachineRecipeBuilder(MIMachineRecipeTypes.CHEMICAL_REACTOR, 8, 400)
-                .level("aluminum_alloy")
-                .addItemInput("#c:plates/silicon", 1, 1.0f)
-                .addItemInput("#c:tiny_dusts/aluminum", 1, 1.0f)
-                .addItemOutput("moderntech:silicon_p_doped_plate", 1, 1.0f)
-                .offerTo(consumer, "electric_age/component/chemical_reactor/p_doped_silicon");
-
 
         shaped(consumer, "electric_age/component/craft/air_intake_asbl",
                 new ShapedRecipeJson("moderntech:air_intake", 1, "ara", "rRr", "ara")
@@ -294,8 +280,8 @@ public class ElectricAgeRecipesProvider extends FixedRecipesProvider {
         shaped(consumer, "electric_age/component/craft/op_amp_asbl",
                 new ShapedRecipeJson("moderntech:op_amp", 1, "rTT", "rdr", "rTT")
                         .addInput('r', "moderntech:resistor")
-                        .addInput('T', "moderntech:transistor")
-                        .addInput('d', "moderntech:diode"));
+                        .addInput('T', "#c:plates/silicon")
+                        .addInput('d', "#c:plates/steel"));
 
         shaped(consumer, "electric_age/component/craft/capacitor",
                 new ShapedRecipeJson("moderntech:capacitor", 1, " P ", "wSw", " P ")
@@ -308,20 +294,6 @@ public class ElectricAgeRecipesProvider extends FixedRecipesProvider {
                         .addInput('m', "moderntech:motor")
                         .addInput('r', "moderntech:rubber_sheet")
                         .addInput('c', "moderntech:tin_wire"));
-
-        shaped(consumer, "electric_age/component/craft/diode_asbl",
-                new ShapedRecipeJson("moderntech:diode", 1, "ePg", "eSg", "ePg")
-                        .addInput('S', "#c:plates/silicon")
-                        .addInput('g', "#c:glass_blocks")
-                        .addInput('e', "moderntech:electrum_fine_wire")
-                        .addInput('P', "#c:plates/steel"));
-
-        shaped(consumer, "electric_age/component/craft/diode_doped_asbl",
-                new ShapedRecipeJson("moderntech:diode", 2, "ePg", "eSg", "ePg")
-                        .addInput('S', "moderntech:silicon_n_doped_plate")
-                        .addInput('g', "#c:glass_blocks")
-                        .addInput('e', "moderntech:electrum_fine_wire")
-                        .addInput('P', "#c:plates/steel"));
 
         shaped(consumer, "electric_age/component/craft/inductor",
                 new ShapedRecipeJson("moderntech:inductor", 1, "www", "wrw", "www")
@@ -366,8 +338,8 @@ public class ElectricAgeRecipesProvider extends FixedRecipesProvider {
 
         shaped(consumer, "electric_age/component/craft/overclocker_unit_asbl",
                 new ShapedRecipeJson("moderntech:overclocker_unit", 1, "wdw", "tbt", "wdw")
-                        .addInput('d', "moderntech:diode")
-                        .addInput('t', "moderntech:transistor")
+                        .addInput('d', "#c:plates/steel")
+                        .addInput('t', "#c:plates/silicon")
                         .addInput('w', "moderntech:electrum_fine_wire")
                         .addInput('b', "moderntech:electronic_circuit_board"));
 
@@ -409,19 +381,6 @@ public class ElectricAgeRecipesProvider extends FixedRecipesProvider {
                 new ShapedRecipeJson("moderntech:steel_rod_magnetic", 1, " RR", "RrR", "RR ")
                         .addInput('R', "minecraft:redstone")
                         .addInput('r', "#c:rods/steel"));
-
-        shaped(consumer, "electric_age/component/craft/transistor_asbl",
-                new ShapedRecipeJson("moderntech:transistor", 2, " e ", "PPP", "SSS")
-                        .addInput('S', "#c:plates/silicon")
-                        .addInput('e', "moderntech:electrum_fine_wire")
-                        .addInput('P', "#c:plates/steel"));
-
-        shaped(consumer, "electric_age/component/craft/transistor_doped_asbl",
-                new ShapedRecipeJson("moderntech:transistor", 4, " e ", "PPP", "SsS")
-                        .addInput('S', "moderntech:silicon_p_doped_plate")
-                        .addInput('s', "moderntech:silicon_n_doped_plate")
-                        .addInput('e', "moderntech:electrum_fine_wire")
-                        .addInput('P', "#c:plates/steel"));
 
         shaped(consumer, "electric_age/component/craft/ultradense_metal_ball_asbl",
                 new ShapedRecipeJson("moderntech:ultradense_metal_ball", 1, "TlT", "lIl", "TlT")

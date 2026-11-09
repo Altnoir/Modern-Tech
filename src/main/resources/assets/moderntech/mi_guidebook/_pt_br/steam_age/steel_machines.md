@@ -12,12 +12,12 @@ item_ids:
 
 # Melhorando para Aço
 
-Agora que você tem aço, pode fazer o upgrade das suas máquinas de bronze, se quiser. Máquinas de aço processam receitas até 4 RF/t e funcionarão com o dobro da velocidade, desde que o uso de energia não ultrapasse 4 RF/t. Basicamente, são duas vezes mais rápidas que as de bronze e podem desbloquear novas receitas.
+Máquinas de aço processam receitas dos níveis bronze e aço. Receitas de bronze são processadas com o dobro da velocidade base de uma máquina de bronze.
 
 Para fazer o upgrade de uma máquina de bronze, fabrique um Mecanismo de Máquina de Aço e aplique em uma Mesa de Trabalho.
-As escotilhas de aço têm mais capacidade que as de bronze, e um multiblocos com pelo menos uma escotilha de aço será atualizado para o nível aço. Isso significa que ele funcionará duas vezes mais rápido, desde que o consumo de energia não ultrapasse 4 RF/t.
+Um multibloco a vapor com pelo menos uma escotilha de aço opera no nível aço.
 
-Uma caldeira de aço produzirá o dobro de vapor que uma de bronze, ou seja, até 16 RF/t, e uma bomba de água de aço produzirá o dobro de água que a versão de bronze, até 2 baldes a cada 5 segundos.
+Uma caldeira de aço produzirá o dobro de vapor que uma de bronze, ou seja, até 16 mB/t, e uma bomba de água de aço produzirá o dobro de água que a versão de bronze, até 2 baldes a cada 5 segundos.
 
 Tanques de Aço armazenam até 16 baldes.
 

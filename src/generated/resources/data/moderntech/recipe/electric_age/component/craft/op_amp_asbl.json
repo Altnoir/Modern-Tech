@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "T": {
-      "item": "moderntech:transistor"
+      "tag": "c:plates/silicon"
     },
     "d": {
-      "item": "moderntech:diode"
+      "tag": "c:plates/steel"
     },
     "r": {
       "item": "moderntech:resistor"

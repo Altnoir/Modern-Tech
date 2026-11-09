@@ -15,7 +15,7 @@ item_ids:
 
 <Recipe id="moderntech:processing_table/fusion_reactor" />
 
-プラズマタービンはヘリウムプラズマを1ミリバケツあたり100 kRFの割合でRFに変換することができる。その最大生産速度はおよそ1 MRF/tである。
+プラズマタービンはヘリウムプラズマを1ミリバケツあたり100 kFEの割合でFEに変換することができる。その最大生産速度はおよそ1 MFE/tである。
 
 <Recipe id="moderntech:processing_table/plasma_turbine" />
 

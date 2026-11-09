@@ -27,11 +27,11 @@ The furnace is made of one layer of Heatproof Machine Casings, two hollow layers
 
 <Recipe id="moderntech:materials/cupronickel/craft/coil" />
 
-Don't forget to add Energy Input Hatch(es) or the EBF won't have energy! An Electric Energy Input Hatch feeds at most 32 RF/t into the furnace.
+Power the furnace through Energy Input Hatches. An Electric Energy Input Hatch stores 153,600 FE.
 
 <Recipe id="moderntech:hatches/electric/energy_input_hatch" />
 
-Aluminum Alloy Energy Input Hatches move up to 128 RF/t, which can be useful if you need a ton of energy for your EBF!
+An Aluminum Alloy Energy Input Hatch stores 614,400 FE. A larger buffer lets the furnace run longer between energy deliveries.
 
 <Recipe id="moderntech:hatches/aluminum_alloy/energy_input_hatch" />
 

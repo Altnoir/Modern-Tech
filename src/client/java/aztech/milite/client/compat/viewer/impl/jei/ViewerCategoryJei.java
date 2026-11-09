@@ -1,6 +1,5 @@
 package aztech.milite.client.compat.viewer.impl.jei;
 
-import aztech.milite.MIText;
 import aztech.milite.client.compat.viewer.abstraction.ViewerCategory;
 import aztech.milite.client.machines.gui.MachineScreen;
 import aztech.milite.MI;
@@ -177,7 +176,7 @@ class ViewerCategoryJei<D> extends AbstractRecipeCategory<D> {
 
                     @Override
                     public ViewerCategory.SlotBuilder markCatalyst() {
-                        slotBuilder.addRichTooltipCallback((view, tooltip) -> tooltip.add(MIText.NotConsumed.text()));
+                        slotBuilder.addRichTooltipCallback((view, tooltip) -> tooltip.add(TextHelper.getNotConsumedTooltip()));
                         return this;
                     }
                 };

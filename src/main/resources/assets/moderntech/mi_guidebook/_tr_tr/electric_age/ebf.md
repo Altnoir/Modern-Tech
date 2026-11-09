@@ -13,7 +13,7 @@ item_ids:
 
 # Elektrikli Maden Eritme Ocağı
 
-Elektrikli Maden Eritme Ocağı, Buharlı Maden Eritme Ocağının elektrikli versiyonudur. Yeni tariflerin kilidini açar ve diğer çok bloklu elektrikli makineler gibi hız aşırtması varsayılan olarak 128 RF/t ile sınırlandırılmıştır.
+Elektrikli maden eritme ocağının bobini, işleyebileceği tarif kademelerini belirler. Daha yüksek kademeli bobinler alt kademelerin tariflerini de işler.
 
 <Recipe id="moderntech:processing_table/electric_blast_furnace" />
 
@@ -21,11 +21,11 @@ EMEO, bir kat Isıya Dayanıklı Makine Muhafazası, iki içi boş Cupronickel B
 
 <Recipe id="moderntech:materials/cupronickel/craft/coil" />
 
-Enerji Giriş Kapakları eklemeyi unutmayın, aksi takdirde EMEO enerjisiz kalır! Elektrik Enerji Giriş Kapağı ocağa en fazla 32 RF/t aktarır.
+Ocağa enerji vermek için enerji giriş kapağı ekleyin. Elektrik kademesindeki kapak 153.600 FE depolar.
 
 <Recipe id="moderntech:hatches/electric/energy_input_hatch" />
 
-Alüminyum Alaşımı Enerji Giriş Kapakları 128 RF/t'ye kadar aktarır, bu da EMEO'nuz için bir ton enerjiye ihtiyacınız varsa yararlı olabilir!
+Alüminyum alaşımı enerji giriş kapağı 614.400 FE depolar.
 
 <Recipe id="moderntech:hatches/aluminum_alloy/energy_input_hatch" />
 

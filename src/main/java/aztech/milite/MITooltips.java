@@ -1,7 +1,6 @@
 package aztech.milite;
 
 import aztech.milite.api.datamaps.MIDataMaps;
-import aztech.milite.api.energy.CableTier;
 import aztech.milite.blocks.OreBlock;
 import aztech.milite.config.MIClientConfig;
 import aztech.milite.definition.FluidLike;
@@ -9,7 +8,6 @@ import aztech.milite.items.PortableStorageUnit;
 import aztech.milite.items.diesel_tools.DieselToolItem;
 import aztech.milite.machines.MachineBlock;
 import aztech.milite.machines.blockentities.multiblocks.ElectricBlastFurnaceBlockEntity;
-import aztech.milite.machines.components.CasingComponent;
 import aztech.milite.nuclear.NuclearAbsorbable;
 import aztech.milite.nuclear.NuclearFuel;
 import aztech.milite.util.TextHelper;
@@ -187,15 +185,13 @@ public class MITooltips {
             });
     public static final TooltipAttachment COILS = TooltipAttachment.of(
             (context, itemStack, item) -> {
-                if (item instanceof BlockItem blockItem
-                        && ElectricBlastFurnaceBlockEntity.tiersByCoil.containsKey(BuiltInRegistries.BLOCK.getKey(blockItem.getBlock()))) {
-                    long fe = ElectricBlastFurnaceBlockEntity.tiersByCoil
-                            .get(BuiltInRegistries.BLOCK.getKey(((BlockItem) itemStack.getItem()).getBlock()))
-                            .maxBaseFE();
-                    return Optional.of(new Line(MIText.EbfMaxFE).arg(fe).build());
-                } else {
-                    return Optional.empty();
+                if (item instanceof BlockItem blockItem) {
+                    var tier = ElectricBlastFurnaceBlockEntity.tiersByCoil.get(BuiltInRegistries.BLOCK.getKey(blockItem.getBlock()));
+                    if (tier != null) {
+                        return Optional.of(new Line(MIText.EbfMaxLevel).arg(tier.level().getDisplayName()).build());
+                    }
                 }
+                return Optional.empty();
             });
     public static final TooltipAttachment ENERGY_STORED_ITEM = TooltipAttachment.of(
             (context, itemStack, item) -> {
@@ -281,13 +277,6 @@ public class MITooltips {
                     line(MIText.SteamDrillFuelHelp).arg("use", KEYBIND_PARSER).build(),
                     line(MIText.SteamDrillProfit).arg("moderntech.toggle_3x3", KEYBIND_PARSER).build(),
                     line(MIText.SteamDrillToggle).arg("sneak", KEYBIND_PARSER).arg("use", KEYBIND_PARSER).build()));
-    public static final TooltipAttachment MACHINE_CASING_VOLTAGE = TooltipAttachment.of(
-            (context, itemStack, item) -> {
-                CableTier tier = CasingComponent.getCasingTier(item);
-                return tier == null ? Optional.empty()
-                        : Optional.of(new Line(MIText.MachineCasingVoltage).arg(Component.translatable(tier.shortEnglishKey())).build());
-            });
-
     public static void attachTooltip(Item.TooltipContext context, ItemStack stack, List<Component> lines) {
         boolean hasPrintRequiredShift = false;
         for (var tooltip : TOOLTIPS) {

@@ -3,7 +3,6 @@ package aztech.milite.machines.blockentities;
 import static aztech.milite.machines.components.FluidItemConsumerComponent.NumberOfFuel.*;
 
 import aztech.milite.MICapabilities;
-import aztech.milite.api.energy.CableTier;
 import aztech.milite.api.machine.holder.EnergyComponentHolder;
 import aztech.milite.definition.FluidDefinition;
 import aztech.milite.inventory.ConfigurableFluidStack;
@@ -45,7 +44,6 @@ public class GeneratorMachineBlockEntity extends MachineBlockEntity implements T
     public GeneratorMachineBlockEntity(BEP bep,
             String name,
             boolean hasFacing,
-            CableTier outputTier,
             long energyCapacity,
             long fluidCapacity,
             FluidItemConsumerComponent fluidItemConsumer) {
@@ -123,13 +121,12 @@ public class GeneratorMachineBlockEntity extends MachineBlockEntity implements T
     public GeneratorMachineBlockEntity(BEP bep,
             String name,
             boolean hasFacing,
-            CableTier outputTier,
             long energyCapacity,
             long fluidCapacity,
             long maxEnergyOutput,
             FluidDefinition acceptedFluid,
             long fluidFEperMb) {
-        this(bep, name, hasFacing, outputTier, energyCapacity, fluidCapacity,
+        this(bep, name, hasFacing, energyCapacity, fluidCapacity,
                 FluidItemConsumerComponent.ofSingleFluid(
                         maxEnergyOutput,
                         acceptedFluid,

@@ -17,6 +17,7 @@ public class MachineRecipeBuilder extends MIRecipeJson<MachineRecipeBuilder> imp
     public void offerTo(RecipeOutput recipeOutput, String path) {
         var id = MI.id(path);
         try {
+            clampBuiltInLevel();
             recipeOutput.accept(id, recipe, null);
         } catch (Exception ex) {
             MI.LOGGER.error("Failed to generate recipe {}", id);

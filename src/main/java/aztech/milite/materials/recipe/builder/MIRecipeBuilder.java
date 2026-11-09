@@ -112,6 +112,7 @@ public class MIRecipeBuilder extends MIRecipeJson<MIRecipeBuilder> implements Ma
     public void save(RecipeOutput recipeOutput) {
         if (!canceled) {
             String fullId = "materials/" + context.getMaterialName() + "/" + recipeId;
+            clampBuiltInLevel();
             recipeOutput.accept(MI.id(fullId), recipe, null);
         }
     }

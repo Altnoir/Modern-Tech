@@ -9,7 +9,7 @@ public record FluidFuel(int fePerMb) {
     public static final Codec<FluidFuel> CODEC = RecordCodecBuilder.create(
             instance -> instance
                     .group(
-                            ExtraCodecs.POSITIVE_INT.fieldOf("eu_per_mb").forGetter(FluidFuel::fePerMb))
+                            ExtraCodecs.POSITIVE_INT.fieldOf("fe_per_mb").forGetter(FluidFuel::fePerMb))
                     .apply(instance, FluidFuel::new));
 
     public static int getFe(Fluid fluid) {

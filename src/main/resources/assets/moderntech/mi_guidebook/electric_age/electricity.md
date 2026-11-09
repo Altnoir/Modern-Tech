@@ -32,3 +32,5 @@ That means:
 - Electric, aluminum alloy, stainless steel, titanium and iridium are machine levels with fixed speed multipliers and minimum recipe requirements. Casings size the energy buffer separately. A full buffer stops accepting FE.
 
 Single-block electric crafting machines accept FE from all sides. Generators expose FE output on their configured output side.
+
+Machine screens can show the full size of large buffers. Standard FE interfaces report at most 2,147,483,647 FE, so some external devices may display a lower value.

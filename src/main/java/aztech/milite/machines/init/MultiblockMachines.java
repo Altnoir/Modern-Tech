@@ -29,6 +29,7 @@ import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
+import static aztech.milite.machines.blockentities.multiblocks.AbstractElectricCraftingMultiblockBlockEntity.STANDARD_SPEED_BONUS;
 import static aztech.milite.machines.models.MachineCasings.CLEAN_STAINLESS_STEEL;
 import static aztech.milite.machines.multiblocks.HatchTypes.*;
 
@@ -88,7 +89,7 @@ public class MultiblockMachines {
         COKE_OVEN = MachineRegistrationHelper.registerMachine("Coke Oven", "coke_oven",
                 bet -> new SteamCraftingMultiblockBlockEntity(bet, "coke_oven", cokeOvenShape, MIMachineRecipeTypes.COKE_OVEN, OverclockComponent.getDefaultCatalysts()));
         ReiMachineRecipes.registerMultiblockShape("coke_oven", cokeOvenShape);
-        MachineRegistrationHelper.recordMachineLevel(MIMachineRecipeTypes.COKE_OVEN, MachineLevel.STEEL);
+        recordSteamRecipeMachine(MIMachineRecipeTypes.COKE_OVEN, "coke_oven");
     }
 
     private static void steamBlastFurnace() {
@@ -98,15 +99,16 @@ public class MultiblockMachines {
         STEAM_BLAST_FURNACE = MachineRegistrationHelper.registerMachine("Steam Blast Furnace", "steam_blast_furnace",
                 bet -> new SteamCraftingMultiblockBlockEntity(bet, "steam_blast_furnace", sbfShape, MIMachineRecipeTypes.STEAM_BLAST_FURNACE, OverclockComponent.getDefaultCatalysts()));
         ReiMachineRecipes.registerMultiblockShape("steam_blast_furnace", sbfShape);
-        // It has no levels, but it does reach the steel one, so its recipes are checked against that.
-        MachineRegistrationHelper.recordMachineLevel(MIMachineRecipeTypes.STEAM_BLAST_FURNACE, MachineLevel.STEEL);
+        recordSteamRecipeMachine(MIMachineRecipeTypes.STEAM_BLAST_FURNACE, "steam_blast_furnace");
     }
 
     private static void electricBlastFurnaces() {
         ELECTRIC_BLAST_FURNACE = MachineRegistrationHelper.registerMachine("Electric Blast Furnace", "electric_blast_furnace",
                 ElectricBlastFurnaceBlockEntity::new);
-        // The slider reaches every tier, so the recipes the furnace may run go up to the highest one.
-        MachineRegistrationHelper.recordMachineLevel(MIMachineRecipeTypes.BLAST_FURNACE, MachineLevel.IRIDIUM);
+        for (var tier : ElectricBlastFurnaceBlockEntity.tiers) {
+            MachineRegistrationHelper.recordRecipeMachine(MIMachineRecipeTypes.BLAST_FURNACE, "electric_blast_furnace",
+                    tier.level(), STANDARD_SPEED_BONUS, tier.coilBlockId());
+        }
         ElectricBlastFurnaceBlockEntity.registerReiShapes();
     }
 
@@ -206,7 +208,8 @@ public class MultiblockMachines {
                 "electric_quarry",
                 bet -> new ElectricCraftingMultiblockBlockEntity(bet, "electric_quarry", quarryElectricShape, MIMachineRecipeTypes.QUARRY));
         ReiMachineRecipes.registerMultiblockShape("electric_quarry", quarryElectricShape);
-        MachineRegistrationHelper.recordMachineLevel(MIMachineRecipeTypes.QUARRY, MachineLevel.STAINLESS_STEEL);
+        recordSteamRecipeMachine(MIMachineRecipeTypes.QUARRY, "steam_quarry");
+        recordStandardElectricRecipeMachine(MIMachineRecipeTypes.QUARRY, "electric_quarry");
     }
 
     private static void oilDrillingRig() {
@@ -232,7 +235,7 @@ public class MultiblockMachines {
                 "oil_drilling_rig", bet -> new ElectricCraftingMultiblockBlockEntity(bet,
                         "oil_drilling_rig", oilDrillingRigShape, MIMachineRecipeTypes.OIL_DRILLING_RIG));
         ReiMachineRecipes.registerMultiblockShape("oil_drilling_rig", oilDrillingRigShape);
-        MachineRegistrationHelper.recordMachineLevel(MIMachineRecipeTypes.OIL_DRILLING_RIG, MachineLevel.STAINLESS_STEEL);
+        recordStandardElectricRecipeMachine(MIMachineRecipeTypes.OIL_DRILLING_RIG, "oil_drilling_rig");
     }
 
     private static void vacuumFreezer() {
@@ -245,7 +248,7 @@ public class MultiblockMachines {
                 "vacuum_freezer",
                 bet -> new ElectricCraftingMultiblockBlockEntity(bet, "vacuum_freezer", vacuumFreezerShape, MIMachineRecipeTypes.VACUUM_FREEZER));
         ReiMachineRecipes.registerMultiblockShape("vacuum_freezer", vacuumFreezerShape);
-        MachineRegistrationHelper.recordMachineLevel(MIMachineRecipeTypes.VACUUM_FREEZER, MachineLevel.STAINLESS_STEEL);
+        recordStandardElectricRecipeMachine(MIMachineRecipeTypes.VACUUM_FREEZER, "vacuum_freezer");
     }
 
     private static void distillationTower() {
@@ -253,7 +256,7 @@ public class MultiblockMachines {
                 "Large Distillation Tower",
                 "distillation_tower", DistillationTowerBlockEntity::new);
         DistillationTowerBlockEntity.registerReiShapes();
-        MachineRegistrationHelper.recordMachineLevel(MIMachineRecipeTypes.DISTILLATION_TOWER, MachineLevel.STAINLESS_STEEL);
+        recordStandardElectricRecipeMachine(MIMachineRecipeTypes.DISTILLATION_TOWER, "distillation_tower");
     }
 
     private static void largeDieselGenerator() {
@@ -360,7 +363,7 @@ public class MultiblockMachines {
                 "heat_exchanger",
                 bet -> new ElectricCraftingMultiblockBlockEntity(bet, "heat_exchanger", heatExchangerShape, MIMachineRecipeTypes.HEAT_EXCHANGER));
         ReiMachineRecipes.registerMultiblockShape("heat_exchanger", heatExchangerShape);
-        MachineRegistrationHelper.recordMachineLevel(MIMachineRecipeTypes.HEAT_EXCHANGER, MachineLevel.STAINLESS_STEEL);
+        recordStandardElectricRecipeMachine(MIMachineRecipeTypes.HEAT_EXCHANGER, "heat_exchanger");
 
     }
 
@@ -390,7 +393,7 @@ public class MultiblockMachines {
                 "pressurizer",
                 bet -> new ElectricCraftingMultiblockBlockEntity(bet, "pressurizer", pressurizerShape, MIMachineRecipeTypes.PRESSURIZER));
         ReiMachineRecipes.registerMultiblockShape("pressurizer", pressurizerShape);
-        MachineRegistrationHelper.recordMachineLevel(MIMachineRecipeTypes.PRESSURIZER, MachineLevel.STAINLESS_STEEL);
+        recordStandardElectricRecipeMachine(MIMachineRecipeTypes.PRESSURIZER, "pressurizer");
     }
 
     private static void implosionCompressor() {
@@ -407,7 +410,7 @@ public class MultiblockMachines {
                 "implosion_compressor",
                 bet -> new ElectricCraftingMultiblockBlockEntity(bet, "implosion_compressor", implosionCompressorShape, MIMachineRecipeTypes.IMPLOSION_COMPRESSOR));
         ReiMachineRecipes.registerMultiblockShape("implosion_compressor", implosionCompressorShape);
-        MachineRegistrationHelper.recordMachineLevel(MIMachineRecipeTypes.IMPLOSION_COMPRESSOR, MachineLevel.STAINLESS_STEEL);
+        recordStandardElectricRecipeMachine(MIMachineRecipeTypes.IMPLOSION_COMPRESSOR, "implosion_compressor");
     }
 
     private static void nuclearReactor() {
@@ -451,7 +454,7 @@ public class MultiblockMachines {
                 bet -> new FusionReactorBlockEntity(bet, "fusion_reactor",
                         fusionReactorShape));
         ReiMachineRecipes.registerMultiblockShape("fusion_reactor", fusionReactorShape);
-        MachineRegistrationHelper.recordMachineLevel(MIMachineRecipeTypes.FUSION_REACTOR, MachineLevel.IRIDIUM);
+        MachineRegistrationHelper.recordRecipeMachine(MIMachineRecipeTypes.FUSION_REACTOR, "fusion_reactor", MachineLevel.IRIDIUM, 1);
 
     }
 
@@ -512,6 +515,15 @@ public class MultiblockMachines {
         clientInit();
     }
 
+    private static void recordSteamRecipeMachine(MachineRecipeType type, String workstation) {
+        MachineRegistrationHelper.recordRecipeMachine(type, workstation, MachineLevel.BRONZE, 1);
+        MachineRegistrationHelper.recordRecipeMachine(type, workstation, MachineLevel.STEEL, 1);
+    }
+
+    private static void recordStandardElectricRecipeMachine(MachineRecipeType type, String workstation) {
+        MachineRegistrationHelper.recordRecipeMachine(type, workstation, MachineLevel.STAINLESS_STEEL, STANDARD_SPEED_BONUS);
+    }
+
     private static void clientInit() {
         MachineRegistrationHelper.addMachineModel("coke_oven", "coke_oven", MachineCasings.BRICKS, true, false, false);
         new Rei("Coke Oven", "coke_oven", MIMachineRecipeTypes.COKE_OVEN, new ProgressBar.Params(77, 33, "arrow"))
@@ -538,13 +550,16 @@ public class MultiblockMachines {
         MachineRegistrationHelper.addMachineModel("steam_quarry", "steam_quarry", MachineCasings.STEEL, true, false, false);
         new Rei("Steam Quarry", "steam_quarry", MIMachineRecipeTypes.QUARRY, new ProgressBar.Params(77, 33, "arrow"))
                 .items(inputs -> inputs.addSlot(56, 35), outputs -> outputs.addSlots(102, 35, 4, 4))
-                .workstations("steam_quarry", "electric_quarry").extraTest(recipe -> recipe.energy <= 4)
+                .workstations("steam_quarry", "electric_quarry").extraTest(recipe -> MachineLevel.STEEL.canCraft(recipe.level))
                 .steam(false)
                 .register();
         new Rei("Electric Quarry", "electric_quarry", MIMachineRecipeTypes.QUARRY, new ProgressBar.Params(77, 33, "arrow"))
                 .items(inputs -> inputs.addSlot(56, 35), outputs -> outputs.addSlots(102, 35, 4, 4))
-                .workstations("electric_quarry").extraTest(recipe -> recipe.energy > 4)
+                .workstations("electric_quarry").extraTest(recipe -> !MachineLevel.STEEL.canCraft(recipe.level)
+                        && MachineLevel.STAINLESS_STEEL.canCraft(recipe.level))
                 .register();
+        ReiMachineRecipes.registerRecipeCategoryForMachine(MI.id("electric_quarry"), MI.id("steam_quarry"),
+                ReiMachineRecipes.MachineScreenPredicate.MULTIBLOCK);
 
         MachineRegistrationHelper.addMachineModel("electric_quarry", "electric_quarry", MachineCasings.ALUMINUM_ALLOY, true, false, false);
 

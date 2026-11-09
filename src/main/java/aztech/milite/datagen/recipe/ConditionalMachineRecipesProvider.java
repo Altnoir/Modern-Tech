@@ -40,6 +40,10 @@ public class ConditionalMachineRecipesProvider implements DataProvider {
     }
 
     private static void buildRecipes(BiConsumer<ResourceLocation, JsonObject> consumer) {
+        addAe2Lithography(consumer, "calculation", "ae2:certus_quartz_crystal");
+        addAe2Lithography(consumer, "engineering", "#c:gems/diamond");
+        addAe2Lithography(consumer, "logic", "#c:ingots/gold");
+
         new ConditionalMachineRecipeBuilder(MIMachineRecipeTypes.QUARRY, 128, 600)
                 .level("bronze")
                 .withConditions(new ModLoadedCondition("create"))
@@ -119,5 +123,15 @@ public class ConditionalMachineRecipesProvider implements DataProvider {
                 .addItemOutput("moderntech:iridium_ore", 1, 0.05f)
                 .addItemOutput("mekanism:fluorite_ore", 1, 0.3f, new ModLoadedCondition("mekanism"))
                 .offerTo(consumer, "quarry/titanium");
+    }
+
+    private static void addAe2Lithography(BiConsumer<ResourceLocation, JsonObject> consumer, String kind, String material) {
+        new ConditionalMachineRecipeBuilder(MIMachineRecipeTypes.LITHOGRAPHY, 4, 200)
+                .level("stainless_steel")
+                .withConditions(new ModLoadedCondition("ae2"))
+                .addReusableItemInput("ae2:" + kind + "_processor_press", 1)
+                .addItemInput(material, 1, 1.0f)
+                .addItemOutput("ae2:printed_" + kind + "_processor", 1, 1.0f)
+                .offerTo(consumer, "compat/ae2/lithography/printed_" + kind + "_processor");
     }
 }

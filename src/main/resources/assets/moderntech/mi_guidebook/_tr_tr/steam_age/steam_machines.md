@@ -17,7 +17,7 @@ item_ids:
 
 Şimdi sıra bazı bronz makineler inşa etmeye geldi. Kazan otomatik olarak buhar üretecek ve bitişik makinelere gönderecek, tik başına 8 mili kova'ya kadar.
 
-Bronz makineler yalnızca 2 RF/t'ye kadar olan tarifleri işleyebilir, bu da tarifin Tik başına 2 Energy Unit kullanacağı anlamına gelir. 1 mili kova buhar = 1 RF olduğundan, maks sıcaklıktaki bir kazan aynı anda 4 makineye güç sağlayabilir!
+Bronz makineler bronz kademe tarifleri işler. Her 1 mB normal buhar 1 FE'ye eşdeğerdir.
 
 Kompresör külçeleri 1:1 oranında levhalara dönüştürecektir. Ayrıca her bir çift külçeyi 2 levhaya dönüştürebilir. Bu muhtemelen inşa etmek isteyeceğiniz ilk makinedir!
 

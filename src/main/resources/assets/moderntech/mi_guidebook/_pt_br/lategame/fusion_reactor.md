@@ -27,7 +27,7 @@ O Reator de Fusão é a fonte de energia suprema! Ele pode combinar Deutério, T
     <MultiblockShape controller="plasma_turbine" />
 </GameScene>
 
-A Turbina de Plasma pode converter o Plasma de Hélio em RF, na taxa de 100 kRF por milibalde. Sua taxa máxima de produção é de aproximadamente 1 MRF/t.
+A Turbina de Plasma pode converter o Plasma de Hélio em FE, na taxa de 100 kFE por milibalde. Sua taxa máxima de produção é de aproximadamente 1 MFE/t.
 
 <Recipe id="moderntech:processing_table/plasma_turbine" />
 

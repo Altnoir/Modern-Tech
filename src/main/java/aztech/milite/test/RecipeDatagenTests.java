@@ -27,16 +27,19 @@ import java.util.Map;
 public class RecipeDatagenTests {
     @MIGameTest
     public void builtInMachineRecipeLevelsAreReachable(MIGameTestHelper helper) {
-        var manager = helper.getLevel().getRecipeManager();
         for (var type : MIMachineRecipeTypes.getRecipeTypes()) {
             var highest = MachineRegistrationHelper.highestLevel(type);
             if (highest == null) {
                 helper.fail("Missing machine level registration for " + type.getId());
                 return;
             }
-            for (var holder : manager.getAllRecipesFor(type)) {
+            for (var holder : type.getRecipesWithoutCache(helper.getLevel())) {
                 if (!highest.canCraft(holder.value().level)) {
                     helper.fail(holder.id() + " requires " + holder.value().level + " but " + type.getId() + " reaches " + highest);
+                }
+                var minimum = MachineRegistrationHelper.clampBuiltInRecipeLevel(type, holder.value().level);
+                if (holder.id().getNamespace().equals(MI.ID) && minimum != holder.value().level) {
+                    helper.fail(holder.id() + " requires " + holder.value().level + " but the first compatible level is " + minimum);
                 }
             }
         }
@@ -139,12 +142,16 @@ public class RecipeDatagenTests {
     }
 
     @MIGameTest
-    public void generatedRecipesPreserveLegacyDefaultLevel(MIGameTestHelper helper) {
-        // Energy used to set the builder's default to electric, while these JSON recipes loaded as bronze.
-        for (String path : new String[] {"trash_can_assembler", "quarry/bronze", "quarry/steel", "quarry/titanium"}) {
+    public void generatedRecipesUseActualMinimumLevels(MIGameTestHelper helper) {
+        var trashCan = helper.getLevel().getRecipeManager().byKey(MI.id("trash_can_assembler")).orElse(null);
+        if (trashCan == null || !(trashCan.value() instanceof MachineRecipe recipe) || recipe.level != MachineLevel.ELECTRIC) {
+            helper.fail("The assembler has no bronze variant, so the trash can recipe must require electric level");
+        }
+
+        for (String path : new String[] {"quarry/bronze", "quarry/steel", "quarry/titanium"}) {
             var holder = helper.getLevel().getRecipeManager().byKey(MI.id(path)).orElse(null);
-            if (holder == null || !(holder.value() instanceof MachineRecipe recipe) || recipe.level != MachineLevel.BRONZE) {
-                helper.fail("Migration changed the legacy bronze level of " + path);
+            if (holder == null || !(holder.value() instanceof MachineRecipe quarry) || quarry.level != MachineLevel.BRONZE) {
+                helper.fail("The electric quarry must not raise the shared recipe level of " + path);
             }
         }
         helper.succeed();

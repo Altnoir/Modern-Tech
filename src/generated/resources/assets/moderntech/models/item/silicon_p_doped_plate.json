@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "moderntech:item/silicon_p_doped_plate"
-  }
-}

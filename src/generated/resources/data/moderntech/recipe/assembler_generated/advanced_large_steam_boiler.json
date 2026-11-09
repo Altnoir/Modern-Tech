@@ -25,5 +25,6 @@
       "amount": 1,
       "item": "moderntech:advanced_large_steam_boiler"
     }
-  ]
+  ],
+  "level": "electric"
 }

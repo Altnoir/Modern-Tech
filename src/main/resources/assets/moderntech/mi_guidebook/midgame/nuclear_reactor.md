@@ -18,7 +18,7 @@ item_ids:
     <MultiblockShape controller="nuclear_reactor" useBigShape={true} x="-11" z="-3" />
 </GameScene>
 
-The Nuclear Reactor is a large multiblock whose purpose is to generate massive amounts of energy by consuming nuclear fuel. It can produce 100s of times more RF/t than diesel. Its small, medium, and large structures have 3×3, 5×5, and 7×7 hatch areas respectively; choose the size on the controller before building.
+The Nuclear Reactor is a large multiblock whose purpose is to generate massive amounts of energy by consuming nuclear fuel. It can produce 100s of times more FE/t than diesel. Its small, medium, and large structures have 3×3, 5×5, and 7×7 hatch areas respectively; choose the size on the controller before building.
 
 <Recipe id="moderntech:processing_table/nuclear_reactor" />
 

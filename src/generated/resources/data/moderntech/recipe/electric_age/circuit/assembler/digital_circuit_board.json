@@ -27,5 +27,6 @@
       "amount": 1,
       "item": "moderntech:digital_circuit_board"
     }
-  ]
+  ],
+  "level": "electric"
 }

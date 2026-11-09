@@ -27,5 +27,6 @@
       "amount": 8,
       "item": "minecraft:powered_rail"
     }
-  ]
+  ],
+  "level": "electric"
 }

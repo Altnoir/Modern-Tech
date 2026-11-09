@@ -41,12 +41,11 @@ public class EnergyComponent implements MachineComponent.ServerOnly, EnergyAcces
     }
 
     public void writeNbt(CompoundTag tag, HolderLookup.Provider registries) {
-        // 旧存档键
-        tag.putLong("storedEu", getFe());
+        tag.putLong("storedFe", getFe());
     }
 
     public void readNbt(CompoundTag tag, HolderLookup.Provider registries, boolean isUpgradingMachine) {
-        setFe(tag.getLong("storedEu"), false);
+        setFe(tag.getLong("storedFe"), false);
     }
 
     private void setFe(long fe, boolean update) {

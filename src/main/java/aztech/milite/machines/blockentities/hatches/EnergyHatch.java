@@ -1,7 +1,7 @@
 package aztech.milite.machines.blockentities.hatches;
 
 import aztech.milite.MICapabilities;
-import aztech.milite.api.energy.CableTier;
+import aztech.milite.api.energy.EnergyTier;
 import aztech.milite.api.machine.holder.EnergyComponentHolder;
 import aztech.milite.inventory.MIInventory;
 import aztech.milite.machines.BEP;
@@ -19,12 +19,12 @@ import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.energy.IEnergyStorage;
 
 public class EnergyHatch extends HatchBlockEntity implements EnergyComponentHolder {
-    public EnergyHatch(BEP bep, MachineGuiParameters guiParams, boolean input, CableTier tier) {
+    public EnergyHatch(BEP bep, MachineGuiParameters guiParams, boolean input, EnergyTier tier) {
         super(bep, guiParams, input ? OrientationComponent.Params.noFacingNoOutput() : OrientationComponent.Params.noFacing(false, false));
 
         this.input = input;
 
-        this.energy = new EnergyComponent(this, 30L * 20L * tier.getMaxTransfer());
+        this.energy = new EnergyComponent(this, tier.getHatchBufferCapacity());
         insertable = energy.buildInsertable();
         extractable = energy.buildExtractable();
         EnergyBar.Params energyBarParams = new EnergyBar.Params(81, 32);

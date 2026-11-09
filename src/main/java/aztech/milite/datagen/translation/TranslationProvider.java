@@ -1,6 +1,5 @@
 package aztech.milite.datagen.translation;
 
-import aztech.milite.api.energy.CableTier;
 import aztech.milite.compat.rei.machines.ReiMachineRecipes;
 import aztech.milite.config.MIConfigBuilder;
 import aztech.milite.datagen.tag.TagsToGenerate;
@@ -107,10 +106,6 @@ public final class TranslationProvider implements DataProvider {
             addTranslation(entry.getKey(), entry.getValue());
         }
 
-        for (var cableTier : CableTier.allTiers()) {
-            addTranslation(cableTier.shortEnglishKey(), cableTier.shortEnglishName);
-            addTranslation(cableTier.longEnglishKey(), cableTier.longEnglishName);
-        }
 
         for (var casingName : MachineCasings.translations) {
             addTranslation(casingName.casing().getTranslationKey(), casingName.englishName());

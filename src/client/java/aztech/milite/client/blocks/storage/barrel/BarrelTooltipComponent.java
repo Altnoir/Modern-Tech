@@ -42,7 +42,7 @@ public record BarrelTooltipComponent(BarrelTooltipData data) implements ClientTo
         long capacity = data.capacity();
         Component itemNumber;
 
-        Style style = TextHelper.YELLOW;
+        Style style = TextHelper.GOLD;
 
         if (data.creative()) {
             itemNumber = Component.literal("∞ / ∞").setStyle(style);

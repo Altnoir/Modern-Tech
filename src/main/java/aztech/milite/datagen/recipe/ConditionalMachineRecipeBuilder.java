@@ -2,6 +2,7 @@ package aztech.milite.datagen.recipe;
 
 import aztech.milite.MI;
 import aztech.milite.machines.init.MachineLevel;
+import aztech.milite.machines.init.MachineRegistrationHelper;
 import aztech.milite.machines.recipe.MachineRecipeType;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
@@ -17,6 +18,7 @@ import java.util.function.BiConsumer;
  * on individual outputs must reach the game's conditional codec intact rather than being evaluated while generating.
  */
 final class ConditionalMachineRecipeBuilder {
+    private final MachineRecipeType type;
     private final JsonObject recipe = new JsonObject();
     private final JsonArray inputs = new JsonArray();
     private final JsonArray outputs = new JsonArray();
@@ -25,6 +27,7 @@ final class ConditionalMachineRecipeBuilder {
         if (energy <= 0 || duration <= 0) {
             throw new IllegalArgumentException("Energy and duration must be positive");
         }
+        this.type = type;
         recipe.addProperty("type", type.getId().toString());
         recipe.addProperty("energy", energy);
         recipe.addProperty("duration", duration);
@@ -33,7 +36,8 @@ final class ConditionalMachineRecipeBuilder {
     }
 
     ConditionalMachineRecipeBuilder level(String level) {
-        recipe.addProperty("level", MachineLevel.byName(level).getSerializedName());
+        var required = MachineRegistrationHelper.clampBuiltInRecipeLevel(type, MachineLevel.byName(level));
+        recipe.addProperty("level", required.getSerializedName());
         return this;
     }
 

@@ -27,7 +27,7 @@ item_ids:
     <MultiblockShape controller="plasma_turbine" />
 </GameScene>
 
-等离子涡轮机可以将氦等离子体转化为RF，转化率为100 kRF/mB。其最大功率约为1 MRF/t。
+等离子涡轮机可以将氦等离子体转化为FE，转化率为100 kFE/mB。其最大功率约为1 MFE/t。
 
 <Recipe id="moderntech:processing_table/plasma_turbine" />
 

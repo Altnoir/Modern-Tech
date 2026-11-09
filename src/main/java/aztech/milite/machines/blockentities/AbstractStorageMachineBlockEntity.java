@@ -1,6 +1,5 @@
 package aztech.milite.machines.blockentities;
 
-import aztech.milite.api.energy.CableTier;
 import aztech.milite.api.machine.holder.EnergyComponentHolder;
 import aztech.milite.inventory.MIInventory;
 import aztech.milite.machines.BEP;
@@ -12,10 +11,8 @@ import aztech.milite.machines.guicomponents.EnergyBar;
 import aztech.milite.machines.guicomponents.RedstoneControlGui;
 import aztech.milite.machines.helper.EnergyHelper;
 import aztech.milite.machines.MachineBlockEntity;
-import aztech.milite.machines.models.MachineCasing;
 import aztech.milite.machines.models.MachineModelClientData;
 import aztech.milite.MICapabilities;
-import aztech.milite.thirdparty.fabrictransfer.api.transaction.Transaction;
 import aztech.milite.util.Simulation;
 import aztech.milite.util.Tickable;
 import net.minecraft.core.Direction;
@@ -33,22 +30,8 @@ public abstract class AbstractStorageMachineBlockEntity extends MachineBlockEnti
     protected final IEnergyStorage insertable;
     protected final IEnergyStorage extractable;
 
-    protected final long feCapacity;
-    protected final CableTier from, to;
-
-    protected boolean extractableOnOutputDirection;
-
-    public AbstractStorageMachineBlockEntity(BEP bep, CableTier from, CableTier to, String name, long feCapacity) {
-        this(bep, from, to, name, feCapacity, true);
-    }
-
-    public AbstractStorageMachineBlockEntity(BEP bep, CableTier from, CableTier to, String name, long feCapacity,
-            boolean extractableOnOutputDirection) {
+    public AbstractStorageMachineBlockEntity(BEP bep, String name, long feCapacity) {
         super(bep, new MachineGuiParameters.Builder(name, false).build(), OrientationComponent.Params.noFacing(false, false));
-
-        this.from = from;
-        this.to = to;
-        this.feCapacity = feCapacity;
 
         this.energy = new EnergyComponent(this, feCapacity);
         this.redstoneControl = new RedstoneControlComponent();
@@ -97,20 +80,11 @@ public abstract class AbstractStorageMachineBlockEntity extends MachineBlockEnti
         registerGuiComponent(new EnergyBar(energyBarParams, energy::getFe, energy::getCapacity),
                 new RedstoneControlGui(redstoneControl));
 
-        this.extractableOnOutputDirection = extractableOnOutputDirection;
     }
 
     @Override
     public MIInventory getInventory() {
         return MIInventory.EMPTY;
-    }
-
-    public static MachineCasing getCasingFromTier(CableTier from, CableTier to) {
-        if (from.fe > to.fe) {
-            return from.casing;
-        } else {
-            return to.casing;
-        }
     }
 
     @Override
@@ -120,21 +94,14 @@ public abstract class AbstractStorageMachineBlockEntity extends MachineBlockEnti
         return data;
     }
 
-    @Override
-    public void tick() {
-        if (!level.isClientSide()) {
-            if (extractableOnOutputDirection) {
-                EnergyHelper.autoOutput(this, orientation, extractable);
-            } else {
-                for (Direction side : Direction.values()) {
-                    if (side == orientation.outputDirection) {
-                        continue;
-                    }
+    public static void registerEnergyApi(BlockEntityType<?> bet) {
+        MICapabilities.onEvent(event -> {
+            event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, bet, (be, direction) -> {
+                AbstractStorageMachineBlockEntity abe = (AbstractStorageMachineBlockEntity) be;
 
-                    EnergyHelper.autoOutput(this, side, extractable);
-                }
-            }
-        }
+                return abe.orientation.outputDirection == direction ? abe.extractable : abe.insertable;
+            });
+        });
     }
 
     @Override
@@ -143,68 +110,40 @@ public abstract class AbstractStorageMachineBlockEntity extends MachineBlockEnti
     }
 
     @Override
+    public void tick() {
+        if (!level.isClientSide()) {
+            EnergyHelper.autoOutput(this, orientation, extractable);
+        }
+    }
+
+    @Override
     protected ItemInteractionResult useItemOn(Player player, InteractionHand hand, Direction face) {
         var energyItem = player.getItemInHand(hand).getCapability(Capabilities.EnergyStorage.ITEM);
-        int stackSize = player.getItemInHand(hand).getCount();
         if (energyItem != null) {
             if (!player.level().isClientSide()) {
-                boolean insertedSomething = false;
-
-                for (int i = 0; i < 10000; ++i) { // Try up to 10000 times to bypass I/O limits
-                    try (Transaction transaction = Transaction.openRoot()) {
-                        int inserted = energyItem.receiveEnergy((int) Math.min(Integer.MAX_VALUE, energy.getFe() / stackSize), false);
-
-                        if (inserted == 0) {
-                            break;
-                        } else {
-                            insertedSomething = true;
-                        }
-
-                        energy.consumeFe((long) inserted * stackSize, Simulation.ACT);
-                        transaction.commit();
-                    }
-                }
-
-                if (!insertedSomething) {
-                    for (int i = 0; i < 10000; ++i) { // Try up to 10000 times to bypass I/O limits
-                        try (Transaction transaction = Transaction.openRoot()) {
-                            int extracted = energyItem.extractEnergy(
-                                    (int) Math.min(Integer.MAX_VALUE, energy.getRemainingCapacity() / stackSize), false);
-
-                            if (extracted == 0) {
-                                break;
-                            }
-
-                            energy.insertFe((long) extracted * stackSize, Simulation.ACT);
-                            transaction.commit();
-                        }
-                    }
-                }
+                exchangeEnergyWithItem(energyItem);
             }
             return ItemInteractionResult.sidedSuccess(player.level().isClientSide());
         }
         return super.useItemOn(player, hand, face);
     }
 
-    public static void registerEnergyApi(BlockEntityType<?> bet) {
-        MICapabilities.onEvent(event -> {
-            event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, bet, (be, direction) -> {
-                AbstractStorageMachineBlockEntity abe = (AbstractStorageMachineBlockEntity) be;
+    private void exchangeEnergyWithItem(IEnergyStorage item) {
+        int available = (int) Math.min(Integer.MAX_VALUE, energy.getFe());
+        if (available > 0 && item.canReceive()) {
+            int charged = item.receiveEnergy(available, false);
+            if (charged > 0) {
+                energy.consumeFe(charged, Simulation.ACT);
+                return;
+            }
+        }
 
-                if (abe.extractableOnOutputDirection) {
-                    if (abe.orientation.outputDirection == direction) {
-                        return abe.extractable;
-                    } else {
-                        return abe.insertable;
-                    }
-                } else {
-                    if (abe.orientation.outputDirection == direction) {
-                        return abe.insertable;
-                    } else {
-                        return abe.extractable;
-                    }
-                }
-            });
-        });
+        int room = (int) Math.min(Integer.MAX_VALUE, energy.getRemainingCapacity());
+        if (room > 0 && item.canExtract()) {
+            int drained = item.extractEnergy(room, false);
+            if (drained > 0) {
+                energy.insertFe(drained, Simulation.ACT);
+            }
+        }
     }
 }

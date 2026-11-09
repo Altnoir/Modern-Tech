@@ -12,7 +12,7 @@ item_ids:
 
 # Máquinas Elétricas
 
-Máquinas Elétricas funcionam exatamente como as máquinas a vapor, exceto que elas usam eletricidade em vez de vapor e fazem overclock progressivo nas receitas até 32 RF/t.
+Máquinas elétricas usam FE. A máquina precisa atingir o nível exigido pela receita, e cada nível acima dele dobra a velocidade base.
 
 Você pode usar o JEI para ver as receitas da versão elétrica das máquinas que já conhece.
 
@@ -44,10 +44,3 @@ O canto superior direito da tela de uma Máquina Elétrica ou multibloco tem doi
 ## Unidade de Overclock
 
 Uma Unidade de Overclock é um bloco que acelera Máquinas Elétricas. Coloque-a encostada em qualquer lado de uma máquina e ela processa duas vezes mais rápido, com o mesmo FE por receita. As unidades se acumulam: cada unidade adicional encostada na máquina dobra a velocidade novamente, até uma tick por receita.
-
-## Melhorias de Overclock
-
-Máquinas Elétricas comuns têm overclock limitado a 32 RF/t, e multiblocos elétricos têm overclock limitado a 128 RF/t.
-
-No menu da máquina ou multibloco, adicione upgrades para aumentar o overclock máximo! Confira no REI os valores exatos.
-

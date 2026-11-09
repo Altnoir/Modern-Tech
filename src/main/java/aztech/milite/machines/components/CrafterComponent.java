@@ -65,10 +65,15 @@ public class CrafterComponent implements MachineComponent.ServerOnly, CrafterAcc
     }
 
     /**
-     * How many times faster than the reference machine of its level this machine runs, coefficients included.
+     * The machine's speed index, including bonuses, before taking the recipe level into account.
      */
     public int getSpeedMultiplier() {
-        long speed = (long) behavior.getMachineLevel().speedMultiplier() * behavior.getSpeedBonus();
+        return getSpeedMultiplier(MachineLevel.BRONZE);
+    }
+
+    private int getSpeedMultiplier(MachineLevel recipeLevel) {
+        long speed = Math.clamp((long) behavior.getMachineLevel().speedMultiplierFrom(recipeLevel) * behavior.getSpeedBonus(),
+                1, Integer.MAX_VALUE);
         if (behavior.getMachineLevel().canCraft(MachineLevel.ELECTRIC)) {
             int units = Math.min(behavior.getOverclockerUnits(), 31);
             for (int i = 0; i < units; i++) {
@@ -96,7 +101,6 @@ public class CrafterComponent implements MachineComponent.ServerOnly, CrafterAcc
     /** The FE that went into the recipe during the last tick, which is the requested amount unless the machine is starved. */
     private long lastConsumedFe;
 
-    private long lastSpeed = -1;
 
     private int lastInvHash = 0;
     private int lastForcedTick = 0;
@@ -122,11 +126,6 @@ public class CrafterComponent implements MachineComponent.ServerOnly, CrafterAcc
 
     public Behavior getBehavior() {
         return behavior;
-    }
-
-    private long getRecipeFePerTick(MachineRecipe recipe) {
-        long speed = Math.min(getSpeedMultiplier(), recipe.duration);
-        return Math.max(1, (long) recipe.energy * speed);
     }
 
     /**
@@ -176,6 +175,8 @@ public class CrafterComponent implements MachineComponent.ServerOnly, CrafterAcc
 
         if (activeRecipe != null) {
             lastForcedTick = 0;
+            var recipe = activeRecipe.value();
+            recipeFePerTick = recipe.getFePerTick(getSpeedMultiplier(recipe.level));
         }
 
         // PROCESS RECIPE TICK
@@ -184,7 +185,7 @@ public class CrafterComponent implements MachineComponent.ServerOnly, CrafterAcc
             if (usedFe > 0 || recipeStarted) {
                 // A starved machine eats what its buffer holds and keeps its progress until the power comes back.
                 long request = Math.min(recipeFePerTick, recipeFe - usedFe);
-                fe = activeRecipe.value().conditionsMatch(conditionContext)
+                fe = !behavior.banRecipe(activeRecipe.value()) && activeRecipe.value().conditionsMatch(conditionContext)
                         ? behavior.consumeFe(request, ACT)
                         : 0;
                 lastConsumedFe = fe;
@@ -203,14 +204,6 @@ public class CrafterComponent implements MachineComponent.ServerOnly, CrafterAcc
             }
         } else {
             isActive = false;
-        }
-
-        if (activeRecipe != null) {
-            long speed = getSpeedMultiplier();
-            if (speed != lastSpeed) {
-                lastSpeed = speed;
-                recipeFePerTick = getRecipeFePerTick(activeRecipe.value());
-            }
         }
 
         // If the recipe is done, allow starting another one right away
@@ -409,8 +402,6 @@ public class CrafterComponent implements MachineComponent.ServerOnly, CrafterAcc
             activeRecipe = newActiveRecipe;
             recipeFe = newActiveRecipe.value().getTotalFe();
             usedFe = 0;
-            lastSpeed = getSpeedMultiplier();
-            recipeFePerTick = getRecipeFePerTick(newActiveRecipe.value());
             return true;
         }
         return false;
@@ -515,7 +506,6 @@ public class CrafterComponent implements MachineComponent.ServerOnly, CrafterAcc
         this.usedFe = tag.getLong("usedFe");
         this.recipeFe = tag.getLong("recipeFe");
         this.recipeFePerTick = tag.getLong("recipeFePerTick");
-        this.lastSpeed = -1;
         String recipeId = tag.getString("activeRecipe");
         this.delayedActiveRecipe = recipeId.isEmpty() ? null : ResourceLocation.tryParse(recipeId);
         if (delayedActiveRecipe == null && usedFe > 0) {

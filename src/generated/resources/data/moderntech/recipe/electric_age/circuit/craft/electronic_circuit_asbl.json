@@ -9,10 +9,10 @@
       "item": "moderntech:analog_circuit"
     },
     "d": {
-      "item": "moderntech:diode"
+      "tag": "c:plates/steel"
     },
     "t": {
-      "item": "moderntech:transistor"
+      "tag": "c:plates/silicon"
     }
   },
   "pattern": [

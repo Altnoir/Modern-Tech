@@ -1,6 +1,6 @@
 package aztech.milite.machines.components;
 
-import aztech.milite.api.energy.CableTier;
+import aztech.milite.api.energy.EnergyTier;
 import aztech.milite.machines.MachineBlockEntity;
 import aztech.milite.machines.MachineComponent;
 import aztech.milite.machines.models.MachineCasing;
@@ -20,16 +20,16 @@ import net.minecraft.world.level.Level;
 import org.jspecify.annotations.Nullable;
 
 public class CasingComponent implements MachineComponent, DropableComponent {
-    @FunctionalInterface
-    public interface UpdatedCallback {
-        void onUpdated(CableTier from, CableTier to);
-    }
+    private EnergyTier currentTier = EnergyTier.ELECTRIC;
 
     @Nullable
     private final UpdatedCallback callback;
 
     private ItemStack casingStack = ItemStack.EMPTY;
-    private CableTier currentTier = CableTier.ELECTRIC;
+    public CasingComponent(@Nullable UpdatedCallback callback, EnergyTier initialTier) {
+        this(callback);
+        this.currentTier = initialTier;
+    }
     private int speedMultiplier = 1;
 
     public CasingComponent(@Nullable UpdatedCallback callback) {
@@ -40,12 +40,7 @@ public class CasingComponent implements MachineComponent, DropableComponent {
         this((UpdatedCallback) null);
     }
 
-    public CasingComponent(@Nullable UpdatedCallback callback, CableTier initialTier) {
-        this(callback);
-        this.currentTier = initialTier;
-    }
-
-    public CasingComponent(CableTier initialTier) {
+    public CasingComponent(EnergyTier initialTier) {
         this(null, initialTier);
     }
 
@@ -54,9 +49,20 @@ public class CasingComponent implements MachineComponent, DropableComponent {
      *                        because a machine that eats {@code n} times as much per tick needs {@code n} times as
      *                        much energy waiting for it to keep running at full speed between two insertions.
      */
-    public CasingComponent(CableTier initialTier, int speedMultiplier) {
+    public CasingComponent(EnergyTier initialTier, int speedMultiplier) {
         this(null, initialTier);
         this.speedMultiplier = Math.max(1, speedMultiplier);
+    }
+
+    @Nullable
+    public static EnergyTier getCasingTier(Item item) {
+        var itemKey = BuiltInRegistries.ITEM.getKey(item);
+        for (var tier : EnergyTier.allTiers()) {
+            if (tier.itemKey != null && tier.itemKey.equals(itemKey)) {
+                return tier;
+            }
+        }
+        return null;
     }
 
     /**
@@ -65,7 +71,7 @@ public class CasingComponent implements MachineComponent, DropableComponent {
     private void setCasingStack(ItemStack stack) {
         casingStack = stack;
 
-        CableTier storedTier = getCasingTier(stack.getItem());
+        EnergyTier storedTier = getCasingTier(stack.getItem());
         if (storedTier != null) {
             currentTier = storedTier;
         }
@@ -91,7 +97,7 @@ public class CasingComponent implements MachineComponent, DropableComponent {
 
     @Override
     public void readClientNbt(CompoundTag tag, HolderLookup.Provider registries) {
-        currentTier = CableTier.getTier(tag.getString("casing"));
+        currentTier = EnergyTier.getTier(tag.getString("casing"));
     }
 
     public void dropCasing(Level world, BlockPos pos) {
@@ -104,7 +110,7 @@ public class CasingComponent implements MachineComponent, DropableComponent {
             var previousTier = currentTier;
             var newTier = getCasingTier(stackInHand.getItem());
             if (newTier != null && newTier != currentTier) {
-                if (currentTier != CableTier.ELECTRIC) {
+                if (currentTier != EnergyTier.ELECTRIC) {
                     dropCasing(be.getLevel(), be.getBlockPos());
                 }
                 setCasingStack(stackInHand.copyWithCount(1));
@@ -138,15 +144,12 @@ public class CasingComponent implements MachineComponent, DropableComponent {
         });
     }
 
-    @Nullable
-    public static CableTier getCasingTier(Item item) {
-        var itemKey = BuiltInRegistries.ITEM.getKey(item);
-        for (var tier : CableTier.allTiers()) {
-            if (tier.itemKey != null && tier.itemKey.equals(itemKey)) {
-                return tier;
-            }
-        }
-        return null;
+    /**
+     * @return The FE buffer capacity granted by the current casing. It is proportional to the tier of the
+     * casing and the machine's level multiplier, capped by the largest registered energy tier.
+     */
+    public long getFeCapacity() {
+        return currentTier.getMachineBufferCapacity(speedMultiplier);
     }
 
     @Override
@@ -170,13 +173,8 @@ public class CasingComponent implements MachineComponent, DropableComponent {
         return casingStack.isEmpty() ? null : currentTier.casing;
     }
 
-    /**
-     * @return The FE buffer capacity granted by the current casing. It is proportional to the tier of the
-     * casing and to the speed of the machine, and capped so that it always fits in NeoForge's int-based energy API.
-     */
-    public long getFeCapacity() {
-        long capacity = currentTier.fe * 100 * speedMultiplier;
-        long maxCapacity = CableTier.maxFe() * 100;
-        return Math.min(capacity, maxCapacity);
+    @FunctionalInterface
+    public interface UpdatedCallback {
+        void onUpdated(EnergyTier from, EnergyTier to);
     }
 }

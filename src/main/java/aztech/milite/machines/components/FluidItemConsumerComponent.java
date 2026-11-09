@@ -79,12 +79,12 @@ public class FluidItemConsumerComponent implements MachineComponent.ServerOnly {
 
     @Override
     public void writeNbt(CompoundTag tag, HolderLookup.Provider registries) {
-        tag.putLong("euBuffer", feBuffer);
+        tag.putLong("feBuffer", feBuffer);
     }
 
     @Override
     public void readNbt(CompoundTag tag, HolderLookup.Provider registries, boolean isUpgradingMachine) {
-        feBuffer = tag.getLong("euBuffer");
+        feBuffer = tag.getLong("feBuffer");
     }
 
     public long getFeProduction(List<ConfigurableFluidStack> fluidInputs,

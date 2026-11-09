@@ -34,7 +34,7 @@ public class BarrelItem extends AbstractStorageBlockItem<ItemVariant> implements
             Style style = Style.EMPTY.withColor(TextColor.fromRgb(0xa9a9a9)).withItalic(false);
             if (isEmpty(stack) && isUnlocked(stack)) {
                 tooltip.add(MIText.Empty.text().setStyle(style));
-                tooltip.add(MIText.BarrelStack.text(barrelStorage.stackCapacity).setStyle(TextHelper.YELLOW));
+                tooltip.add(MIText.BarrelStack.text(barrelStorage.stackCapacity).setStyle(TextHelper.GOLD));
             }
         }
         super.appendHoverText(stack, context, tooltip, flag);

@@ -9,11 +9,11 @@
     },
     {
       "amount": 4,
-      "item": "moderntech:transistor"
+      "tag": "c:plates/silicon"
     },
     {
       "amount": 1,
-      "item": "moderntech:diode"
+      "tag": "c:plates/steel"
     }
   ],
   "item_outputs": [

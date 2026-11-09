@@ -4,7 +4,7 @@ import static aztech.milite.materials.part.MIParts.*;
 import static aztech.milite.materials.property.MaterialHardness.*;
 import static aztech.milite.materials.set.MaterialSet.*;
 
-import aztech.milite.api.energy.CableTier;
+import aztech.milite.api.energy.EnergyTier;
 import aztech.milite.compat.kubejs.KubeJSProxy;
 import aztech.milite.items.SortOrder;
 import aztech.milite.machines.init.MachineLevel;
@@ -201,7 +201,7 @@ public class MIMaterials {
                         .set(MaterialProperty.SET, STONE)
                         .set(MaterialProperty.MEAN_RGB, 0xd20000)
                         .set(MaterialProperty.HARDNESS, SOFT)
-                        .addParts(TINY_DUST, CRUSHED_DUST, BATTERY.of(CableTier.ELECTRIC)).addMaterialItemParts(MaterialItemPart.external(DUST, "minecraft:redstone", "minecraft:redstone"))
+                        .addParts(TINY_DUST, CRUSHED_DUST, BATTERY.of(EnergyTier.ELECTRIC)).addMaterialItemParts(MaterialItemPart.external(DUST, "minecraft:redstone", "minecraft:redstone"))
                         .addMaterialItemParts(MaterialItemPart.external(BLOCK, "#c:storage_blocks/redstone", "minecraft:redstone_block"))
                         .addMaterialItemParts(MaterialItemPart.external(ORE, "#c:ores/redstone", "minecraft:redstone_ore"))
                         .addMaterialItemParts(MaterialItemPart.external(ORE_DEEPSLATE, "#c:ores/redstone", "minecraft:deepslate_redstone_ore"))
@@ -403,7 +403,7 @@ public class MIMaterials {
                         .set(MaterialProperty.SET, STONE)
                         .set(MaterialProperty.MEAN_RGB, 0x071CB8)
                         .set(MaterialProperty.HARDNESS, SOFT).addParts(TINY_DUST, DUST).addParts(BLOCK.of(MaterialBlockSet.LAPIS))
-                        .addParts(BATTERY.of(CableTier.STAINLESS_STEEL)).addRecipes(StandardRecipes::apply, SmeltingRecipes::apply));
+                        .addParts(BATTERY.of(EnergyTier.STAINLESS_STEEL)).addRecipes(StandardRecipes::apply, SmeltingRecipes::apply));
 
         SALT = MaterialRegistry.addMaterial(new MaterialBuilder("Salt", "salt")
                 .set(MaterialProperty.MAIN_PART, DUST)
@@ -439,7 +439,7 @@ public class MIMaterials {
                 .set(MaterialProperty.MEAN_RGB, 0x3C3C50)
                 .set(MaterialProperty.HARDNESS, SOFT)
                 .addParts(ITEM_PURE_METAL)
-                .addParts(BLOCK.of(MaterialBlockSet.IRON)).addParts(N_DOPED_PLATE, P_DOPED_PLATE).addParts(PLATE, DOUBLE_INGOT, BATTERY.of(CableTier.ALUMINUM))
+                .addParts(BLOCK.of(MaterialBlockSet.IRON)).addParts(PLATE, DOUBLE_INGOT, BATTERY.of(EnergyTier.ALUMINUM))
                 .addRecipes(StandardRecipes::apply, SmeltingRecipes::apply));
 
         STAINLESS_STEEL = MaterialRegistry.addMaterial(new MaterialBuilder("Stainless Steel", "stainless_steel")
@@ -557,7 +557,7 @@ public class MIMaterials {
                 .set(MaterialProperty.HARDNESS, VERY_HARD)
                 .set(MaterialProperty.ISOTOPE, new IsotopeFuelParams(0.9, 0.25, 2100, 600, 2000, 9, 0.25))
                 .addParts(BLOCK.of(MaterialBlockSet.GOLD))
-                .addParts(ITEM_PURE_METAL).addParts(BATTERY.of(CableTier.IRIDIUM)).addRecipes(StandardRecipes::apply)
+                .addParts(ITEM_PURE_METAL).addParts(BATTERY.of(EnergyTier.IRIDIUM)).addRecipes(StandardRecipes::apply)
                 .addRecipes((ctx) -> SmeltingRecipes.applyBlastFurnace(ctx, 128)));
 
         LE_MOX = MaterialRegistry.addMaterial(new MaterialBuilder("LE Mox", "le_mox")
@@ -635,7 +635,7 @@ public class MIMaterials {
                         .set(MaterialProperty.SET, DULL)
                         .set(MaterialProperty.MEAN_RGB, 0x967224)
                         .set(MaterialProperty.HARDNESS, SOFT)
-                        .addParts(DUST, TINY_DUST, INGOT, PLATE, ROD, DOUBLE_INGOT, BATTERY.of(CableTier.TITANIUM))
+                        .addParts(DUST, TINY_DUST, INGOT, PLATE, ROD, DOUBLE_INGOT, BATTERY.of(EnergyTier.TITANIUM))
                         .addParts(CONTROL_ROD.of(1900, 0.5, NuclearConstant.ScatteringType.HEAVY, NuclearConstant.CADMIUM, 1))
                         .addRecipes(StandardRecipes::apply, SmeltingRecipes::apply));
 

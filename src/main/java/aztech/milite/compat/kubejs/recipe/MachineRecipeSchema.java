@@ -25,8 +25,7 @@ public final class MachineRecipeSchema {
 
     public static final RecipeKey<Integer> FE = NumberComponent.intRange(1, Integer.MAX_VALUE)
             .inputKey("energy")
-            .alt("eu")
-            .functionNames(List.of("energy", "fe", "eu"));
+            .functionNames(List.of("energy", "fe"));
     public static final RecipeKey<TickDuration> DURATION = TimeComponent.TICKS.inputKey("duration");
     public static final RecipeKey<String> LEVEL = StringComponent.STRING.instance()
             .otherKey("level")

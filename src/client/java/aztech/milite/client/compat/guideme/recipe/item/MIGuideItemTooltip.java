@@ -1,6 +1,5 @@
 package aztech.milite.client.compat.guideme.recipe.item;
 
-import aztech.milite.MIText;
 import aztech.milite.util.TextHelper;
 import guideme.document.interaction.ItemTooltip;
 import net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent;
@@ -25,7 +24,7 @@ public class MIGuideItemTooltip extends ItemTooltip {
     public List<ClientTooltipComponent> getLines() {
         List<ClientTooltipComponent> lines = new ArrayList<>(super.getLines());
         if (reusable) {
-            lines.add(ClientTooltipComponent.create(MIText.NotConsumed.text().getVisualOrderText()));
+            lines.add(ClientTooltipComponent.create(TextHelper.getNotConsumedTooltip().getVisualOrderText()));
         } else if (probability != 1) {
             lines.add(ClientTooltipComponent.create(TextHelper.getProbabilityTooltip(probability, input).getVisualOrderText()));
         }

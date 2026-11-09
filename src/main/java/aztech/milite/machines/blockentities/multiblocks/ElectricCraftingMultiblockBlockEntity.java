@@ -5,7 +5,6 @@ import aztech.milite.machines.BEP;
 import aztech.milite.machines.components.OrientationComponent;
 import aztech.milite.machines.guicomponents.RedstoneControlGui;
 import aztech.milite.machines.init.MachineLevel;
-import aztech.milite.machines.init.MachineTier;
 import aztech.milite.machines.multiblocks.ShapeTemplate;
 import aztech.milite.machines.recipe.MachineRecipeType;
 import aztech.milite.MI;
@@ -50,6 +49,6 @@ public class ElectricCraftingMultiblockBlockEntity extends AbstractElectricCraft
     /** A controller is twice as fast as a single block machine of the same level. */
     @Override
     public int getSpeedBonus() {
-        return 2;
+        return STANDARD_SPEED_BONUS;
     }
 }

@@ -12,7 +12,7 @@ item_ids:
 
 # Elektrikli Makineler
 
-Elektrikli makineler, buhar yerine elektrik gerektirmeleri ve 32 RF/t'ye kadar aşamalı olarak hız aşırtma yapmaları dışında buharlı makinelerle tamamen aynı şekilde çalışır.
+Elektrikli makineler FE kullanır. Makine tarifin gerektirdiği kademede veya daha yüksek olmalıdır. Her ek kademe temel hızı ikiye katlar.
 
 Zaten aşina olduğunuz makinelerin elektrikli versiyonlarının tariflerini görüntülemek için REI'yi kullanabilirsiniz.
 
@@ -42,10 +42,3 @@ Elektrikli bir makine veya çoklu blok ekranının sağ üst köşesinde iki dü
 ## Hız Aşırtma Birimi
 
 Hız Aşırtma Birimi, elektrikli makineleri hızlandıran bir bloktur. Bir makinenin herhangi bir yüzüne yerleştirin; makine aynı FE ile iki kat hızlı çalışır. Birimler üst üste eklenir: makineye değen her ek birim hızı bir kez daha ikiye katlar, sınır reçete başına bir ticktir.
-
-## Hız Aşırtma Yükseltmeleri
-
-Normal elektrikli makinelerde hız aşırtma 32 RF/t ile sınırlandırılmıştır ve elektrikli çoklu bloklarda hız aşırtma 128 RF/t ile sınırlandırılmıştır.
-
-Makine veya çoklu blok menüsünde, maksimum hız aşırtmayı artırmak için yükseltmeler ekleyin! Kesin miktarlar için REI'yi kontrol edin.
-

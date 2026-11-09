@@ -17,7 +17,7 @@ Now that you have steel, you can upgrade your bronze machines. Steel machines pr
 To upgrade a bronze machine, craft a Steel Machine Hull and apply it in a Crafting Table.
 Steel hatches have more capacity than bronze hatches, and a steam multiblock with at least one steel hatch will be upgraded to steel level and run twice as fast when enough steam is available. Gunpowder provides a further temporary speed multiplier of 2.
 
-A steel boiler will produce twice as much steam as a bronze one, that means up to 16 RF/t, and a steel water pump will produce twice as much water as its bronze counterpart, so up to 2 buckets / 5 seconds.
+A steel boiler produces up to 16 mB of steam per tick, twice as much as a bronze boiler. A steel water pump produces up to 2 buckets of water every 5 seconds, twice as much as a bronze pump.
 
 Steel tanks store up to 16 buckets.
 

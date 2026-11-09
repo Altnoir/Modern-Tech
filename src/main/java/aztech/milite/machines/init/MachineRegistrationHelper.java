@@ -1,8 +1,9 @@
 package aztech.milite.machines.init;
 
+import aztech.milite.MI;
 import aztech.milite.MIBlock;
 import aztech.milite.MIRegistries;
-import aztech.milite.api.energy.CableTier;
+import aztech.milite.api.energy.EnergyTier;
 import aztech.milite.datagen.model.MachineModelsToGenerate;
 import aztech.milite.definition.BlockDefinition;
 import aztech.milite.items.SortOrder;
@@ -14,6 +15,7 @@ import aztech.milite.machines.models.MachineCasings;
 import aztech.milite.machines.recipe.MachineRecipeType;
 import aztech.milite.util.MobSpawning;
 import net.minecraft.core.BlockPos;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
@@ -22,6 +24,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import org.jspecify.annotations.Nullable;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -160,6 +163,40 @@ public class MachineRegistrationHelper {
     }
 
     private static final Map<MachineRecipeType, MachineLevel> highestLevelByRecipeType = new HashMap<>();
+    private static final Map<MachineRecipeType, List<RecipeMachineVariant>> recipeMachineVariants = new HashMap<>();
+
+    public static void recordRecipeMachine(MachineRecipeType type, String workstation, MachineLevel level, int speedBonus) {
+        recordRecipeMachine(type, workstation, level, speedBonus, null);
+    }
+
+    public static void recordRecipeMachine(MachineRecipeType type, String workstation, MachineLevel level, int speedBonus,
+            @Nullable ResourceLocation coil) {
+        recordMachineLevel(type, level);
+        recipeMachineVariants.computeIfAbsent(type, ignored -> new ArrayList<>())
+                .add(new RecipeMachineVariant(MI.id(workstation), level, speedBonus, coil));
+    }
+
+    public static List<RecipeMachineVariant> recipeMachines(MachineRecipeType type) {
+        return List.copyOf(recipeMachineVariants.getOrDefault(type, List.of()));
+    }
+
+    public static MachineLevel clampBuiltInRecipeLevel(MachineRecipeType type, MachineLevel level) {
+        return recipeMachineVariants.getOrDefault(type, List.of()).stream().map(RecipeMachineVariant::level)
+                .filter(machineLevel -> machineLevel.canCraft(level))
+                .min(Comparator.naturalOrder()).orElse(level);
+    }
+
+    public static MachineCasing casingOf(MachineLevel level) {
+        return switch (level) {
+            case BRONZE -> MachineCasings.BRONZE;
+            case STEEL -> MachineCasings.STEEL;
+            case ELECTRIC -> EnergyTier.ELECTRIC.casing;
+            case ALUMINUM -> EnergyTier.ALUMINUM.casing;
+            case STAINLESS_STEEL -> EnergyTier.STAINLESS_STEEL.casing;
+            case TITANIUM -> EnergyTier.TITANIUM.casing;
+            case IRIDIUM -> EnergyTier.IRIDIUM.casing;
+        };
+    }
 
     public static void recordMachineLevel(MachineRecipeType recipeType, MachineLevel level) {
         highestLevelByRecipeType.merge(recipeType, level,
@@ -170,31 +207,14 @@ public class MachineRegistrationHelper {
         return highestLevelByRecipeType.get(recipeType);
     }
 
-    public static MachineCasing casingOf(MachineLevel level) {
+    public static EnergyTier casingTierOf(MachineLevel level) {
         return switch (level) {
-            case BRONZE -> MachineCasings.BRONZE;
-            case STEEL -> MachineCasings.STEEL;
-            case ELECTRIC -> CableTier.ELECTRIC.casing;
-            case ALUMINUM -> CableTier.ALUMINUM.casing;
-            case STAINLESS_STEEL -> CableTier.STAINLESS_STEEL.casing;
-            case TITANIUM -> CableTier.TITANIUM.casing;
-            case IRIDIUM -> CableTier.IRIDIUM.casing;
+            case BRONZE, STEEL, ELECTRIC -> EnergyTier.ELECTRIC;
+            case ALUMINUM -> EnergyTier.ALUMINUM;
+            case STAINLESS_STEEL -> EnergyTier.STAINLESS_STEEL;
+            case TITANIUM -> EnergyTier.TITANIUM;
+            case IRIDIUM -> EnergyTier.IRIDIUM;
         };
-    }
-
-    public static CableTier casingTierOf(MachineLevel level) {
-        return switch (level) {
-            case BRONZE, STEEL, ELECTRIC -> CableTier.ELECTRIC;
-            case ALUMINUM -> CableTier.ALUMINUM;
-            case STAINLESS_STEEL -> CableTier.STAINLESS_STEEL;
-            case TITANIUM -> CableTier.TITANIUM;
-            case IRIDIUM -> CableTier.IRIDIUM;
-        };
-    }
-
-    public static void addMachineModel(MachineLevel level, String id, String machineType, boolean frontOverlay, boolean topOverlay,
-                                       boolean sideOverlay) {
-        addMachineModel(id, machineType, casingOf(level), frontOverlay, topOverlay, sideOverlay);
     }
 
     @Deprecated(forRemoval = false)
@@ -206,12 +226,19 @@ public class MachineRegistrationHelper {
         } else if (tier.equals("steel")) {
             defaultCasing = MachineCasings.STEEL;
         } else if (tier.equals("electric")) {
-            defaultCasing = CableTier.ELECTRIC.casing;
+            defaultCasing = EnergyTier.ELECTRIC.casing;
         } else {
             throw new RuntimeException("Invalid tier: " + tier);
         }
         addMachineModel(id, machineType, defaultCasing, frontOverlay, topOverlay, sideOverlay);
     }
+
+    public static void addMachineModel(MachineLevel level, String id, String machineType, boolean frontOverlay, boolean topOverlay,
+                                       boolean sideOverlay) {
+        addMachineModel(id, machineType, casingOf(level), frontOverlay, topOverlay, sideOverlay);
+    }
+
+    public record RecipeMachineVariant(ResourceLocation workstation, MachineLevel level, int speedBonus, @Nullable ResourceLocation coil) {}
 
     public static void addMachineModel(String id, String overlayFolder, MachineCasing defaultCasing, boolean frontOverlay, boolean topOverlay,
                                        boolean sideOverlay) {

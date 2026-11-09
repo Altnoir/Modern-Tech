@@ -7,40 +7,40 @@
           "modid": "immersiveengineering"
         }
       ],
-      "eu_per_mb": 160
+      "fe_per_mb": 160
     },
     "moderntech:biodiesel": {
-      "eu_per_mb": 250
+      "fe_per_mb": 250
     },
     "moderntech:boosted_diesel": {
-      "eu_per_mb": 800
+      "fe_per_mb": 800
     },
     "moderntech:creosote": {
-      "eu_per_mb": 160
+      "fe_per_mb": 160
     },
     "moderntech:crude_oil": {
-      "eu_per_mb": 16
+      "fe_per_mb": 16
     },
     "moderntech:diesel": {
-      "eu_per_mb": 400
+      "fe_per_mb": 400
     },
     "moderntech:heavy_fuel": {
-      "eu_per_mb": 240
+      "fe_per_mb": 240
     },
     "moderntech:hydrogen": {
-      "eu_per_mb": 2
+      "fe_per_mb": 2
     },
     "moderntech:light_fuel": {
-      "eu_per_mb": 160
+      "fe_per_mb": 160
     },
     "moderntech:naphtha": {
-      "eu_per_mb": 80
+      "fe_per_mb": 80
     },
     "moderntech:raw_biodiesel": {
-      "eu_per_mb": 50
+      "fe_per_mb": 50
     },
     "moderntech:synthetic_oil": {
-      "eu_per_mb": 16
+      "fe_per_mb": 16
     }
   }
 }

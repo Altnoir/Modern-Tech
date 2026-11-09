@@ -13,7 +13,7 @@ item_ids:
 
 ## Gerador à Diesel de Aço Inoxidável
 
-Lembre-se de que você pode usar um Gerador à Diesel de Aço Inoxidável para uma geração compacta de energia. Como esperado, ele produz até 1024 RF/t. Não esqueça que você pode conferir a quantidade de energia armazenada em cada combustível usando o JEI.
+Lembre-se de que você pode usar um Gerador à Diesel de Aço Inoxidável para uma geração compacta de energia. Como esperado, ele produz até 1024 FE/t. Não esqueça que você pode conferir a quantidade de energia armazenada em cada combustível usando o JEI.
 
 <Recipe id="moderntech:processing_table/stainless_steel_diesel_generator" />
 
@@ -23,7 +23,7 @@ Lembre-se de que você pode usar um Gerador à Diesel de Aço Inoxidável para u
     <MultiblockShape controller="large_diesel_generator" />
 </GameScene>
 
-Quando tiver acesso a unidades de processamento e carcaças de máquinas extremamente avançadas, considere construir alguns Grandes Geradores à Diesel. Cada um desses monstros converte combustível em RF, produzindo até 16.384 RF/t!
+Quando tiver acesso a unidades de processamento e carcaças de máquinas extremamente avançadas, considere construir alguns Grandes Geradores à Diesel. Cada um desses monstros converte combustível em FE, produzindo até 16.384 FE/t!
 
 <Recipe id="moderntech:processing_table/large_diesel_generator" />
 

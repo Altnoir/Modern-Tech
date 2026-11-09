@@ -70,8 +70,7 @@ the startup config for a log-only check of custom recipes. Custom machine regist
 MI adds a nicer syntax when the recipes are being registered by KubeJS:
 - Create the recipe with the reference FE/t and duration as the two constructor arguments.
 - Use `.level("electric")` to set its minimum machine level. Names and aliases match datagen; omitted levels remain `bronze`.
-- The energy key is `energy`. `.energy(...)`, `.fe(...)`, and legacy `.eu(...)` set that value; `eu` is also accepted
-  as an alternative input key when reading existing recipes through the schema.
+- The energy key is `energy`. Either `.energy(...)` or `.fe(...)` sets the reference FE per tick.
 - Then you can add inputs and outputs by calling the following functions. The can be called multiple times of course:
   - `itemIn(input specification)`: Add a new input.
   - `itemInReusable(input specification)`: Require an input without consuming it, such as a quarry drill.

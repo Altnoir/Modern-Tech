@@ -7,7 +7,7 @@ import aztech.milite.compat.kubejs.material.ModifyMaterialEventJS;
 import aztech.milite.compat.kubejs.recipe.CustomConditionEventJS;
 import aztech.milite.compat.kubejs.recipe.MIRecipeKubeJSEvents;
 import aztech.milite.compat.kubejs.registration.MIRegistrationKubeJSEvents;
-import aztech.milite.compat.kubejs.registration.RegisterCableTiersEventJS;
+import aztech.milite.compat.kubejs.registration.RegisterEnergyTiersEventJS;
 import aztech.milite.compat.kubejs.registration.RegisterFluidNeutronInteractionsEventJS;
 import aztech.milite.compat.kubejs.registration.RegisterFluidsEventJS;
 import aztech.milite.inventory.SlotPositions;
@@ -70,8 +70,8 @@ public class LoadedKubeJSProxy extends KubeJSProxy {
     }
 
     @Override
-    public void fireCableTiersEvent() {
-        MIRegistrationKubeJSEvents.REGISTER_CABLE_TIERS.post(new RegisterCableTiersEventJS());
+    public void fireEnergyTiersEvent() {
+        MIRegistrationKubeJSEvents.REGISTER_ENERGY_TIERS.post(new RegisterEnergyTiersEventJS());
     }
 
     @Override
