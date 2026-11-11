@@ -1,6 +1,7 @@
 package aztech.milite;
 
 import aztech.milite.api.energy.EnergyStorage;
+import aztech.milite.blocks.storage.waterbarrel.WaterBarrelBlockEntity;
 import aztech.milite.thirdparty.fabrictransfer.api.bridge.SlotFluidHandler;
 import aztech.milite.thirdparty.fabrictransfer.api.bridge.SlotItemHandler;
 import net.neoforged.neoforge.capabilities.Capabilities;
@@ -24,6 +25,7 @@ public class MICapabilities {
 
         event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, MIRegistries.CREATIVE_BARREL_BE.get(), (be, side) -> new SlotItemHandler(be));
         event.registerBlockEntity(Capabilities.FluidHandler.BLOCK, MIRegistries.CREATIVE_TANK_BE.get(), (be, side) -> new SlotFluidHandler(be));
+        event.registerBlockEntity(Capabilities.FluidHandler.BLOCK, MIRegistries.WATER_BARREL_BE.get(), WaterBarrelBlockEntity::getDrainHandler);
         event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, MIRegistries.CREATIVE_STORAGE_UNIT_BE.get(),
                 (be, side) -> EnergyStorage.CREATIVE);
     }

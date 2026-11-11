@@ -144,6 +144,7 @@ public record MIAdvancementsProvider(TranslationProvider translations) implement
         var dieselChainsaw = createBasic(consumer, "diesel_chainsaw", electricBlastFurnace, AdvancementType.CHALLENGE, "The Texas Chain Saw Massacre", "Craft a Diesel Chainsaw", existingFileHelper);
         var dieselMiningDrill = createBasic(consumer, "diesel_mining_drill", electricBlastFurnace, AdvancementType.CHALLENGE, "Through The Walls Of Ba Sing Se", "Craft a Diesel Mining Drill", existingFileHelper);
         var centrifuge = createBasic(consumer, "electric_centrifuge", "aluminum_alloy_centrifuge", electronicCircuit, AdvancementType.TASK, "Actually It's The Centripetal Force", "Craft a Centrifuge", existingFileHelper);
+        createMultiblock(consumer, "water_barrel", centrifuge, AdvancementType.GOAL, "Mad Waterworld", "Build a solid 3×3×3 cube of Water Barrels", existingFileHelper);
         var electrolyzer = createBasic(consumer, "electric_electrolyzer", "aluminum_alloy_electrolyzer", electronicCircuit, AdvancementType.TASK, "It's Got What Plants Crave", "Craft an Electrolyzer", existingFileHelper);
         var chemicalReactor = createBasic(consumer, "electric_chemical_reactor", "aluminum_alloy_chemical_reactor", electronicCircuit, AdvancementType.TASK, "Walter White Approves", "Craft a Chemical Reactor", existingFileHelper);
         var distillery = createBasic(consumer, "electric_distillery", "aluminum_alloy_distillery", electronicCircuit, AdvancementType.TASK, "Al Capone Approves", "Craft a Distillery", existingFileHelper);

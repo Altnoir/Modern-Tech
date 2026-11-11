@@ -10,8 +10,6 @@ import aztech.milite.util.Simulation;
 import aztech.milite.util.TextHelper;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.Holder;
-import net.minecraft.core.HolderLookup;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
 import net.minecraft.network.chat.TextColor;
@@ -31,9 +29,6 @@ import net.minecraft.world.inventory.ClickAction;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.inventory.tooltip.TooltipComponent;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
-import net.minecraft.world.item.enchantment.Enchantment;
-import net.minecraft.world.item.enchantment.Enchantments;
-import net.minecraft.world.item.enchantment.ItemEnchantments;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
@@ -74,7 +69,7 @@ import java.util.WeakHashMap;
  */
 public class SteamDrillItem
         extends Item
-        implements DynamicToolItem, ItemContainingItemHelper, ActivatableItem {
+        implements DynamicToolItem, ItemContainingItemHelper, AreaMiningDrill {
     public static final StorageBehaviour<ItemVariant> DRILL_BEHAVIOUR = new StorageBehaviour<>() {
         @Override
         public long getCapacityForResource(ItemVariant resource) {
@@ -93,17 +88,8 @@ public class SteamDrillItem
         super(settings
                 .stacksTo(1)
                 .rarity(Rarity.UNCOMMON)
-                .component(MIComponents.SILK_TOUCH, true)
                 .component(MIComponents.STEAM_DRILL_FUEL, SteamDrillFuel.EMPTY)
                 .component(MIComponents.WATER, 0));
-    }
-
-    private static boolean isNotSilkTouch(ItemStack stack) {
-        return !stack.getOrDefault(MIComponents.SILK_TOUCH, true);
-    }
-
-    private static void setSilkTouch(ItemStack stack, boolean silkTouch) {
-        stack.set(MIComponents.SILK_TOUCH, silkTouch);
     }
 
     @Override
@@ -165,11 +151,7 @@ public class SteamDrillItem
     public record Area(BlockPos center, BlockPos corner1, BlockPos corner2) {}
 
     @Nullable
-    public Area getArea(BlockGetter level, Player player, ItemStack stack, boolean rayTraceOnly) {
-        if (!should3by3(stack, player)) {
-            return null;
-        }
-
+    static Area findArea(BlockGetter level, Player player, boolean rayTraceOnly) {
         if (!rayTraceOnly) {
             ClickedBlock clickedBlock = lastClickedBlock.get(player);
             if (clickedBlock != null) {
@@ -363,14 +345,9 @@ public class SteamDrillItem
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level world, Player user, InteractionHand hand) {
-        // Enable or disable silk touch
         if (hand == InteractionHand.MAIN_HAND && user.isShiftKeyDown()) {
             ItemStack stack = user.getItemInHand(hand);
-            setSilkTouch(stack, isNotSilkTouch(stack));
-            if (!world.isClientSide) {
-                user.displayClientMessage(
-                        isNotSilkTouch(stack) ? MIText.ToolSwitchedNoSilkTouch.text() : MIText.ToolSwitchedSilkTouch.text(), true);
-            }
+            toggleMiningArea(user, stack);
             return InteractionResultHolder.sidedSuccess(stack, world.isClientSide);
         }
 
@@ -442,22 +419,13 @@ public class SteamDrillItem
     }
 
     @Override
-    public int getEnchantmentLevel(ItemStack stack, Holder<Enchantment> enchantment) {
-        return getAllEnchantments(stack, enchantment.unwrapLookup()).getLevel(enchantment);
+    public boolean isEnchantable(ItemStack stack) {
+        return stack.getCount() == 1;
     }
 
     @Override
-    public ItemEnchantments getAllEnchantments(ItemStack stack, HolderLookup.RegistryLookup<Enchantment> lookup) {
-        var map = new ItemEnchantments.Mutable(ItemEnchantments.EMPTY);
-        if (!isNotSilkTouch(stack)) {
-            lookup.get(Enchantments.SILK_TOUCH).ifPresent(h -> map.set(h, 1));
-        }
-        return map.toImmutable();
-    }
-
-    @Override
-    public boolean isFoil(ItemStack pStack) {
-        return !isNotSilkTouch(pStack);
+    public int getEnchantmentValue() {
+        return Tiers.DIAMOND.getEnchantmentValue();
     }
 
     public Optional<TooltipComponent> getTooltipImage(ItemStack stack) {
@@ -534,11 +502,6 @@ public class SteamDrillItem
         // 3x3 state
         tooltip.add(MIText.MiningArea
                 .text((this.isActivated(stack) ? MIText.MiningArea3x3 : MIText.MiningArea1x1).text().setStyle(TextHelper.NUMBER_TEXT))
-                .setStyle(TextHelper.GRAY_TEXT.withItalic(false)));
-        // Silk touch
-        tooltip.add(MIText.SilkTouchState
-                .text((isNotSilkTouch(stack) ? MIText.Deactivated.text().setStyle(TextHelper.RED)
-                        : MIText.Activated.text().setStyle(TextHelper.GREEN)))
                 .setStyle(TextHelper.GRAY_TEXT.withItalic(false)));
     }
 

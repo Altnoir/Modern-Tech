@@ -20,7 +20,7 @@ Não esqueça de ativá-lo usando a tecla de *Alternar Voo*!
 
 Esta Broca de Mineração pode finalmente substituir suas Picaretas e Pás. Carregue-a com combustível potente para a melhor velocidade!
 
-Alterne entre Toque Suave e Fortuna III com shift + clique direito.
+Toque Suave e Fortuna exigem os respectivos encantamentos.
 
 <Recipe id="moderntech:tools/diesel_mining_drill" />
 

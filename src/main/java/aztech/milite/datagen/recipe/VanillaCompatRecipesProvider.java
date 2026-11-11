@@ -1,14 +1,17 @@
 package aztech.milite.datagen.recipe;
 
+import aztech.milite.MIBlock;
 import aztech.milite.MIFluids;
 import aztech.milite.MIItem;
 import aztech.milite.machines.init.MIMachineRecipeTypes;
 import aztech.milite.machines.init.MachineLevel;
 import aztech.milite.machines.recipe.MachineRecipeBuilder;
+import aztech.milite.recipe.json.ShapedRecipeJson;
 import aztech.milite.recipe.json.ShapelessRecipeBuilder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeOutput;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -56,6 +59,21 @@ public class VanillaCompatRecipesProvider extends MIRecipesProvider {
                 .addItemInput(Items.HONEYCOMB, 1)
                 .addItemOutput(MIItem.WAX, 4)
                 .offerTo(exporter, "vanilla_recipes/centrifuge/honeycomb");
+
+        ShapelessRecipeBuilder.shapeless(MIItem.WAX)
+                .requires(Items.HONEYCOMB)
+                .offerTo(exporter, "wax_from_honeycomb");
+
+        ShapelessRecipeBuilder.shapeless(MIBlock.WATER_BARREL.asItem())
+                .requires(Items.BARREL)
+                .requires(MIItem.WAX)
+                .offerTo(exporter, "water_barrel");
+
+        new ShapedRecipeJson(MIBlock.WATER_BARREL.id(), 1, "PSP", "PWP", "PSP")
+                .addInput('P', "#" + ItemTags.PLANKS.location())
+                .addInput('S', "#" + ItemTags.WOODEN_SLABS.location())
+                .addInput('W', MIItem.WAX.id())
+                .offerTo(exporter, "water_barrel_from_planks");
 
         generateWax(exporter, Items.COPPER_BLOCK, Items.WAXED_COPPER_BLOCK);
         generateWax(exporter, Items.CUT_COPPER, Items.WAXED_CUT_COPPER);

@@ -13,6 +13,7 @@ import aztech.milite.blocks.storage.StorageBehaviour;
 import aztech.milite.blocks.storage.tank.creativetank.CreativeTankBlockEntity;
 import aztech.milite.blocks.storage.tank.TankBlock;
 import aztech.milite.blocks.storage.tank.TankItem;
+import aztech.milite.blocks.storage.waterbarrel.WaterBarrelBlock;
 import aztech.milite.blocks.TrashCanBlock;
 import aztech.milite.datagen.loot.MIBlockLoot;
 import aztech.milite.datagen.model.BaseModelProvider;
@@ -39,6 +40,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
@@ -93,6 +95,15 @@ public class MIBlock {
     public static final BlockDefinition<Block> INDUSTRIAL_TNT = blockExplosive("Industrial TNT", "industrial_tnt");
     public static final BlockDefinition<Block> NUKE = blockExplosive("Nuke", "nuke");
 
+    public static final BlockDefinition<WaterBarrelBlock> WATER_BARREL = block("Water Barrel", "water_barrel",
+            BlockDefinitionParams.of(BlockBehaviour.Properties.ofFullCopy(Blocks.BARREL).pushReaction(PushReaction.BLOCK))
+                    .withBlockConstructor(WaterBarrelBlock::new)
+                    .clearTags().addMoreTags(BlockTags.MINEABLE_WITH_AXE)
+                    .sortOrder(SortOrder.TANKS)
+                    .withModel((block, gen) -> gen.simpleBlockWithItem(block, gen.models().cubeColumn(gen.name(block),
+                            ResourceLocation.withDefaultNamespace("block/barrel_side"),
+                            ResourceLocation.withDefaultNamespace("block/barrel_bottom")))));
+
     public static final BlockDefinition<TankBlock> CREATIVE_TANK = block(
             "Creative Tank",
             "creative_tank",
@@ -108,7 +119,6 @@ public class MIBlock {
                     event.registerItem(Capabilities.FluidHandler.ITEM, (stack, vd) -> new ContainerItem.FluidHandler(stack, (TankItem) item), item);
                 });
             });
-
     public static final BlockDefinition<BarrelBlock> CREATIVE_BARREL = block(
             "Creative Barrel",
             "creative_barrel",
@@ -122,7 +132,6 @@ public class MIBlock {
                     .withBlockEntityRendererItemModel()
                     .noLootTable()
     );
-
 
     public static final BlockDefinition<CreativeStorageUnitBlock> CREATIVE_STORAGE_UNIT = block("Creative Storage Unit",
             "creative_storage_unit", BlockDefinitionParams.defaultStone().withBlockConstructor(CreativeStorageUnitBlock::new).dontConductRedstone());

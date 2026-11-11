@@ -739,7 +739,5 @@
   "text.moderntech.RedstoneControlOff": "Redstone control disabled",
   "text.moderntech.RedstoneControlOn": "Redstone control enabled",
   "text.moderntech.SteamDrillFuelHelp": "- Platziere Brennstoff in den Bohrer mit %s.",
-  "text.moderntech.SteamDrillProfit": "- Drücke %s um den 3x3-Abbau umzuschalten.",
-  "text.moderntech.SteamDrillToggle": "- Schalte Behutsamkeit mit %s + %s um.",
   "text.moderntech.SteamDrillWaterHelp": "- Drücke %s auf stehendes oder fließendes Wasser zum Füllen."
 }

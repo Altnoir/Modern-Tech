@@ -30,7 +30,7 @@ public final class SteamDrillHooks {
 
     public static void overrideDestroyProgress(Player pPlayer, BlockGetter pLevel, CallbackInfoReturnable<Float> cir) {
         ItemStack stack = pPlayer.getMainHandItem();
-        if (!(stack.getItem() instanceof SteamDrillItem drillItem) || !canOverride.get()) {
+        if (!(stack.getItem() instanceof AreaMiningDrill drillItem) || !canOverride.get()) {
             return;
         }
 
@@ -43,6 +43,9 @@ public final class SteamDrillHooks {
         MutableBoolean foundAny = new MutableBoolean(false);
 
         SteamDrillItem.forEachMineableBlock(pLevel, area, pPlayer, (blockPos, state) -> {
+            if (!drillItem.canMineAreaBlock(stack, state)) {
+                return;
+            }
             // Disable this hook during the call to avoid infinite recursion...
             float destroyProgress = getDestroyProgressRaw(state, pPlayer, pLevel, blockPos);
 

@@ -43,6 +43,8 @@ import aztech.milite.items.armor.MIArmorMaterials;
 import aztech.milite.items.armor.MIKeyMap;
 import aztech.milite.items.DynamicToolItem;
 import aztech.milite.items.SteamDrillHooks;
+import aztech.milite.items.SteamDrillItem;
+import aztech.milite.items.diesel_tools.DieselToolItem;
 import aztech.milite.machines.init.*;
 import aztech.milite.machines.multiblocks.world.ChunkEventListeners;
 import aztech.milite.machines.multiblocks.CoilGlowTracker;
@@ -177,7 +179,10 @@ public class MI {
 
         SteamDrillHooks.init();
         NeoForge.EVENT_BUS.addListener(AnvilUpdateEvent.class, event -> {
-            // Don't let anyone try to enchant our dynamic tools! Renaming is allowed, only if the other slot is empty.
+            if (event.getLeft().getItem() instanceof SteamDrillItem || event.getLeft().getItem() instanceof DieselToolItem) {
+                return;
+            }
+            // Other dynamic tools only support renaming.
             if ((event.getLeft().getItem() instanceof DynamicToolItem && !event.getRight().isEmpty()) ||
                     (!event.getLeft().isEmpty() && event.getRight().getItem() instanceof DynamicToolItem)) {
                 event.setCanceled(true);

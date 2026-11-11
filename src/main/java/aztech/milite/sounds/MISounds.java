@@ -16,6 +16,8 @@ import java.util.Map;
 
 public final class MISounds {
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS = DeferredRegister.create(Registries.SOUND_EVENT, MI.ID);
+    public static final DeferredHolder<SoundEvent, SoundEvent> WATER_BARREL_OPEN = register("block/water_barrel/open");
+    public static final DeferredHolder<SoundEvent, SoundEvent> WATER_BARREL_CLOSE = register("block/water_barrel/close");
 
     private static final Map<String, MachineSound> SOUNDS = new HashMap<>();
     private static final Map<ResourceLocation, String> MACHINE_SOUNDS = Map.ofEntries(
@@ -97,8 +99,12 @@ public final class MISounds {
 
     private static void sound(String name, int duration) {
         var path = "machine/" + name;
-        var event = SOUND_EVENTS.register(path, () -> SoundEvent.createVariableRangeEvent(MI.id(path)));
+        var event = register(path);
         SOUNDS.put(name, new MachineSound(event, duration));
+    }
+
+    private static DeferredHolder<SoundEvent, SoundEvent> register(String path) {
+        return SOUND_EVENTS.register(path, () -> SoundEvent.createVariableRangeEvent(MI.id(path)));
     }
 
     public record MachineSound(DeferredHolder<SoundEvent, SoundEvent> event, int duration) {

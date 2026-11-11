@@ -61,7 +61,6 @@ public final class TranslationProvider implements DataProvider {
 
         addTranslation("key.categories.moderntech.moderntech", "ModernTech");
         addTranslation("key.moderntech.toggle_flight", "Toggle Flight");
-        addTranslation("key.moderntech.toggle_3x3", "Toggle 3x3 Mining");
         addTranslation("text.autoconfig.moderntech.title", "ModernTech Menu");
         addTranslation("tag.moderntech.replicator_blacklist", "Replicator Blacklist");
 

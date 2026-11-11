@@ -5,14 +5,8 @@ import aztech.milite.fluid.MIFluid;
 import aztech.milite.items.DynamicToolItem;
 import aztech.milite.items.FluidFuelItemHelper;
 import aztech.milite.items.ItemHelper;
-import aztech.milite.MIComponents;
-import aztech.milite.MIText;
 import aztech.milite.thirdparty.fabrictransfer.api.fluid.FluidVariant;
-import aztech.milite.util.TextHelper;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Holder;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -22,13 +16,9 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Shearable;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.context.UseOnContext;
-import net.minecraft.world.item.enchantment.Enchantment;
-import net.minecraft.world.item.enchantment.Enchantments;
-import net.minecraft.world.item.enchantment.ItemEnchantments;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
@@ -53,13 +43,18 @@ public class DieselToolItem extends Item implements DynamicToolItem {
     private final double damage;
 
     public DieselToolItem(Properties settings, double damage) {
-        super(settings.stacksTo(1).rarity(Rarity.UNCOMMON).component(MIComponents.SILK_TOUCH, true));
+        super(settings.stacksTo(1).rarity(Rarity.UNCOMMON));
         this.damage = damage;
     }
 
     @Override
     public boolean isEnchantable(ItemStack stack) {
-        return false;
+        return stack.getCount() == 1;
+    }
+
+    @Override
+    public int getEnchantmentValue() {
+        return Tiers.NETHERITE.getEnchantmentValue();
     }
 
     @Override
@@ -116,13 +111,6 @@ public class DieselToolItem extends Item implements DynamicToolItem {
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
         FluidFuelItemHelper.appendTooltip(stack, tooltip, CAPACITY);
-
-        if (context.registries() != null) {
-            var enchantmentRegistry = context.registries().lookupOrThrow(Registries.ENCHANTMENT);
-
-            tooltip.add(MIText.MiningMode.text(enchantmentRegistry.get(isFortune(stack) ? Enchantments.FORTUNE : Enchantments.SILK_TOUCH)
-                    .orElseThrow().value().description().copy().setStyle(TextHelper.NUMBER_TEXT)).setStyle(TextHelper.GRAY_TEXT.withItalic(false)));
-        }
     }
 
     @Override
@@ -148,30 +136,6 @@ public class DieselToolItem extends Item implements DynamicToolItem {
 
     public double getDurabilityBarProgress(ItemStack stack) {
         return (double) FluidFuelItemHelper.getAmount(stack) / CAPACITY;
-    }
-
-    private static boolean isFortune(ItemStack stack) {
-        return !stack.getOrDefault(MIComponents.SILK_TOUCH, false);
-    }
-
-    private static void setFortune(ItemStack stack, boolean fortune) {
-        stack.set(MIComponents.SILK_TOUCH, !fortune);
-    }
-
-    @Override
-    public InteractionResultHolder<ItemStack> use(Level world, Player user, InteractionHand hand) {
-        // Toggle between silk touch and fortune
-        if (hand == InteractionHand.MAIN_HAND && user.isShiftKeyDown()) {
-            ItemStack stack = user.getItemInHand(hand);
-            setFortune(stack, !isFortune(stack));
-            if (!world.isClientSide) {
-                user.displayClientMessage(
-                        isFortune(stack) ? MIText.ToolSwitchedFortune.text() : MIText.ToolSwitchedSilkTouch.text(),
-                        true);
-            }
-            return InteractionResultHolder.sidedSuccess(stack, world.isClientSide);
-        }
-        return super.use(world, user, hand);
     }
 
     @Override
@@ -206,29 +170,6 @@ public class DieselToolItem extends Item implements DynamicToolItem {
             }
         }
         return super.useOn(context);
-    }
-
-    @Override
-    public int getEnchantmentLevel(ItemStack stack, Holder<Enchantment> enchantment) {
-        return getAllEnchantments(stack, enchantment.unwrapLookup()).getLevel(enchantment);
-    }
-
-    @Override
-    public ItemEnchantments getAllEnchantments(ItemStack stack, HolderLookup.RegistryLookup<Enchantment> lookup) {
-        var map = new ItemEnchantments.Mutable(ItemEnchantments.EMPTY);
-        if (FluidFuelItemHelper.getAmount(stack) > 0) {
-            if (!isFortune(stack)) {
-                lookup.get(Enchantments.SILK_TOUCH).ifPresent(h -> map.set(h, h.value().getMaxLevel()));
-            } else {
-                lookup.get(Enchantments.FORTUNE).ifPresent(h -> map.set(h, h.value().getMaxLevel()));
-            }
-        }
-        return map.toImmutable();
-    }
-
-    @Override
-    public boolean isFoil(ItemStack pStack) {
-        return FluidFuelItemHelper.getAmount(pStack) > 0;
     }
 
     @Override

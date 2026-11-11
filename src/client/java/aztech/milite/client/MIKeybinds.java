@@ -3,7 +3,6 @@ package aztech.milite.client;
 import aztech.milite.items.ActivatableItem;
 import aztech.milite.MI;
 import aztech.milite.MIItem;
-import aztech.milite.MIText;
 import aztech.milite.network.armor.ActivateItemPacket;
 import com.google.common.collect.Sets;
 import com.mojang.blaze3d.platform.InputConstants;
@@ -49,20 +48,6 @@ public class MIKeybinds {
                     EquipmentSlot.CHEST,
                     i -> i.is(MIItem.DIESEL_JETPACK.asItem()) || i.is(MIItem.GRAVICHESTPLATE.asItem()),
                     (player, activated) -> {}));
-
-    public static final Keybind TOGGLE_3_BY_3 = create(
-            "toggle_3x3",
-            id -> new KeyMapping(
-                    id,
-                    KeyConflictContext.IN_GAME,
-                    InputConstants.Type.KEYSYM,
-                    GLFW.GLFW_KEY_Y,
-                    CATEGORY),
-            toggleableItemAction(
-                    EquipmentSlot.MAINHAND,
-                    i -> i.is(MIItem.STEAM_MINING_DRILL.asItem()),
-                    (player, activated) -> player.displayClientMessage((activated ? MIText.ToolSwitched3x3 : MIText.ToolSwitchedNo3x3).text(),
-                            true)));
 
     private static Keybind create(String id, Function<String, KeyMapping> creator, Runnable action) {
         String descriptionId = Util.makeDescriptionId("key", MI.id(id));

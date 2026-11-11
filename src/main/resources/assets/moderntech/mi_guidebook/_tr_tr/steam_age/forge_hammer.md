@@ -14,11 +14,11 @@ Bronz yapmadan önce bir Demirci Örsü oluşturmamız gerekecek. Temel işleme 
 
 Demirci örsüne demir, bakır ve kalay cevheri koyabilirsiniz ve cevher başına 2 ham cevher alırsınız. Her ham cevher eritilerek külçe haline getirilebilir.
 
-Şimdi, İpeksi Dokunuşlu kazmaya ihtiyaç duymadan cevherleri doğrudan elde etmek için bir Buharlı Madencilik Matkabı yapmayı düşünebilirsiniz.
+Cevher bloklarını doğrudan toplamak için Buharlı Madencilik Matkabına İpeksi Dokunuş basın.
 
 <Recipe id="moderntech:forge_hammer" />
 
-Buharlı Madencilik Matkabı aynı anda 3x3 blok kazabilir, oyunun başlarındaki madencilik ihtiyaçlarınız için mükemmeldir! Ayrıca Demirci Örsü ile iyi bir uyum sağlayan İpeksi Dokunuşa sahiptir.
+Eğilip sağ tıklayarak 3×3 madenciliği açıp kapatabilirsiniz.
 
 <Recipe id="moderntech:tools/steam_mining_drill" />
 

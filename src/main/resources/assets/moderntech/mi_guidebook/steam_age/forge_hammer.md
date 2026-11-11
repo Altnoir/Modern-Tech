@@ -14,13 +14,13 @@ Before making bronze, we will need to create a Forge Hammer. It is used for basi
 
 You can put iron, copper and tin ore in the forge hammer and you will receive 2 raw ores per ore. Every raw ores can be smelted into an ingot.
 
-Now, you may want to consider making a Steam Mining Drill to obtain the ores directly without needing a Silk Touch pickaxe.
+The Steam Mining Drill can mine ore blocks directly when enchanted with Silk Touch.
 
 <Recipe id="moderntech:forge_hammer" />
 
 Once you have bronze, machines are assembled on the [Processing Table](./processing_table.md) rather than a crafting table.
 
-The Steam Mining Drill can mine 3x3 blocks at the time, perfect for your early game mining needs! It also has Silk Touch which combines well with the Forge Hammer.
+Sneak and right-click with the Steam Mining Drill to toggle 3×3 mining. Silk Touch and Fortune work through their respective enchantments.
 
 <Recipe id="moderntech:tools/steam_mining_drill" />
 

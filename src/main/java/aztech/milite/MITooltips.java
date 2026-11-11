@@ -4,6 +4,7 @@ import aztech.milite.api.datamaps.MIDataMaps;
 import aztech.milite.blocks.OreBlock;
 import aztech.milite.config.MIClientConfig;
 import aztech.milite.definition.FluidLike;
+import aztech.milite.items.AreaMiningDrill;
 import aztech.milite.items.PortableStorageUnit;
 import aztech.milite.items.diesel_tools.DieselToolItem;
 import aztech.milite.machines.MachineBlock;
@@ -259,12 +260,15 @@ public class MITooltips {
             });
     public static final TooltipAttachment DIESEL_TOOLS = TooltipAttachment.ofMultilines(
             (context, itemStack, item) -> {
-                if (item instanceof DieselToolItem tool) {
-                    return List.of(
+                if (item instanceof DieselToolItem) {
+                    var lines = new ArrayList<>(List.of(
                             line(MIText.ToolConfiguration).build(),
                             line(MIText.DieselToolFuelHelp1).arg("use", KEYBIND_PARSER).build(),
-                            line(MIText.DieselToolFuelHelp2).build(),
-                            line(MIText.DieselToolToggle).arg("sneak", KEYBIND_PARSER).arg("use", KEYBIND_PARSER).build());
+                            line(MIText.DieselToolFuelHelp2).build()));
+                    if (item instanceof AreaMiningDrill) {
+                        lines.add(line(MIText.SteamDrillToggle).arg("sneak", KEYBIND_PARSER).arg("use", KEYBIND_PARSER).build());
+                    }
+                    return lines;
                 } else {
                     return List.of();
                 }
@@ -275,7 +279,6 @@ public class MITooltips {
                     line(MIText.ToolConfiguration).build(),
                     line(MIText.SteamDrillWaterHelp).arg("use", KEYBIND_PARSER).build(),
                     line(MIText.SteamDrillFuelHelp).arg("use", KEYBIND_PARSER).build(),
-                    line(MIText.SteamDrillProfit).arg("moderntech.toggle_3x3", KEYBIND_PARSER).build(),
                     line(MIText.SteamDrillToggle).arg("sneak", KEYBIND_PARSER).arg("use", KEYBIND_PARSER).build()));
     public static void attachTooltip(Item.TooltipContext context, ItemStack stack, List<Component> lines) {
         boolean hasPrintRequiredShift = false;

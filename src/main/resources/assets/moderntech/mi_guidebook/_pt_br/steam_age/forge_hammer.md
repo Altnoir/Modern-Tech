@@ -14,11 +14,11 @@ Antes de fazer bronze, precisamos criar um Martelo de Forja. Ele é usado para o
 
 Você pode colocar minério de ferro, cobre e estanho no martelo de forja e receberá 2 minérios crus por minério. Cada minério cru pode ser fundido em um lingote.
 
-Agora, você pode querer considerar fazer uma Broca de Mineração a Vapor para obter os minérios diretamente, sem precisar de uma picareta com Toque Suave.
+Para coletar blocos de minério intactos, aplique Toque Suave à Broca de Mineração a Vapor.
 
 <Recipe id="moderntech:forge_hammer" />
 
-A Broca de Mineração a Vapor minera blocos em área 3x3 ao mesmo tempo, perfeita para suas necessidades iniciais de mineração! Ela também possui Toque Suave, que combina bem com o Martelo de Forja.
+Agache e clique com o botão direito para alternar a mineração em 3×3.
 
 <Recipe id="moderntech:tools/steam_mining_drill" />
 

@@ -10,6 +10,7 @@ import aztech.milite.items.*;
 import aztech.milite.items.armor.GraviChestPlateItem;
 import aztech.milite.items.armor.JetpackItem;
 import aztech.milite.items.armor.QuantumArmorItem;
+import aztech.milite.items.diesel_tools.DieselDrillItem;
 import aztech.milite.items.diesel_tools.DieselToolItem;
 import aztech.milite.items.tools.QuantumSword;
 import aztech.milite.materials.MaterialProgression;
@@ -93,7 +94,7 @@ public final class MIItem {
 
     public static final ItemDefinition<SteamDrillItem> STEAM_MINING_DRILL = itemHandheld("Steam Mining Drill", "steam_mining_drill", SteamDrillItem::new, ITEMS_ORDERED.next());
 
-    public static final ItemDefinition<DieselToolItem> DIESEL_MINING_DRILL = itemHandheld("Diesel Mining Drill", "diesel_mining_drill", s -> new DieselToolItem(s, 7), ITEMS_ORDERED.next())
+    public static final ItemDefinition<DieselDrillItem> DIESEL_MINING_DRILL = itemHandheld("Diesel Mining Drill", "diesel_mining_drill", DieselDrillItem::new, ITEMS_ORDERED.next())
             .withItemRegistrationEvent((item) -> {
                 MICapabilities.onEvent(event -> {
                     event.registerItem(Capabilities.FluidHandler.ITEM, (stack, ctx) -> new FluidFuelItemHelper.ItemStorage(stack, DieselToolItem.CAPACITY), item);

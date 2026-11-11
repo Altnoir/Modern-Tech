@@ -20,7 +20,7 @@ item_ids:
 
 这个采矿手钻终于可以取代你的镐和锹了。用强大的燃料填充它以获得最佳速度！
 
-使用Shift+右键点击在精准采集和时运 III模式之间切换。
+手持柴油采矿手钻时，潜行并右键可切换 3×3 挖掘。精准采集和时运由对应的附魔提供。
 
 <Recipe id="moderntech:tools/diesel_mining_drill" />
 

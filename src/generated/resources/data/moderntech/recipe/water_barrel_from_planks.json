@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "tag": "minecraft:planks"
+    },
+    "S": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "W": {
+      "item": "moderntech:wax"
+    }
+  },
+  "pattern": [
+    "PSP",
+    "PWP",
+    "PSP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moderntech:water_barrel"
+  }
+}

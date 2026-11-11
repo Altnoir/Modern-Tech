@@ -20,7 +20,7 @@ Don't forget to activate it using the *Toggle Flight* keybinding!
 
 This Mining Drill can finally replace your Pickaxes and Shovels. Fill it with powerful fuel for the best speed!
 
-Toggle between Silk Touch and Fortune III with shift right-click.
+Sneak and right-click with the Diesel Mining Drill to toggle 3×3 mining. Silk Touch and Fortune work through their respective enchantments.
 
 <Recipe id="moderntech:tools/diesel_mining_drill" />
 

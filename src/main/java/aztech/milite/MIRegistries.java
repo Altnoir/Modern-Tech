@@ -9,6 +9,7 @@ import aztech.milite.blocks.processingtable.ProcessingTableRecipe;
 import aztech.milite.blocks.processingtable.ProcessingTableScreenHandler;
 import aztech.milite.blocks.storage.barrel.CreativeBarrelBlockEntity;
 import aztech.milite.blocks.storage.tank.creativetank.CreativeTankBlockEntity;
+import aztech.milite.blocks.storage.waterbarrel.WaterBarrelBlockEntity;
 import aztech.milite.items.CreativeSections;
 import aztech.milite.machines.gui.MachineMenuCommon;
 import com.altnoir.abysslib.creative.BannerStyle;
@@ -49,6 +50,9 @@ public class MIRegistries {
     });
     public static final Supplier<BlockEntityType<CreativeTankBlockEntity>> CREATIVE_TANK_BE = BLOCK_ENTITIES.register("creative_tank", () -> {
         return BlockEntityType.Builder.of(CreativeTankBlockEntity::new, MIBlock.CREATIVE_TANK.get()).build(null);
+    });
+    public static final Supplier<BlockEntityType<WaterBarrelBlockEntity>> WATER_BARREL_BE = BLOCK_ENTITIES.register("water_barrel", () -> {
+        return BlockEntityType.Builder.of(WaterBarrelBlockEntity::new, MIBlock.WATER_BARREL.get()).build(null);
     });
     public static final Supplier<BlockEntityType<CreativeStorageUnitBlockEntity>> CREATIVE_STORAGE_UNIT_BE = BLOCK_ENTITIES
             .register("creative_storage_unit", () -> {

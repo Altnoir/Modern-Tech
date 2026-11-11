@@ -1,4 +1,19 @@
 {
+  "block/water_barrel/open": {
+    "category": "block",
+    "subtitle": "subtitles.block.barrel.open",
+    "sounds": [
+      "moderntech:block/water_barrel/open1",
+      "moderntech:block/water_barrel/open2"
+    ]
+  },
+  "block/water_barrel/close": {
+    "category": "block",
+    "subtitle": "subtitles.block.barrel.close",
+    "sounds": [
+      "moderntech:block/water_barrel/close"
+    ]
+  },
   "machine/assembler": {
     "category": "block",
     "sounds": [
